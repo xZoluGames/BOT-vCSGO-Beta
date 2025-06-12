@@ -1,0 +1,7 @@
+{
+    "data_saved": "Datos guardados correctamente en {filename}",
+    "data_fetched": "Datos obtenidos de Waxpeer correctamente. Total de ítems: {count}",
+    "unexpected_format": "Formato de datos inesperado en la respuesta de Waxpeer.",
+    "error_fetching_data": "Error al obtener datos de Waxpeer: {error}",
+    "waiting": "Esperando 15 segundos para la próxima actualización..."
+}

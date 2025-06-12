@@ -1,0 +1,6 @@
+{
+    "success_message": "Data retrieved from Skindeck successfully. Total items: {total_items}",
+    "unexpected_format": "Unexpected data format in Skindeck response.",
+    "fetch_error": "Error retrieving data from Skindeck: {error}",
+    "waiting_message": "Waiting 15 seconds for the next update..."
+}

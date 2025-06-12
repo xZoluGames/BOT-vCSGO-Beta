@@ -1,0 +1,110 @@
+[
+    {
+        "nombre": "Sticker | IHC Esports (Glitter) | Antwerp 2022",
+        "precio_steam": 0.07,
+        "precio_mannco": 1.01,
+        "precio_mannco_con_comision": 0.9594999999999999,
+        "rentabilidad": 0.8895,
+        "rentabilidad_porcentaje": 1270.7142857142856,
+        "url_mannco": "https://mannco.store/item/730-sticker-ihc-esports-glitter-antwerp-2022"
+    },
+    {
+        "nombre": "Sticker | Copenhagen Flames (Glitter) | Antwerp 2022",
+        "precio_steam": 0.27,
+        "precio_mannco": 1.01,
+        "precio_mannco_con_comision": 0.9594999999999999,
+        "rentabilidad": 0.6894999999999999,
+        "rentabilidad_porcentaje": 255.3703703703703,
+        "url_mannco": "https://mannco.store/item/730-sticker-copenhagen-flames-glitter-antwerp-2022"
+    },
+    {
+        "nombre": "Sticker | saffee (Holo) | Paris 2023",
+        "precio_steam": 0.75,
+        "precio_mannco": 2.59,
+        "precio_mannco_con_comision": 2.4604999999999997,
+        "rentabilidad": 1.7104999999999997,
+        "rentabilidad_porcentaje": 228.06666666666663,
+        "url_mannco": "https://mannco.store/item/730-sticker-saffee-holo-paris-2023"
+    },
+    {
+        "nombre": "Souvenir SSG 08 | Prey (Factory New)",
+        "precio_steam": 0.03,
+        "precio_mannco": 0.06,
+        "precio_mannco_con_comision": 0.056999999999999995,
+        "rentabilidad": 0.026999999999999996,
+        "rentabilidad_porcentaje": 89.99999999999999,
+        "url_mannco": "https://mannco.store/item/730-souvenir-ssg-08-prey-factory-new"
+    },
+    {
+        "nombre": "Souvenir SSG 08 | Carbon Fiber (Factory New)",
+        "precio_steam": 1.32,
+        "precio_mannco": 2.51,
+        "precio_mannco_con_comision": 2.3844999999999996,
+        "rentabilidad": 1.0644999999999996,
+        "rentabilidad_porcentaje": 80.64393939393936,
+        "url_mannco": "https://mannco.store/item/730-souvenir-ssg-08-carbon-fiber-factory-new"
+    },
+    {
+        "nombre": "CS:GO Patch Pack",
+        "precio_steam": 1.8,
+        "precio_mannco": 3.01,
+        "precio_mannco_con_comision": 2.8594999999999997,
+        "rentabilidad": 1.0594999999999997,
+        "rentabilidad_porcentaje": 58.861111111111086,
+        "url_mannco": "https://mannco.store/item/730-csgo-patch-pack"
+    },
+    {
+        "nombre": "Sticker | broky (Holo, Champion) | Antwerp 2022",
+        "precio_steam": 0.65,
+        "precio_mannco": 1.01,
+        "precio_mannco_con_comision": 0.9594999999999999,
+        "rentabilidad": 0.3094999999999999,
+        "rentabilidad_porcentaje": 47.6153846153846,
+        "url_mannco": "https://mannco.store/item/730-sticker-broky-holo-champion-antwerp-2022"
+    },
+    {
+        "nombre": "M4A1-S | Boreal Forest (Well-Worn)",
+        "precio_steam": 0.08,
+        "precio_mannco": 0.12,
+        "precio_mannco_con_comision": 0.11399999999999999,
+        "rentabilidad": 0.03399999999999999,
+        "rentabilidad_porcentaje": 42.499999999999986,
+        "url_mannco": "https://mannco.store/item/730-m4a1-s-boreal-forest-well-worn"
+    },
+    {
+        "nombre": "Sticker | Natus Vincere | 2020 RMR",
+        "precio_steam": 0.04,
+        "precio_mannco": 0.06,
+        "precio_mannco_con_comision": 0.056999999999999995,
+        "rentabilidad": 0.016999999999999994,
+        "rentabilidad_porcentaje": 42.499999999999986,
+        "url_mannco": "https://mannco.store/item/730-sticker-natus-vincere-2020-rmr"
+    },
+    {
+        "nombre": "Sticker | roeJ | Antwerp 2022",
+        "precio_steam": 0.03,
+        "precio_mannco": 0.04,
+        "precio_mannco_con_comision": 0.038,
+        "rentabilidad": 0.008,
+        "rentabilidad_porcentaje": 26.666666666666668,
+        "url_mannco": "https://mannco.store/item/730-sticker-roej-antwerp-2022"
+    },
+    {
+        "nombre": "Stockholm 2021 Challengers Sticker Capsule",
+        "precio_steam": 2.62,
+        "precio_mannco": 3.01,
+        "precio_mannco_con_comision": 2.8594999999999997,
+        "rentabilidad": 0.2394999999999996,
+        "rentabilidad_porcentaje": 9.141221374045786,
+        "url_mannco": "https://mannco.store/item/730-stockholm-2021-challengers-sticker-capsule"
+    },
+    {
+        "nombre": "Sticker | FaZe Clan | Stockholm 2021",
+        "precio_steam": 0.14,
+        "precio_mannco": 0.15,
+        "precio_mannco_con_comision": 0.1425,
+        "rentabilidad": 0.0024999999999999745,
+        "rentabilidad_porcentaje": 1.7857142857142672,
+        "url_mannco": "https://mannco.store/item/730-sticker-faze-clan-stockholm-2021"
+    }
+]

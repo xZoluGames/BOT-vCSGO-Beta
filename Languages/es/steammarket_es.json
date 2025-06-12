@@ -1,0 +1,9 @@
+{
+    "data_saved": "Datos guardados correctamente en {filename}",
+    "no_price_data": "No hay datos de precio disponibles para el item ID {item_id}",
+    "price_error": "Error al obtener el precio para el item ID {item_id}",
+    "invalid_response": "Respuesta inválida para el item ID {item_id}",
+    "update_completed": "Actualización completada en {duration:.2f} segundos con {workers} hilos.",
+    "error_obtaining_data": "Error al obtener datos de Steam Market: {error}",
+    "waiting": "Esperando 30 segundos para la próxima actualización..."
+}

@@ -1,0 +1,6 @@
+{
+    "success_message": "Data retrieved from CsDeals successfully. Total items: {total_items}",
+    "unexpected_format": "Unexpected data format in CsDeals response.",
+    "fetch_error": "Error retrieving data from CsDeals: {error}",
+    "waiting_message": "Waiting 15 seconds for the next update..."
+}

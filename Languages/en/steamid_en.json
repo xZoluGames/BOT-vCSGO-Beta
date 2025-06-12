@@ -1,0 +1,6 @@
+{
+    "data_obtained": "Data obtained from Steam ID successfully. Total items: {count}",
+    "error_obtaining_data": "Error obtaining data from Steam ID: {error}",
+    "updating_data": "Updating Steam ID data...",
+    "waiting": "Waiting 60 seconds for the next update..."
+}

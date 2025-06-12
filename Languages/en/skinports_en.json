@@ -1,0 +1,7 @@
+{
+    "data_saved": "Data saved successfully to {filename}",
+    "data_obtained": "Data obtained from Skinport successfully. Total items: {count}",
+    "unexpected_format": "Unexpected data format in Skinport response.",
+    "error_obtaining_data": "Error obtaining data from Skinport: {error}",
+    "waiting": "Waiting 200 seconds for the next update..."
+}

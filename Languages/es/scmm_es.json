@@ -1,0 +1,9 @@
+{
+    "item_info": "Item: {name}",
+    "buy_from": "Comprar en: {buy_from} por ${buy_price}",
+    "buy_link": "Link: {buy_url}",
+    "sell_info": "Vender en Steam por: ${sell_price} (después de la tarifa: ${sell_price_after_fee})",
+    "steam_link": "Link: {steam_url}",
+    "profit": "Rentabilidad: {profit_percentage:.2f}%",
+    "clear_console": "CLEAR_CONSOLE"
+}

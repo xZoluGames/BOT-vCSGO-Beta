@@ -1,0 +1,6 @@
+{
+    "success_message": "Data retrieved from Bitskins successfully. Total items: {total_items}",
+    "unexpected_format": "Unexpected data format in Bitskins response.",
+    "fetch_error": "Error retrieving data from Bitskins: {error}",
+    "waiting_message": "Waiting 15 seconds for the next update..."
+}

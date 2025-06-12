@@ -1,0 +1,6 @@
+{
+    "success_message": "Data retrieved from Skinout successfully. Total items: {total_items}",
+    "unexpected_format": "Unexpected data format in Skinout response.",
+    "fetch_error": "Error retrieving data from Skinout: {error}",
+    "waiting_message": "Waiting 15 seconds for the next update..."
+}

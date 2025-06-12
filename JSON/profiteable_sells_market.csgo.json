@@ -1,0 +1,933 @@
+[
+    {
+        "item": "Sticker | Jame (Champion) | Rio 2022",
+        "precio_steam": 0.03,
+        "precio_buy_order": 0.044,
+        "rentabilidad": 0.013999999999999999,
+        "rentabilidad_porcentaje": 46.666666666666664
+    },
+    {
+        "item": "Sticker | interz (Holo) | Stockholm 2021",
+        "precio_steam": 0.32,
+        "precio_buy_order": 0.442,
+        "rentabilidad": 0.122,
+        "rentabilidad_porcentaje": 38.125
+    },
+    {
+        "item": "AUG | Aristocrat (Well-Worn)",
+        "precio_steam": 1.03,
+        "precio_buy_order": 1.319,
+        "rentabilidad": 0.2889999999999999,
+        "rentabilidad_porcentaje": 28.05825242718446
+    },
+    {
+        "item": "Sticker | vexite (Holo) | Rio 2022",
+        "precio_steam": 0.49,
+        "precio_buy_order": 0.608,
+        "rentabilidad": 0.118,
+        "rentabilidad_porcentaje": 24.081632653061224
+    },
+    {
+        "item": "StatTrak™ MAG-7 | Heat (Battle-Scarred)",
+        "precio_steam": 1.2,
+        "precio_buy_order": 1.436,
+        "rentabilidad": 0.236,
+        "rentabilidad_porcentaje": 19.666666666666664
+    },
+    {
+        "item": "Shanghai 2024 Legends Sticker Capsule",
+        "precio_steam": 0.28,
+        "precio_buy_order": 0.331,
+        "rentabilidad": 0.05099999999999999,
+        "rentabilidad_porcentaje": 18.214285714285708
+    },
+    {
+        "item": "StatTrak™ Dual Berettas | Hydro Strike (Battle-Scarred)",
+        "precio_steam": 2.0,
+        "precio_buy_order": 2.351,
+        "rentabilidad": 0.351,
+        "rentabilidad_porcentaje": 17.549999999999997
+    },
+    {
+        "item": "Souvenir Sawed-Off | Amber Fade (Field-Tested)",
+        "precio_steam": 10.46,
+        "precio_buy_order": 12.292,
+        "rentabilidad": 1.831999999999999,
+        "rentabilidad_porcentaje": 17.51434034416825
+    },
+    {
+        "item": "StatTrak™ USP-S | 27 (Battle-Scarred)",
+        "precio_steam": 1.46,
+        "precio_buy_order": 1.687,
+        "rentabilidad": 0.2270000000000001,
+        "rentabilidad_porcentaje": 15.547945205479458
+    },
+    {
+        "item": "StatTrak™ P250 | Supernova (Field-Tested)",
+        "precio_steam": 3.17,
+        "precio_buy_order": 3.637,
+        "rentabilidad": 0.4670000000000001,
+        "rentabilidad_porcentaje": 14.731861198738173
+    },
+    {
+        "item": "UMP-45 | Moonrise (Field-Tested)",
+        "precio_steam": 0.62,
+        "precio_buy_order": 0.709,
+        "rentabilidad": 0.08899999999999997,
+        "rentabilidad_porcentaje": 14.354838709677415
+    },
+    {
+        "item": "StatTrak™ SSG 08 | Ghost Crusader (Battle-Scarred)",
+        "precio_steam": 2.32,
+        "precio_buy_order": 2.641,
+        "rentabilidad": 0.3210000000000002,
+        "rentabilidad_porcentaje": 13.836206896551733
+    },
+    {
+        "item": "StatTrak™ Five-SeveN | Kami (Field-Tested)",
+        "precio_steam": 2.49,
+        "precio_buy_order": 2.832,
+        "rentabilidad": 0.34199999999999964,
+        "rentabilidad_porcentaje": 13.73493975903613
+    },
+    {
+        "item": "MP7 | Bloodsport (Well-Worn)",
+        "precio_steam": 2.83,
+        "precio_buy_order": 3.18,
+        "rentabilidad": 0.3500000000000001,
+        "rentabilidad_porcentaje": 12.367491166077741
+    },
+    {
+        "item": "StatTrak™ P250 | Iron Clad (Field-Tested)",
+        "precio_steam": 0.48,
+        "precio_buy_order": 0.539,
+        "rentabilidad": 0.05900000000000005,
+        "rentabilidad_porcentaje": 12.291666666666679
+    },
+    {
+        "item": "StatTrak™ MP9 | Bioleak (Field-Tested)",
+        "precio_steam": 1.53,
+        "precio_buy_order": 1.708,
+        "rentabilidad": 0.17799999999999994,
+        "rentabilidad_porcentaje": 11.633986928104571
+    },
+    {
+        "item": "M4A1-S | Flashback (Well-Worn)",
+        "precio_steam": 0.89,
+        "precio_buy_order": 0.993,
+        "rentabilidad": 0.10299999999999998,
+        "rentabilidad_porcentaje": 11.573033707865166
+    },
+    {
+        "item": "StatTrak™ P2000 | Wicked Sick (Battle-Scarred)",
+        "precio_steam": 3.46,
+        "precio_buy_order": 3.86,
+        "rentabilidad": 0.3999999999999999,
+        "rentabilidad_porcentaje": 11.560693641618494
+    },
+    {
+        "item": "Desert Eagle | Naga (Well-Worn)",
+        "precio_steam": 2.78,
+        "precio_buy_order": 3.088,
+        "rentabilidad": 0.3080000000000003,
+        "rentabilidad_porcentaje": 11.079136690647493
+    },
+    {
+        "item": "USP-S | Jawbreaker (Well-Worn)",
+        "precio_steam": 9.52,
+        "precio_buy_order": 10.554,
+        "rentabilidad": 1.0340000000000007,
+        "rentabilidad_porcentaje": 10.861344537815134
+    },
+    {
+        "item": "Desert Eagle | Naga (Battle-Scarred)",
+        "precio_steam": 3.0,
+        "precio_buy_order": 3.32,
+        "rentabilidad": 0.31999999999999984,
+        "rentabilidad_porcentaje": 10.666666666666663
+    },
+    {
+        "item": "Sticker | fEAR (Holo) | Shanghai 2024",
+        "precio_steam": 0.4,
+        "precio_buy_order": 0.442,
+        "rentabilidad": 0.04199999999999998,
+        "rentabilidad_porcentaje": 10.499999999999995
+    },
+    {
+        "item": "Souvenir MAC-10 | Candy Apple (Minimal Wear)",
+        "precio_steam": 12.05,
+        "precio_buy_order": 13.298,
+        "rentabilidad": 1.2479999999999993,
+        "rentabilidad_porcentaje": 10.356846473029039
+    },
+    {
+        "item": "StatTrak™ PP-Bizon | Fuel Rod (Well-Worn)",
+        "precio_steam": 1.84,
+        "precio_buy_order": 2.03,
+        "rentabilidad": 0.18999999999999972,
+        "rentabilidad_porcentaje": 10.326086956521724
+    },
+    {
+        "item": "Rio 2022 Contenders Autograph Capsule",
+        "precio_steam": 0.31,
+        "precio_buy_order": 0.341,
+        "rentabilidad": 0.031000000000000028,
+        "rentabilidad_porcentaje": 10.000000000000009
+    },
+    {
+        "item": "Souvenir Dual Berettas | Twin Turbo (Well-Worn)",
+        "precio_steam": 17.02,
+        "precio_buy_order": 18.684,
+        "rentabilidad": 1.6640000000000015,
+        "rentabilidad_porcentaje": 9.776733254994134
+    },
+    {
+        "item": "Tec-9 | Brass (Battle-Scarred)",
+        "precio_steam": 2.82,
+        "precio_buy_order": 3.081,
+        "rentabilidad": 0.2610000000000001,
+        "rentabilidad_porcentaje": 9.255319148936175
+    },
+    {
+        "item": "XM1014 | XOXO (Well-Worn)",
+        "precio_steam": 2.45,
+        "precio_buy_order": 2.671,
+        "rentabilidad": 0.22099999999999964,
+        "rentabilidad_porcentaje": 9.02040816326529
+    },
+    {
+        "item": "Desert Eagle | Naga (Field-Tested)",
+        "precio_steam": 2.79,
+        "precio_buy_order": 3.041,
+        "rentabilidad": 0.2509999999999999,
+        "rentabilidad_porcentaje": 8.996415770609314
+    },
+    {
+        "item": "StatTrak™ UMP-45 | Metal Flowers (Battle-Scarred)",
+        "precio_steam": 3.68,
+        "precio_buy_order": 4.007,
+        "rentabilidad": 0.3269999999999995,
+        "rentabilidad_porcentaje": 8.885869565217378
+    },
+    {
+        "item": "M4A1-S | Flashback (Battle-Scarred)",
+        "precio_steam": 0.89,
+        "precio_buy_order": 0.969,
+        "rentabilidad": 0.07899999999999996,
+        "rentabilidad_porcentaje": 8.876404494382017
+    },
+    {
+        "item": "USP-S | Jawbreaker (Battle-Scarred)",
+        "precio_steam": 9.93,
+        "precio_buy_order": 10.807,
+        "rentabilidad": 0.8770000000000007,
+        "rentabilidad_porcentaje": 8.831822759315214
+    },
+    {
+        "item": "StatTrak™ P90 | Virus (Minimal Wear)",
+        "precio_steam": 4.78,
+        "precio_buy_order": 5.195,
+        "rentabilidad": 0.41500000000000004,
+        "rentabilidad_porcentaje": 8.682008368200837
+    },
+    {
+        "item": "FAMAS | Valence (Field-Tested)",
+        "precio_steam": 4.02,
+        "precio_buy_order": 4.364,
+        "rentabilidad": 0.3440000000000003,
+        "rentabilidad_porcentaje": 8.557213930348267
+    },
+    {
+        "item": "Glock-18 | Blue Fissure (Well-Worn)",
+        "precio_steam": 2.9,
+        "precio_buy_order": 3.145,
+        "rentabilidad": 0.2450000000000001,
+        "rentabilidad_porcentaje": 8.44827586206897
+    },
+    {
+        "item": "AUG | Stymphalian (Battle-Scarred)",
+        "precio_steam": 2.13,
+        "precio_buy_order": 2.305,
+        "rentabilidad": 0.17500000000000027,
+        "rentabilidad_porcentaje": 8.215962441314566
+    },
+    {
+        "item": "StatTrak™ SG 553 | Darkwing (Battle-Scarred)",
+        "precio_steam": 1.45,
+        "precio_buy_order": 1.569,
+        "rentabilidad": 0.119,
+        "rentabilidad_porcentaje": 8.206896551724139
+    },
+    {
+        "item": "USP-S | Alpine Camo (Battle-Scarred)",
+        "precio_steam": 2.01,
+        "precio_buy_order": 2.162,
+        "rentabilidad": 0.15200000000000014,
+        "rentabilidad_porcentaje": 7.562189054726376
+    },
+    {
+        "item": "Souvenir AUG | Random Access (Field-Tested)",
+        "precio_steam": 3.47,
+        "precio_buy_order": 3.73,
+        "rentabilidad": 0.2599999999999998,
+        "rentabilidad_porcentaje": 7.492795389048985
+    },
+    {
+        "item": "M4A4 | Evil Daimyo (Field-Tested)",
+        "precio_steam": 3.29,
+        "precio_buy_order": 3.53,
+        "rentabilidad": 0.23999999999999977,
+        "rentabilidad_porcentaje": 7.294832826747713
+    },
+    {
+        "item": "MP7 | Fade (Field-Tested)",
+        "precio_steam": 4.49,
+        "precio_buy_order": 4.815,
+        "rentabilidad": 0.3250000000000002,
+        "rentabilidad_porcentaje": 7.238307349665927
+    },
+    {
+        "item": "StatTrak™ UMP-45 | Delusion (Field-Tested)",
+        "precio_steam": 1.41,
+        "precio_buy_order": 1.511,
+        "rentabilidad": 0.10099999999999998,
+        "rentabilidad_porcentaje": 7.163120567375886
+    },
+    {
+        "item": "USP-S | Check Engine (Battle-Scarred)",
+        "precio_steam": 0.83,
+        "precio_buy_order": 0.889,
+        "rentabilidad": 0.05900000000000005,
+        "rentabilidad_porcentaje": 7.108433734939766
+    },
+    {
+        "item": "StatTrak™ USP-S | Ticket to Hell (Battle-Scarred)",
+        "precio_steam": 1.84,
+        "precio_buy_order": 1.968,
+        "rentabilidad": 0.1279999999999999,
+        "rentabilidad_porcentaje": 6.956521739130428
+    },
+    {
+        "item": "Souvenir M4A4 | Red DDPAT (Field-Tested)",
+        "precio_steam": 6.18,
+        "precio_buy_order": 6.603,
+        "rentabilidad": 0.42300000000000004,
+        "rentabilidad_porcentaje": 6.844660194174758
+    },
+    {
+        "item": "P90 | Virus (Well-Worn)",
+        "precio_steam": 4.1,
+        "precio_buy_order": 4.38,
+        "rentabilidad": 0.28000000000000025,
+        "rentabilidad_porcentaje": 6.829268292682933
+    },
+    {
+        "item": "Souvenir P250 | Vino Primo (Battle-Scarred)",
+        "precio_steam": 10.2,
+        "precio_buy_order": 10.867,
+        "rentabilidad": 0.6670000000000016,
+        "rentabilidad_porcentaje": 6.539215686274526
+    },
+    {
+        "item": "SCAR-20 | Cardiac (Well-Worn)",
+        "precio_steam": 3.52,
+        "precio_buy_order": 3.75,
+        "rentabilidad": 0.22999999999999998,
+        "rentabilidad_porcentaje": 6.534090909090909
+    },
+    {
+        "item": "FAMAS | Roll Cage (Well-Worn)",
+        "precio_steam": 3.98,
+        "precio_buy_order": 4.238,
+        "rentabilidad": 0.25800000000000045,
+        "rentabilidad_porcentaje": 6.482412060301519
+    },
+    {
+        "item": "PP-Bizon | Blue Streak (Battle-Scarred)",
+        "precio_steam": 2.24,
+        "precio_buy_order": 2.385,
+        "rentabilidad": 0.14499999999999957,
+        "rentabilidad_porcentaje": 6.473214285714265
+    },
+    {
+        "item": "Sticker | apEX | Cologne 2015",
+        "precio_steam": 3.14,
+        "precio_buy_order": 3.341,
+        "rentabilidad": 0.20100000000000007,
+        "rentabilidad_porcentaje": 6.40127388535032
+    },
+    {
+        "item": "StatTrak™ Galil AR | Signal (Well-Worn)",
+        "precio_steam": 2.15,
+        "precio_buy_order": 2.283,
+        "rentabilidad": 0.133,
+        "rentabilidad_porcentaje": 6.186046511627907
+    },
+    {
+        "item": "Souvenir Tec-9 | Brass (Well-Worn)",
+        "precio_steam": 14.17,
+        "precio_buy_order": 15.028,
+        "rentabilidad": 0.8580000000000005,
+        "rentabilidad_porcentaje": 6.055045871559637
+    },
+    {
+        "item": "StatTrak™ Five-SeveN | Urban Hazard (Field-Tested)",
+        "precio_steam": 4.19,
+        "precio_buy_order": 4.431,
+        "rentabilidad": 0.24099999999999966,
+        "rentabilidad_porcentaje": 5.751789976133643
+    },
+    {
+        "item": "AWP | Phobos (Well-Worn)",
+        "precio_steam": 3.99,
+        "precio_buy_order": 4.213,
+        "rentabilidad": 0.22299999999999986,
+        "rentabilidad_porcentaje": 5.588972431077691
+    },
+    {
+        "item": "P2000 | Obsidian (Battle-Scarred)",
+        "precio_steam": 2.03,
+        "precio_buy_order": 2.136,
+        "rentabilidad": 0.10600000000000032,
+        "rentabilidad_porcentaje": 5.221674876847307
+    },
+    {
+        "item": "P2000 | Obsidian (Field-Tested)",
+        "precio_steam": 2.24,
+        "precio_buy_order": 2.352,
+        "rentabilidad": 0.11199999999999966,
+        "rentabilidad_porcentaje": 4.999999999999984
+    },
+    {
+        "item": "Sticker | Kaze | Boston 2018",
+        "precio_steam": 3.53,
+        "precio_buy_order": 3.706,
+        "rentabilidad": 0.17600000000000016,
+        "rentabilidad_porcentaje": 4.985835694050996
+    },
+    {
+        "item": "StatTrak™ MP7 | Nemesis (Field-Tested)",
+        "precio_steam": 13.17,
+        "precio_buy_order": 13.826,
+        "rentabilidad": 0.6560000000000006,
+        "rentabilidad_porcentaje": 4.981017463933186
+    },
+    {
+        "item": "Glock-18 | Nuclear Garden (Field-Tested)",
+        "precio_steam": 2.15,
+        "precio_buy_order": 2.253,
+        "rentabilidad": 0.1030000000000002,
+        "rentabilidad_porcentaje": 4.790697674418614
+    },
+    {
+        "item": "StatTrak™ MAC-10 | Aloha (Field-Tested)",
+        "precio_steam": 5.65,
+        "precio_buy_order": 5.914,
+        "rentabilidad": 0.26399999999999935,
+        "rentabilidad_porcentaje": 4.672566371681404
+    },
+    {
+        "item": "StatTrak™ PP-Bizon | Embargo (Battle-Scarred)",
+        "precio_steam": 3.42,
+        "precio_buy_order": 3.576,
+        "rentabilidad": 0.15600000000000014,
+        "rentabilidad_porcentaje": 4.561403508771934
+    },
+    {
+        "item": "StatTrak™ SG 553 | Darkwing (Field-Tested)",
+        "precio_steam": 1.52,
+        "precio_buy_order": 1.587,
+        "rentabilidad": 0.06699999999999995,
+        "rentabilidad_porcentaje": 4.407894736842102
+    },
+    {
+        "item": "Souvenir P250 | Vino Primo (Field-Tested)",
+        "precio_steam": 11.17,
+        "precio_buy_order": 11.632,
+        "rentabilidad": 0.46199999999999974,
+        "rentabilidad_porcentaje": 4.136078782452997
+    },
+    {
+        "item": "M4A4 | Desert-Strike (Well-Worn)",
+        "precio_steam": 10.43,
+        "precio_buy_order": 10.854,
+        "rentabilidad": 0.4239999999999995,
+        "rentabilidad_porcentaje": 4.06519654841802
+    },
+    {
+        "item": "StatTrak™ M4A4 | Griffin (Field-Tested)",
+        "precio_steam": 8.13,
+        "precio_buy_order": 8.457,
+        "rentabilidad": 0.32699999999999996,
+        "rentabilidad_porcentaje": 4.022140221402213
+    },
+    {
+        "item": "Souvenir Glock-18 | Nuclear Garden (Field-Tested)",
+        "precio_steam": 17.14,
+        "precio_buy_order": 17.821,
+        "rentabilidad": 0.6810000000000009,
+        "rentabilidad_porcentaje": 3.973162193698955
+    },
+    {
+        "item": "M4A4 | Royal Paladin (Field-Tested)",
+        "precio_steam": 10.26,
+        "precio_buy_order": 10.667,
+        "rentabilidad": 0.40700000000000003,
+        "rentabilidad_porcentaje": 3.9668615984405466
+    },
+    {
+        "item": "P250 | Franklin (Field-Tested)",
+        "precio_steam": 1.12,
+        "precio_buy_order": 1.162,
+        "rentabilidad": 0.041999999999999815,
+        "rentabilidad_porcentaje": 3.749999999999983
+    },
+    {
+        "item": "Souvenir M4A1-S | Control Panel (Well-Worn)",
+        "precio_steam": 48.12,
+        "precio_buy_order": 49.86,
+        "rentabilidad": 1.740000000000002,
+        "rentabilidad_porcentaje": 3.615960099750628
+    },
+    {
+        "item": "StatTrak™ SCAR-20 | Cardiac (Well-Worn)",
+        "precio_steam": 11.74,
+        "precio_buy_order": 12.164,
+        "rentabilidad": 0.4239999999999995,
+        "rentabilidad_porcentaje": 3.611584327086878
+    },
+    {
+        "item": "StatTrak™ P90 | Nostalgia (Well-Worn)",
+        "precio_steam": 10.35,
+        "precio_buy_order": 10.721,
+        "rentabilidad": 0.37100000000000044,
+        "rentabilidad_porcentaje": 3.5845410628019367
+    },
+    {
+        "item": "G3SG1 | Azure Zebra (Minimal Wear)",
+        "precio_steam": 2.49,
+        "precio_buy_order": 2.577,
+        "rentabilidad": 0.08699999999999974,
+        "rentabilidad_porcentaje": 3.493975903614447
+    },
+    {
+        "item": "StatTrak™ M4A4 | Tooth Fairy (Battle-Scarred)",
+        "precio_steam": 6.8,
+        "precio_buy_order": 7.037,
+        "rentabilidad": 0.2370000000000001,
+        "rentabilidad_porcentaje": 3.48529411764706
+    },
+    {
+        "item": "Negev | Nuclear Waste (Field-Tested)",
+        "precio_steam": 2.71,
+        "precio_buy_order": 2.804,
+        "rentabilidad": 0.09399999999999986,
+        "rentabilidad_porcentaje": 3.4686346863468582
+    },
+    {
+        "item": "USP-S | Torque (Field-Tested)",
+        "precio_steam": 1.39,
+        "precio_buy_order": 1.437,
+        "rentabilidad": 0.04700000000000015,
+        "rentabilidad_porcentaje": 3.381294964028788
+    },
+    {
+        "item": "StatTrak™ P90 | Neoqueen (Battle-Scarred)",
+        "precio_steam": 1.56,
+        "precio_buy_order": 1.607,
+        "rentabilidad": 0.04699999999999993,
+        "rentabilidad_porcentaje": 3.0128205128205083
+    },
+    {
+        "item": "StatTrak™ Five-SeveN | Retrobution (Battle-Scarred)",
+        "precio_steam": 3.18,
+        "precio_buy_order": 3.275,
+        "rentabilidad": 0.09499999999999975,
+        "rentabilidad_porcentaje": 2.9874213836477908
+    },
+    {
+        "item": "StatTrak™ MP9 | Airlock (Battle-Scarred)",
+        "precio_steam": 6.06,
+        "precio_buy_order": 6.235,
+        "rentabilidad": 0.1750000000000007,
+        "rentabilidad_porcentaje": 2.8877887788779
+    },
+    {
+        "item": "StatTrak™ Nova | Rising Skull (Field-Tested)",
+        "precio_steam": 15.84,
+        "precio_buy_order": 16.266,
+        "rentabilidad": 0.4259999999999984,
+        "rentabilidad_porcentaje": 2.6893939393939292
+    },
+    {
+        "item": "P90 | Fallout Warning (Battle-Scarred)",
+        "precio_steam": 10.99,
+        "precio_buy_order": 11.285,
+        "rentabilidad": 0.29499999999999993,
+        "rentabilidad_porcentaje": 2.6842584167424923
+    },
+    {
+        "item": "Nova | Koi (Field-Tested)",
+        "precio_steam": 1.01,
+        "precio_buy_order": 1.037,
+        "rentabilidad": 0.026999999999999913,
+        "rentabilidad_porcentaje": 2.6732673267326645
+    },
+    {
+        "item": "M4A4 | Desert-Strike (Field-Tested)",
+        "precio_steam": 8.08,
+        "precio_buy_order": 8.295,
+        "rentabilidad": 0.21499999999999986,
+        "rentabilidad_porcentaje": 2.660891089108909
+    },
+    {
+        "item": "Souvenir MP5-SD | Oxide Oasis (Battle-Scarred)",
+        "precio_steam": 6.26,
+        "precio_buy_order": 6.425,
+        "rentabilidad": 0.16500000000000004,
+        "rentabilidad_porcentaje": 2.6357827476038342
+    },
+    {
+        "item": "AUG | Syd Mead (Field-Tested)",
+        "precio_steam": 2.9,
+        "precio_buy_order": 2.976,
+        "rentabilidad": 0.07600000000000007,
+        "rentabilidad_porcentaje": 2.6206896551724164
+    },
+    {
+        "item": "AWP | Mortis (Battle-Scarred)",
+        "precio_steam": 3.48,
+        "precio_buy_order": 3.571,
+        "rentabilidad": 0.09100000000000019,
+        "rentabilidad_porcentaje": 2.614942528735638
+    },
+    {
+        "item": "StatTrak™ SSG 08 | Fever Dream (Field-Tested)",
+        "precio_steam": 2.65,
+        "precio_buy_order": 2.719,
+        "rentabilidad": 0.06899999999999995,
+        "rentabilidad_porcentaje": 2.6037735849056585
+    },
+    {
+        "item": "Souvenir SG 553 | Damascus Steel (Well-Worn)",
+        "precio_steam": 4.0,
+        "precio_buy_order": 4.103,
+        "rentabilidad": 0.10299999999999976,
+        "rentabilidad_porcentaje": 2.574999999999994
+    },
+    {
+        "item": "FAMAS | Styx (Well-Worn)",
+        "precio_steam": 6.07,
+        "precio_buy_order": 6.224,
+        "rentabilidad": 0.15399999999999991,
+        "rentabilidad_porcentaje": 2.537067545304776
+    },
+    {
+        "item": "StatTrak™ Sawed-Off | Wasteland Princess (Battle-Scarred)",
+        "precio_steam": 5.29,
+        "precio_buy_order": 5.423,
+        "rentabilidad": 0.133,
+        "rentabilidad_porcentaje": 2.5141776937618148
+    },
+    {
+        "item": "MAG-7 | Sand Dune (Battle-Scarred)",
+        "precio_steam": 2.8,
+        "precio_buy_order": 2.87,
+        "rentabilidad": 0.07000000000000028,
+        "rentabilidad_porcentaje": 2.50000000000001
+    },
+    {
+        "item": "Sticker | Boom Blast (Glitter)",
+        "precio_steam": 0.2,
+        "precio_buy_order": 0.205,
+        "rentabilidad": 0.004999999999999977,
+        "rentabilidad_porcentaje": 2.4999999999999885
+    },
+    {
+        "item": "MAC-10 | Disco Tech (Well-Worn)",
+        "precio_steam": 2.81,
+        "precio_buy_order": 2.88,
+        "rentabilidad": 0.06999999999999984,
+        "rentabilidad_porcentaje": 2.4911032028469693
+    },
+    {
+        "item": "StatTrak™ UMP-45 | Bone Pile (Field-Tested)",
+        "precio_steam": 8.0,
+        "precio_buy_order": 8.198,
+        "rentabilidad": 0.1980000000000004,
+        "rentabilidad_porcentaje": 2.475000000000005
+    },
+    {
+        "item": "M4A4 | The Battlestar (Minimal Wear)",
+        "precio_steam": 9.52,
+        "precio_buy_order": 9.755,
+        "rentabilidad": 0.2350000000000012,
+        "rentabilidad_porcentaje": 2.4684873949579957
+    },
+    {
+        "item": "StatTrak™ Desert Eagle | Trigger Discipline (Battle-Scarred)",
+        "precio_steam": 2.3,
+        "precio_buy_order": 2.354,
+        "rentabilidad": 0.05400000000000027,
+        "rentabilidad_porcentaje": 2.347826086956534
+    },
+    {
+        "item": "Galil AR | Stone Cold (Battle-Scarred)",
+        "precio_steam": 2.18,
+        "precio_buy_order": 2.231,
+        "rentabilidad": 0.05099999999999971,
+        "rentabilidad_porcentaje": 2.3394495412843903
+    },
+    {
+        "item": "P90 | Desert Warfare (Field-Tested)",
+        "precio_steam": 3.1,
+        "precio_buy_order": 3.166,
+        "rentabilidad": 0.06599999999999984,
+        "rentabilidad_porcentaje": 2.1290322580645107
+    },
+    {
+        "item": "StatTrak™ MAC-10 | Ultraviolet (Battle-Scarred)",
+        "precio_steam": 2.79,
+        "precio_buy_order": 2.849,
+        "rentabilidad": 0.05900000000000016,
+        "rentabilidad_porcentaje": 2.114695340501798
+    },
+    {
+        "item": "M4A1-S | Control Panel (Battle-Scarred)",
+        "precio_steam": 7.26,
+        "precio_buy_order": 7.412,
+        "rentabilidad": 0.15200000000000014,
+        "rentabilidad_porcentaje": 2.093663911845732
+    },
+    {
+        "item": "StatTrak™ MP7 | Bloodsport (Field-Tested)",
+        "precio_steam": 6.46,
+        "precio_buy_order": 6.593,
+        "rentabilidad": 0.133,
+        "rentabilidad_porcentaje": 2.0588235294117645
+    },
+    {
+        "item": "StatTrak™ Sawed-Off | Highwayman (Well-Worn)",
+        "precio_steam": 1.8,
+        "precio_buy_order": 1.835,
+        "rentabilidad": 0.03499999999999992,
+        "rentabilidad_porcentaje": 1.94444444444444
+    },
+    {
+        "item": "Five-SeveN | Retrobution (Battle-Scarred)",
+        "precio_steam": 0.88,
+        "precio_buy_order": 0.895,
+        "rentabilidad": 0.015000000000000013,
+        "rentabilidad_porcentaje": 1.7045454545454561
+    },
+    {
+        "item": "M4A4 | Griffin (Field-Tested)",
+        "precio_steam": 3.59,
+        "precio_buy_order": 3.651,
+        "rentabilidad": 0.06099999999999994,
+        "rentabilidad_porcentaje": 1.699164345403898
+    },
+    {
+        "item": "FAMAS | Roll Cage (Battle-Scarred)",
+        "precio_steam": 4.14,
+        "precio_buy_order": 4.206,
+        "rentabilidad": 0.06600000000000072,
+        "rentabilidad_porcentaje": 1.5942028985507424
+    },
+    {
+        "item": "Souvenir Nova | Sobek's Bite (Well-Worn)",
+        "precio_steam": 3.77,
+        "precio_buy_order": 3.829,
+        "rentabilidad": 0.05900000000000016,
+        "rentabilidad_porcentaje": 1.5649867374005348
+    },
+    {
+        "item": "StatTrak™ MP5-SD | Acid Wash (Battle-Scarred)",
+        "precio_steam": 1.81,
+        "precio_buy_order": 1.836,
+        "rentabilidad": 0.026000000000000023,
+        "rentabilidad_porcentaje": 1.4364640883977913
+    },
+    {
+        "item": "SG 553 | Integrale (Well-Worn)",
+        "precio_steam": 6.02,
+        "precio_buy_order": 6.102,
+        "rentabilidad": 0.08200000000000074,
+        "rentabilidad_porcentaje": 1.3621262458471883
+    },
+    {
+        "item": "MAC-10 | Neon Rider (Well-Worn)",
+        "precio_steam": 9.75,
+        "precio_buy_order": 9.879,
+        "rentabilidad": 0.12899999999999956,
+        "rentabilidad_porcentaje": 1.3230769230769184
+    },
+    {
+        "item": "StatTrak™ UMP-45 | Scaffold (Field-Tested)",
+        "precio_steam": 3.3,
+        "precio_buy_order": 3.338,
+        "rentabilidad": 0.038000000000000256,
+        "rentabilidad_porcentaje": 1.1515151515151594
+    },
+    {
+        "item": "Souvenir Glock-18 | Groundwater (Battle-Scarred)",
+        "precio_steam": 5.23,
+        "precio_buy_order": 5.284,
+        "rentabilidad": 0.05399999999999938,
+        "rentabilidad_porcentaje": 1.032504780114711
+    },
+    {
+        "item": "SCAR-20 | Splash Jam (Battle-Scarred)",
+        "precio_steam": 10.38,
+        "precio_buy_order": 10.484,
+        "rentabilidad": 0.1039999999999992,
+        "rentabilidad_porcentaje": 1.0019267822735953
+    },
+    {
+        "item": "StatTrak™ Nova | Rising Skull (Minimal Wear)",
+        "precio_steam": 15.66,
+        "precio_buy_order": 15.806,
+        "rentabilidad": 0.14599999999999902,
+        "rentabilidad_porcentaje": 0.9323116219667881
+    },
+    {
+        "item": "AUG | Fleet Flock (Field-Tested)",
+        "precio_steam": 3.25,
+        "precio_buy_order": 3.28,
+        "rentabilidad": 0.029999999999999805,
+        "rentabilidad_porcentaje": 0.9230769230769171
+    },
+    {
+        "item": "Souvenir P90 | ScaraB Rush (Well-Worn)",
+        "precio_steam": 3.5,
+        "precio_buy_order": 3.532,
+        "rentabilidad": 0.03200000000000003,
+        "rentabilidad_porcentaje": 0.914285714285715
+    },
+    {
+        "item": "StatTrak™ Tec-9 | Avalanche (Well-Worn)",
+        "precio_steam": 3.84,
+        "precio_buy_order": 3.873,
+        "rentabilidad": 0.03300000000000036,
+        "rentabilidad_porcentaje": 0.8593750000000094
+    },
+    {
+        "item": "SSG 08 | Death's Head (Well-Worn)",
+        "precio_steam": 7.83,
+        "precio_buy_order": 7.893,
+        "rentabilidad": 0.06299999999999972,
+        "rentabilidad_porcentaje": 0.8045977011494219
+    },
+    {
+        "item": "Five-SeveN | Jungle (Field-Tested)",
+        "precio_steam": 2.2,
+        "precio_buy_order": 2.216,
+        "rentabilidad": 0.016000000000000014,
+        "rentabilidad_porcentaje": 0.7272727272727278
+    },
+    {
+        "item": "M4A4 | Tornado (Field-Tested)",
+        "precio_steam": 8.01,
+        "precio_buy_order": 8.067,
+        "rentabilidad": 0.057000000000000384,
+        "rentabilidad_porcentaje": 0.7116104868913906
+    },
+    {
+        "item": "StatTrak™ Tec-9 | Sandstorm (Minimal Wear)",
+        "precio_steam": 4.87,
+        "precio_buy_order": 4.902,
+        "rentabilidad": 0.03200000000000003,
+        "rentabilidad_porcentaje": 0.657084188911705
+    },
+    {
+        "item": "Dual Berettas | Urban Shock (Field-Tested)",
+        "precio_steam": 2.02,
+        "precio_buy_order": 2.032,
+        "rentabilidad": 0.01200000000000001,
+        "rentabilidad_porcentaje": 0.5940594059405946
+    },
+    {
+        "item": "Sawed-Off | The Kraken (Factory New)",
+        "precio_steam": 7.93,
+        "precio_buy_order": 7.975,
+        "rentabilidad": 0.04499999999999993,
+        "rentabilidad_porcentaje": 0.5674653215636813
+    },
+    {
+        "item": "Nova | Forest Leaves (Field-Tested)",
+        "precio_steam": 1.81,
+        "precio_buy_order": 1.819,
+        "rentabilidad": 0.008999999999999897,
+        "rentabilidad_porcentaje": 0.4972375690607678
+    },
+    {
+        "item": "StatTrak™ SG 553 | Darkwing (Well-Worn)",
+        "precio_steam": 1.41,
+        "precio_buy_order": 1.417,
+        "rentabilidad": 0.007000000000000117,
+        "rentabilidad_porcentaje": 0.49645390070922824
+    },
+    {
+        "item": "SG 553 | Cyrex (Well-Worn)",
+        "precio_steam": 5.87,
+        "precio_buy_order": 5.894,
+        "rentabilidad": 0.02400000000000002,
+        "rentabilidad_porcentaje": 0.4088586030664399
+    },
+    {
+        "item": "FAMAS | ZX Spectron (Field-Tested)",
+        "precio_steam": 3.39,
+        "precio_buy_order": 3.403,
+        "rentabilidad": 0.0129999999999999,
+        "rentabilidad_porcentaje": 0.3834808259586991
+    },
+    {
+        "item": "StatTrak™ M249 | Magma (Battle-Scarred)",
+        "precio_steam": 1.91,
+        "precio_buy_order": 1.917,
+        "rentabilidad": 0.007000000000000117,
+        "rentabilidad_porcentaje": 0.3664921465968648
+    },
+    {
+        "item": "AK-47 | Head Shot (Battle-Scarred)",
+        "precio_steam": 8.79,
+        "precio_buy_order": 8.821,
+        "rentabilidad": 0.031000000000000583,
+        "rentabilidad_porcentaje": 0.3526734926052399
+    },
+    {
+        "item": "R8 Revolver | Fade (Field-Tested)",
+        "precio_steam": 12.27,
+        "precio_buy_order": 12.312,
+        "rentabilidad": 0.041999999999999815,
+        "rentabilidad_porcentaje": 0.342298288508556
+    },
+    {
+        "item": "Tec-9 | Safety Net (Field-Tested)",
+        "precio_steam": 1.51,
+        "precio_buy_order": 1.514,
+        "rentabilidad": 0.0040000000000000036,
+        "rentabilidad_porcentaje": 0.26490066225165587
+    },
+    {
+        "item": "Katowice 2019 Legends (Holo-Foil)",
+        "precio_steam": 9.83,
+        "precio_buy_order": 9.856,
+        "rentabilidad": 0.0259999999999998,
+        "rentabilidad_porcentaje": 0.2644964394710051
+    },
+    {
+        "item": "StatTrak™ P2000 | Red FragCam (Field-Tested)",
+        "precio_steam": 3.03,
+        "precio_buy_order": 3.038,
+        "rentabilidad": 0.008000000000000007,
+        "rentabilidad_porcentaje": 0.2640264026402643
+    },
+    {
+        "item": "StatTrak™ Dual Berettas | Urban Shock (Field-Tested)",
+        "precio_steam": 4.4,
+        "precio_buy_order": 4.409,
+        "rentabilidad": 0.008999999999999453,
+        "rentabilidad_porcentaje": 0.20454545454544212
+    }
+]

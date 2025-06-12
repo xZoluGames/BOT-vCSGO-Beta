@@ -1,0 +1,7 @@
+{
+    "success_message": "Successfully fetched CsTrade data. Total items: {total_items}",
+    "no_items": "No items available with 'have' different from 0.",
+    "fetch_error": "Error fetching CsTrade data: {error}",
+    "waiting_message": "Waiting 15 seconds for the next update..."
+}
+

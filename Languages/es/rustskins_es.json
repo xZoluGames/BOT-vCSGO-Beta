@@ -1,0 +1,6 @@
+{
+    "data_retrieved_success": "Datos obtenidos con éxito. Total de ítems: {total_items}",
+    "data_retrieval_error": "Error al obtener datos: {error}",
+    "waiting_message": "Esperando 15 segundos para la próxima actualización..."
+}
+

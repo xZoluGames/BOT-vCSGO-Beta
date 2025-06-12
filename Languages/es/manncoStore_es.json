@@ -1,0 +1,9 @@
+{
+    "success_message": "Datos de MannCoStore obtenidos correctamente en el 'skip' {skip}. Total de ítems: {total_items}",
+    "no_items": "No se encontraron más ítems en el 'skip' {skip}.",
+    "json_decode_error": "Error al decodificar JSON en el 'skip' {skip}. Asegúrate de que los datos tengan el formato correcto.",
+    "fetch_error": "Error al obtener datos de MannCoStore en el 'skip' {skip}: {error}",
+    "total_items": "Total de ítems obtenidos: {total_items}",
+    "continue_skip": "Continuando con 'skip' {skip}...",
+    "waiting_message": "Esperando 15 segundos antes de reintentar desde el 'skip' 0..."
+}

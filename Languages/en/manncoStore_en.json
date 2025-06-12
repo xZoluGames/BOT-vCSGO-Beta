@@ -1,0 +1,9 @@
+{
+    "success_message": "Successfully fetched MannCoStore data at skip {skip}. Total items: {total_items}",
+    "no_items": "No more items found at skip {skip}.",
+    "json_decode_error": "Error decoding JSON at skip {skip}. Ensure the data format is correct.",
+    "fetch_error": "Error fetching data from MannCoStore at skip {skip}: {error}",
+    "total_items": "Total items obtained: {total_items}",
+    "continue_skip": "Continuing with skip {skip}...",
+    "waiting_message": "Waiting 15 seconds before retrying from skip 0..."
+}

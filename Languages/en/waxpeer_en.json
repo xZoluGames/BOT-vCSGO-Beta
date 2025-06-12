@@ -1,0 +1,7 @@
+{
+    "data_saved": "Data saved successfully to {filename}",
+    "data_fetched": "Data fetched from Waxpeer successfully. Total items: {count}",
+    "unexpected_format": "Unexpected data format in Waxpeer response.",
+    "error_fetching_data": "Error fetching data from Waxpeer: {error}",
+    "waiting": "Waiting 15 seconds for the next update..."
+}

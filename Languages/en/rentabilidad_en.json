@@ -1,0 +1,15 @@
+{
+    "PROFITEABLE_FLIPS": "=== PROFITEABLE FLIPS ===",
+    "ITEM_NAME": "Item",
+    "BUY_PRICE": "Buy at",
+    "STEAM": "Steam",
+    "FOR": "for",
+    "AFTER_FEE": "after fee",
+    "SELL_PRICE": "Sell at",
+    "LINK": "Link",
+    "PROFITABILITY": "Profitability",
+    "ERROR_CALCULATING_PROFITABILITY": "Error calculating profitability",
+    "WAITING_FOR_NEXT_UPDATE": "Waiting for next update...",
+    "SEARCH_RESULTS": "Search results:",
+    "NOTHING_WAS_FOUND": "Nothing..."
+}

@@ -1,0 +1,107 @@
+[
+    {
+        "item": "P90 | Grim (Well-Worn)",
+        "precio_steam": 0.2,
+        "precio_skindeck": 6.75,
+        "rentabilidad": 6.55,
+        "rentabilidad_porcentaje": 3275.0
+    },
+    {
+        "item": "Nova | Moon in Libra (Minimal Wear)",
+        "precio_steam": 6.07,
+        "precio_skindeck": 9.19,
+        "rentabilidad": 3.119999999999999,
+        "rentabilidad_porcentaje": 51.400329489291586
+    },
+    {
+        "item": "Desert Eagle | Urban Rubble (Well-Worn)",
+        "precio_steam": 0.43,
+        "precio_skindeck": 0.55,
+        "rentabilidad": 0.12000000000000005,
+        "rentabilidad_porcentaje": 27.906976744186057
+    },
+    {
+        "item": "Sawed-Off | Full Stop (Battle-Scarred)",
+        "precio_steam": 0.37,
+        "precio_skindeck": 0.4,
+        "rentabilidad": 0.030000000000000027,
+        "rentabilidad_porcentaje": 8.108108108108116
+    },
+    {
+        "item": "Sawed-Off | Full Stop (Battle-Scarred)",
+        "precio_steam": 0.37,
+        "precio_skindeck": 0.4,
+        "rentabilidad": 0.030000000000000027,
+        "rentabilidad_porcentaje": 8.108108108108116
+    },
+    {
+        "item": "CZ75-Auto | Tuxedo (Battle-Scarred)",
+        "precio_steam": 0.5,
+        "precio_skindeck": 0.54,
+        "rentabilidad": 0.040000000000000036,
+        "rentabilidad_porcentaje": 8.000000000000007
+    },
+    {
+        "item": "CZ75-Auto | Tuxedo (Battle-Scarred)",
+        "precio_steam": 0.5,
+        "precio_skindeck": 0.54,
+        "rentabilidad": 0.040000000000000036,
+        "rentabilidad_porcentaje": 8.000000000000007
+    },
+    {
+        "item": "M4A1-S | Fizzy POP (Battle-Scarred)",
+        "precio_steam": 1.55,
+        "precio_skindeck": 1.66,
+        "rentabilidad": 0.10999999999999988,
+        "rentabilidad_porcentaje": 7.096774193548379
+    },
+    {
+        "item": "M4A1-S | Fizzy POP (Battle-Scarred)",
+        "precio_steam": 1.55,
+        "precio_skindeck": 1.66,
+        "rentabilidad": 0.10999999999999988,
+        "rentabilidad_porcentaje": 7.096774193548379
+    },
+    {
+        "item": "Sawed-Off | Zander (Minimal Wear)",
+        "precio_steam": 0.32,
+        "precio_skindeck": 0.34,
+        "rentabilidad": 0.020000000000000018,
+        "rentabilidad_porcentaje": 6.250000000000005
+    },
+    {
+        "item": "Dual Berettas | Royal Consorts (Battle-Scarred)",
+        "precio_steam": 0.59,
+        "precio_skindeck": 0.61,
+        "rentabilidad": 0.020000000000000018,
+        "rentabilidad_porcentaje": 3.3898305084745797
+    },
+    {
+        "item": "Sticker | karrigan (Holo) | Shanghai 2024",
+        "precio_steam": 0.6,
+        "precio_skindeck": 0.62,
+        "rentabilidad": 0.020000000000000018,
+        "rentabilidad_porcentaje": 3.3333333333333366
+    },
+    {
+        "item": "Sticker | ropz (Glitter) | Shanghai 2024",
+        "precio_steam": 0.36,
+        "precio_skindeck": 0.37,
+        "rentabilidad": 0.010000000000000009,
+        "rentabilidad_porcentaje": 2.7777777777777803
+    },
+    {
+        "item": "StatTrak™ SCAR-20 | Green Marine (Field-Tested)",
+        "precio_steam": 0.63,
+        "precio_skindeck": 0.64,
+        "rentabilidad": 0.010000000000000009,
+        "rentabilidad_porcentaje": 1.5873015873015885
+    },
+    {
+        "item": "StatTrak™ SCAR-20 | Green Marine (Field-Tested)",
+        "precio_steam": 0.63,
+        "precio_skindeck": 0.64,
+        "rentabilidad": 0.010000000000000009,
+        "rentabilidad_porcentaje": 1.5873015873015885
+    }
+]

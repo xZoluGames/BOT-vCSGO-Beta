@@ -1,0 +1,6 @@
+{
+    "data_obtained": "Data obtained from SnipeSkins successfully. Total items: {count}",
+    "unexpected_format": "Unexpected data format. Expected a list.",
+    "error_obtaining_data": "Error obtaining data from SnipeSkins: {error}",
+    "waiting": "Waiting 15 seconds for the next update..."
+}

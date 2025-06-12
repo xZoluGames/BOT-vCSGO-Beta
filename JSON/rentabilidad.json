@@ -1,0 +1,2454 @@
+[
+    {
+        "name": "Sealed Graffiti | 8-Ball (Tracer Yellow)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | 8-Ball (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sealed Graffiti | 8-Ball (Tracer Yellow)&sort=price"
+    },
+    {
+        "name": "StatTrak\u2122 Negev | Drop Me (Field-Tested)",
+        "buy_price": 0.1,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 Negev | Drop Me (Field-Tested)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.5,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=StatTrak\u2122 Negev | Drop Me (Field-Tested)"
+    },
+    {
+        "name": "M4A1-S | Wash me plz (Well-Worn)",
+        "buy_price": 0.06,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M4A1-S | Wash me plz (Well-Worn)",
+        "net_steam_price": 0.09,
+        "rentabilidad": 0.5,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=M4A1-S | Wash me plz (Well-Worn)"
+    },
+    {
+        "name": "XM1014 | Blue Steel (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/XM1014 | Blue Steel (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=XM1014 | Blue Steel (Field-Tested)"
+    },
+    {
+        "name": "FAMAS | Meow 36 (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Meow 36 (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=FAMAS | Meow 36 (Field-Tested)"
+    },
+    {
+        "name": "FAMAS | Meow 36 (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Meow 36 (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=FAMAS | Meow 36 (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "MAC-10 | Calf Skin (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAC-10 | Calf Skin (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=MAC-10 | Calf Skin (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "MAC-10 | Palm (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAC-10 | Palm (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=MAC-10 | Palm (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "MAG-7 | Insomnia (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAG-7 | Insomnia (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=MAG-7 | Insomnia (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "MP5-SD | Desert Strike (Minimal Wear)",
+        "buy_price": 0.1,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP5-SD | Desert Strike (Minimal Wear)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=MP5-SD | Desert Strike (Minimal Wear)&sort=price&order=asc"
+    },
+    {
+        "name": "MP5-SD | Desert Strike (Well-Worn)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP5-SD | Desert Strike (Well-Worn)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=MP5-SD | Desert Strike (Well-Worn)&sort=price&order=asc"
+    },
+    {
+        "name": "Negev | Drop Me (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Negev | Drop Me (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Negev | Drop Me (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "P250 | Cassette (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P250 | Cassette (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=P250 | Cassette (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "PP-Bizon | Night Ops (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/PP-Bizon | Night Ops (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=PP-Bizon | Night Ops (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "Sawed-Off | Snake Camo (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sawed-Off | Snake Camo (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sawed-Off | Snake Camo (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | 8-Ball (Tracer Yellow)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | 8-Ball (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | 8-Ball (Tracer Yellow)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tiger Orange)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tiger Orange)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | Piggles (Tiger Orange)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tracer Yellow)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | Piggles (Tracer Yellow)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | Sheriff (Battle Green)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Sheriff (Battle Green)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | Sheriff (Battle Green)&sort=price&order=asc"
+    },
+    {
+        "name": "Sticker | cadiaN (Glitter) | Antwerp 2022",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | cadiaN (Glitter) | Antwerp 2022",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sticker | cadiaN (Glitter) | Antwerp 2022&sort=price&order=asc"
+    },
+    {
+        "name": "USP-S | 27 (Well-Worn)",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/USP-S | 27 (Well-Worn)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=USP-S | 27 (Well-Worn)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | Sheriff (Battle Green)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Sheriff (Battle Green)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/Sealed Graffiti | Sheriff (Battle Green)"
+    },
+    {
+        "name": "Sticker | chelo | Berlin 2019",
+        "buy_price": 0.06,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | chelo | Berlin 2019",
+        "net_steam_price": 0.09,
+        "rentabilidad": 0.5,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | chelo | Berlin 2019\"}}"
+    },
+    {
+        "name": "CZ75-Auto | Distressed (Minimal Wear)",
+        "buy_price": 0.12,
+        "steam_price": 0.2,
+        "steam_link": "https://steamcommunity.com/market/listings/730/CZ75-Auto | Distressed (Minimal Wear)",
+        "net_steam_price": 0.18,
+        "rentabilidad": 0.5,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"CZ75-Auto | Distressed (Minimal Wear)\"}}"
+    },
+    {
+        "name": "Sticker | Dr. Dazzles",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Dr. Dazzles",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | Dr. Dazzles\"}}"
+    },
+    {
+        "name": "Sticker | Little Mischief",
+        "buy_price": 0.12,
+        "steam_price": 0.2,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Little Mischief",
+        "net_steam_price": 0.18,
+        "rentabilidad": 0.5,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Little-Mischief"
+    },
+    {
+        "name": "StatTrak\u2122 SG 553 | Aloha (Well-Worn)",
+        "buy_price": 0.12,
+        "steam_price": 0.2,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 SG 553 | Aloha (Well-Worn)",
+        "net_steam_price": 0.18,
+        "rentabilidad": 0.5,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-SG-553-Aloha-Well-Worn"
+    },
+    {
+        "name": "FAMAS | Halftone Wash (Battle-Scarred)",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Halftone Wash (Battle-Scarred)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=FAMAS%20%7C%20Halftone%20Wash%20%28Battle-Scarred%29"
+    },
+    {
+        "name": "MP7 | Astrolabe (Factory New)",
+        "buy_price": 0.24,
+        "steam_price": 0.4,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Astrolabe (Factory New)",
+        "net_steam_price": 0.36,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=MP7%20%7C%20Astrolabe%20%28Factory%20New%29"
+    },
+    {
+        "name": "P2000 | Coral Halftone (Battle-Scarred)",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P2000 | Coral Halftone (Battle-Scarred)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=P2000%20%7C%20Coral%20Halftone%20%28Battle-Scarred%29"
+    },
+    {
+        "name": "SCAR-20 | Trail Blazer (Minimal Wear)",
+        "buy_price": 0.24,
+        "steam_price": 0.4,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SCAR-20 | Trail Blazer (Minimal Wear)",
+        "net_steam_price": 0.36,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=SCAR-20%20%7C%20Trail%20Blazer%20%28Minimal%20Wear%29"
+    },
+    {
+        "name": "Sawed-Off | Snake Camo (Field-Tested)",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sawed-Off | Snake Camo (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sawed-Off%20%7C%20Snake%20Camo%20%28Field-Tested%29"
+    },
+    {
+        "name": "Sealed Graffiti | 8-Ball (Tracer Yellow)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | 8-Ball (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%208-Ball%20%28Tracer%20Yellow%29"
+    },
+    {
+        "name": "Sealed Graffiti | Cocky (Bazooka Pink)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Cocky (Bazooka Pink)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Cocky%20%28Bazooka%20Pink%29"
+    },
+    {
+        "name": "Sealed Graffiti | OMG (Dust Brown)",
+        "buy_price": 0.14,
+        "steam_price": 0.24,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | OMG (Dust Brown)",
+        "net_steam_price": 0.21,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20OMG%20%28Dust%20Brown%29"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Blood Red)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Blood Red)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Piggles%20%28Blood%20Red%29"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Brick Red)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Brick Red)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Piggles%20%28Brick%20Red%29"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tiger Orange)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tiger Orange)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Piggles%20%28Tiger%20Orange%29"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tracer Yellow)",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Piggles%20%28Tracer%20Yellow%29"
+    },
+    {
+        "name": "Sealed Graffiti | Sheriff (Jungle Green)",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Sheriff (Jungle Green)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Sheriff%20%28Jungle%20Green%29"
+    },
+    {
+        "name": "Souvenir MP9 | Music Box (Field-Tested)",
+        "buy_price": 0.1,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir MP9 | Music Box (Field-Tested)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Souvenir%20MP9%20%7C%20Music%20Box%20%28Field-Tested%29"
+    },
+    {
+        "name": "Souvenir P90 | Sand Spray (Field-Tested)",
+        "buy_price": 0.16,
+        "steam_price": 0.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir P90 | Sand Spray (Field-Tested)",
+        "net_steam_price": 0.24,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Souvenir%20P90%20%7C%20Sand%20Spray%20%28Field-Tested%29"
+    },
+    {
+        "name": "StatTrak\u2122 MP9 | Featherweight (Well-Worn)",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 MP9 | Featherweight (Well-Worn)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=StatTrak%E2%84%A2%20MP9%20%7C%20Featherweight%20%28Well-Worn%29"
+    },
+    {
+        "name": "StatTrak\u2122 Negev | Drop Me (Field-Tested)",
+        "buy_price": 0.1,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 Negev | Drop Me (Field-Tested)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=StatTrak%E2%84%A2%20Negev%20%7C%20Drop%20Me%20%28Field-Tested%29"
+    },
+    {
+        "name": "Sticker | 360 No Scope",
+        "buy_price": 0.02,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | 360 No Scope",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20360%20No%20Scope"
+    },
+    {
+        "name": "Sticker | 3DMAX (Glitter) | Shanghai 2024",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | 3DMAX (Glitter) | Shanghai 2024",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%203DMAX%20%28Glitter%29%20%7C%20Shanghai%202024"
+    },
+    {
+        "name": "Sticker | BLAST.tv (Holo) | Paris 2023",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | BLAST.tv (Holo) | Paris 2023",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20BLAST.tv%20%28Holo%29%20%7C%20Paris%202023"
+    },
+    {
+        "name": "Sticker | Dr. Dazzles",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Dr. Dazzles",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Dr.%20Dazzles"
+    },
+    {
+        "name": "Sticker | Fnatic | Cologne 2016",
+        "buy_price": 2.82,
+        "steam_price": 4.86,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Fnatic | Cologne 2016",
+        "net_steam_price": 4.23,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Fnatic%20%7C%20Cologne%202016"
+    },
+    {
+        "name": "Sticker | Magisk | Berlin 2019",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Magisk | Berlin 2019",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Magisk%20%7C%20Berlin%202019"
+    },
+    {
+        "name": "Sticker | REZ (Foil) | Berlin 2019",
+        "buy_price": 0.32,
+        "steam_price": 0.53,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | REZ (Foil) | Berlin 2019",
+        "net_steam_price": 0.48,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20REZ%20%28Foil%29%20%7C%20Berlin%202019"
+    },
+    {
+        "name": "Sticker | chopper (Holo, Champion) | Shanghai 2024",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | chopper (Holo, Champion) | Shanghai 2024",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20chopper%20%28Holo%2C%20Champion%29%20%7C%20Shanghai%202024"
+    },
+    {
+        "name": "Sticker | sh1ro (Holo, Champion) | Shanghai 2024",
+        "buy_price": 0.06,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | sh1ro (Holo, Champion) | Shanghai 2024",
+        "net_steam_price": 0.09,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20sh1ro%20%28Holo%2C%20Champion%29%20%7C%20Shanghai%202024"
+    },
+    {
+        "name": "Tec-9 | Tiger Stencil (Field-Tested)",
+        "buy_price": 0.12,
+        "steam_price": 0.2,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Tec-9 | Tiger Stencil (Field-Tested)",
+        "net_steam_price": 0.18,
+        "rentabilidad": 0.5,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Tec-9%20%7C%20Tiger%20Stencil%20%28Field-Tested%29"
+    },
+    {
+        "name": "P90 | Off World (Field-Tested)",
+        "buy_price": 0.14,
+        "steam_price": 0.24,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P90 | Off World (Field-Tested)",
+        "net_steam_price": 0.21,
+        "rentabilidad": 0.5,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/P90-Off-World-Field-Tested"
+    },
+    {
+        "name": "Sticker | qikert | Rio 2022",
+        "buy_price": 0.16,
+        "steam_price": 0.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | qikert | Rio 2022",
+        "net_steam_price": 0.24,
+        "rentabilidad": 0.5,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/Sticker-qikert-Rio-2022"
+    },
+    {
+        "name": "Sticker | gob b | Katowice 2019",
+        "buy_price": 0.32,
+        "steam_price": 0.53,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | gob b | Katowice 2019",
+        "net_steam_price": 0.48,
+        "rentabilidad": 0.5,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/Sticker-gob-b-Katowice-2019"
+    },
+    {
+        "name": "Sticker | Magisk | Berlin 2019",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Magisk | Berlin 2019",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=Sticker | Magisk | Berlin 2019&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "Sticker | Dr. Dazzles",
+        "buy_price": 0.08,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Dr. Dazzles",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=Sticker | Dr. Dazzles&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "Sticker | chopper (Holo, Champion) | Shanghai 2024",
+        "buy_price": 0.04,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | chopper (Holo, Champion) | Shanghai 2024",
+        "net_steam_price": 0.06,
+        "rentabilidad": 0.5,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=Sticker | chopper (Holo, Champion) | Shanghai 2024&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "SG 553 | Tiger Moth (Factory New)",
+        "buy_price": 2.19,
+        "steam_price": 3.77,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SG 553 | Tiger Moth (Factory New)",
+        "net_steam_price": 3.29,
+        "rentabilidad": 0.5023,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "StatTrak\u2122 Sawed-Off | Wasteland Princess (Minimal Wear)",
+        "buy_price": 7.08,
+        "steam_price": 12.23,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 Sawed-Off | Wasteland Princess (Minimal Wear)",
+        "net_steam_price": 10.64,
+        "rentabilidad": 0.5028,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sticker | Astralis (Glitter) | Antwerp 2022",
+        "buy_price": 0.306,
+        "steam_price": 0.51,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Astralis (Glitter) | Antwerp 2022",
+        "net_steam_price": 0.46,
+        "rentabilidad": 0.5033,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Sticker | Astralis (Glitter) | Antwerp 2022"
+    },
+    {
+        "name": "Negev | Nuclear Waste (Minimal Wear)",
+        "buy_price": 1.92,
+        "steam_price": 3.31,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Negev | Nuclear Waste (Minimal Wear)",
+        "net_steam_price": 2.89,
+        "rentabilidad": 0.5052,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Glock-18 | Sacrifice (Minimal Wear)",
+        "buy_price": 0.199,
+        "steam_price": 0.34,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Glock-18 | Sacrifice (Minimal Wear)",
+        "net_steam_price": 0.3,
+        "rentabilidad": 0.5075,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Glock-18-Sacrifice-Minimal-Wear"
+    },
+    {
+        "name": "StatTrak\u2122 CZ75-Auto | Eco (Field-Tested)",
+        "buy_price": 1.3,
+        "steam_price": 2.24,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 CZ75-Auto | Eco (Field-Tested)",
+        "net_steam_price": 1.96,
+        "rentabilidad": 0.5077,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "MP7 | Akoben (Battle-Scarred)",
+        "buy_price": 0.159,
+        "steam_price": 0.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Akoben (Battle-Scarred)",
+        "net_steam_price": 0.24,
+        "rentabilidad": 0.5094,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/MP7-Akoben-Battle-Scarred"
+    },
+    {
+        "name": "P90 | Off World (Battle-Scarred)",
+        "buy_price": 0.106,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P90 | Off World (Battle-Scarred)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.5094,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/P90-Off-World-Battle-Scarred"
+    },
+    {
+        "name": "MP9 | Bioleak (Field-Tested)",
+        "buy_price": 0.106,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP9 | Bioleak (Field-Tested)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.5094,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/MP9-Bioleak-Field-Tested"
+    },
+    {
+        "name": "AUG | Radiation Hazard (Field-Tested)",
+        "buy_price": 1.78,
+        "steam_price": 3.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/AUG | Radiation Hazard (Field-Tested)",
+        "net_steam_price": 2.69,
+        "rentabilidad": 0.5112,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "M249 | Hypnosis (Minimal Wear)",
+        "buy_price": 0.231,
+        "steam_price": 0.39,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Hypnosis (Minimal Wear)",
+        "net_steam_price": 0.35,
+        "rentabilidad": 0.5152,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/M249-Hypnosis-Minimal-Wear"
+    },
+    {
+        "name": "Sticker | Hello MP7",
+        "buy_price": 0.33,
+        "steam_price": 0.55,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Hello MP7",
+        "net_steam_price": 0.5,
+        "rentabilidad": 0.5152,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/Sticker-Hello-MP7"
+    },
+    {
+        "name": "Sticker | Kyojin (Holo) | Stockholm 2021",
+        "buy_price": 0.31,
+        "steam_price": 0.52,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Kyojin (Holo) | Stockholm 2021",
+        "net_steam_price": 0.47,
+        "rentabilidad": 0.5161,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Kyojin%20%28Holo%29%20%7C%20Stockholm%202021"
+    },
+    {
+        "name": "Sticker | DeadFox (Foil) | Berlin 2019",
+        "buy_price": 0.244,
+        "steam_price": 0.41,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | DeadFox (Foil) | Berlin 2019",
+        "net_steam_price": 0.37,
+        "rentabilidad": 0.5164,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-DeadFox-Foil-Berlin-2019"
+    },
+    {
+        "name": "Sticker | Ninja Defuse",
+        "buy_price": 0.593,
+        "steam_price": 1.03,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Ninja Defuse",
+        "net_steam_price": 0.9,
+        "rentabilidad": 0.5177,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Ninja-Defuse"
+    },
+    {
+        "name": "Souvenir MP9 | Old Roots (Minimal Wear)",
+        "buy_price": 0.112,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir MP9 | Old Roots (Minimal Wear)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5179,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Souvenir-MP9-Old-Roots-Minimal-Wear"
+    },
+    {
+        "name": "Sealed Graffiti | Sheriff (Jungle Green)",
+        "buy_price": 0.079,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Sheriff (Jungle Green)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.519,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Sealed Graffiti | Sheriff (Jungle Green)"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Battle-Scarred)",
+        "buy_price": 2.56,
+        "steam_price": 4.46,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Battle-Scarred)",
+        "net_steam_price": 3.89,
+        "rentabilidad": 0.5195,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=R8 Revolver | Llama Cannon (Battle-Scarred)&sort=price"
+    },
+    {
+        "name": "Nova | Exo (Battle-Scarred)",
+        "buy_price": 0.204,
+        "steam_price": 0.35,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Nova | Exo (Battle-Scarred)",
+        "net_steam_price": 0.31,
+        "rentabilidad": 0.5196,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/Nova | Exo (Battle-Scarred)"
+    },
+    {
+        "name": "CZ75-Auto | Polymer (Field-Tested)",
+        "buy_price": 0.125,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/CZ75-Auto | Polymer (Field-Tested)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.52,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/CZ75-Auto-Polymer-Field-Tested"
+    },
+    {
+        "name": "MP5-SD | Statics (Minimal Wear)",
+        "buy_price": 0.23,
+        "steam_price": 0.39,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP5-SD | Statics (Minimal Wear)",
+        "net_steam_price": 0.35,
+        "rentabilidad": 0.5217,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=MP5-SD%20%7C%20Statics%20%28Minimal%20Wear%29"
+    },
+    {
+        "name": "Sticker | Chief (Holo)",
+        "buy_price": 0.23,
+        "steam_price": 0.39,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Chief (Holo)",
+        "net_steam_price": 0.35,
+        "rentabilidad": 0.5217,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=Sticker | Chief (Holo)&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "MP5-SD | Statics (Minimal Wear)",
+        "buy_price": 0.23,
+        "steam_price": 0.39,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP5-SD | Statics (Minimal Wear)",
+        "net_steam_price": 0.35,
+        "rentabilidad": 0.5217,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=MP5-SD | Statics (Minimal Wear)&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "G3SG1 | Dream Glade (Battle-Scarred)",
+        "buy_price": 0.197,
+        "steam_price": 0.34,
+        "steam_link": "https://steamcommunity.com/market/listings/730/G3SG1 | Dream Glade (Battle-Scarred)",
+        "net_steam_price": 0.3,
+        "rentabilidad": 0.5228,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/G3SG1-Dream-Glade-Battle-Scarred"
+    },
+    {
+        "name": "Sticker | Outsiders (Glitter) | Rio 2022",
+        "buy_price": 0.059,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Outsiders (Glitter) | Rio 2022",
+        "net_steam_price": 0.09,
+        "rentabilidad": 0.5254,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Outsiders-Glitter-Rio-2022"
+    },
+    {
+        "name": "G3SG1 | Ventilator (Factory New)",
+        "buy_price": 0.203,
+        "buy_coin": 0.33,
+        "steam_price": 0.35,
+        "steam_link": "https://steamcommunity.com/market/listings/730/G3SG1 | Ventilator (Factory New)",
+        "net_steam_price": 0.31,
+        "rentabilidad": 0.5271,
+        "platform": "Empire",
+        "link": "https://csgoempire.com/item/296345812"
+    },
+    {
+        "name": "AWP | Safari Mesh (Minimal Wear)",
+        "buy_price": 0.072,
+        "steam_price": 0.13,
+        "steam_link": "https://steamcommunity.com/market/listings/730/AWP | Safari Mesh (Minimal Wear)",
+        "net_steam_price": 0.11,
+        "rentabilidad": 0.5278,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/AWP-Safari-Mesh-Minimal-Wear"
+    },
+    {
+        "name": "M249 | Downtown (Well-Worn)",
+        "buy_price": 0.36,
+        "steam_price": 0.62,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Downtown (Well-Worn)",
+        "net_steam_price": 0.55,
+        "rentabilidad": 0.5278,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=M249%20%7C%20Downtown%20%28Well-Worn%29"
+    },
+    {
+        "name": "M249 | Downtown (Well-Worn)",
+        "buy_price": 0.36,
+        "steam_price": 0.62,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Downtown (Well-Worn)",
+        "net_steam_price": 0.55,
+        "rentabilidad": 0.5278,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=M249 | Downtown (Well-Worn)&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "StatTrak\u2122 R8 Revolver | Grip (Well-Worn)",
+        "buy_price": 0.085,
+        "steam_price": 0.15,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 R8 Revolver | Grip (Well-Worn)",
+        "net_steam_price": 0.13,
+        "rentabilidad": 0.5294,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-R8-Revolver-Grip-Well-Worn"
+    },
+    {
+        "name": "M249 | Hypnosis (Field-Tested)",
+        "buy_price": 0.111,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Hypnosis (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5315,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/M249-Hypnosis-Field-Tested"
+    },
+    {
+        "name": "XM1014 | Slipstream (Minimal Wear)",
+        "buy_price": 0.124,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/XM1014 | Slipstream (Minimal Wear)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.5323,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/XM1014-Slipstream-Minimal-Wear"
+    },
+    {
+        "name": "FAMAS | Macabre (Battle-Scarred)",
+        "buy_price": 2.34,
+        "steam_price": 4.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Macabre (Battle-Scarred)",
+        "net_steam_price": 3.59,
+        "rentabilidad": 0.5342,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sealed Graffiti | Sheriff (Jungle Green)",
+        "buy_price": 0.078,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Sheriff (Jungle Green)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.5385,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/Sealed Graffiti | Sheriff (Jungle Green)"
+    },
+    {
+        "name": "Sticker | boltz | Rio 2022",
+        "buy_price": 0.065,
+        "steam_price": 0.12,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | boltz | Rio 2022",
+        "net_steam_price": 0.1,
+        "rentabilidad": 0.5385,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-boltz-Rio-2022"
+    },
+    {
+        "name": "Sticker | Necron",
+        "buy_price": 0.13,
+        "steam_price": 0.23,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Necron",
+        "net_steam_price": 0.2,
+        "rentabilidad": 0.5385,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Necron"
+    },
+    {
+        "name": "Negev | Boroque Sand (Field-Tested)",
+        "buy_price": 1.15,
+        "steam_price": 2.02,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Negev | Boroque Sand (Field-Tested)",
+        "net_steam_price": 1.77,
+        "rentabilidad": 0.5391,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Negev | Boroque Sand (Field-Tested)&sort=price"
+    },
+    {
+        "name": "Sticker | Banana",
+        "buy_price": 0.74,
+        "steam_price": 1.3,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Banana",
+        "net_steam_price": 1.14,
+        "rentabilidad": 0.5405,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Banana"
+    },
+    {
+        "name": "Souvenir CZ75-Auto | Framework (Factory New)",
+        "buy_price": 0.162,
+        "steam_price": 0.28,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir CZ75-Auto | Framework (Factory New)",
+        "net_steam_price": 0.25,
+        "rentabilidad": 0.5432,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Souvenir CZ75-Auto | Framework (Factory New)"
+    },
+    {
+        "name": "Sticker | Team Spirit (Glitter) | Copenhagen 2024",
+        "buy_price": 0.149,
+        "steam_price": 0.26,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Team Spirit (Glitter) | Copenhagen 2024",
+        "net_steam_price": 0.23,
+        "rentabilidad": 0.5436,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Team-Spirit-Glitter-Copenhagen-2024"
+    },
+    {
+        "name": "M249 | Downtown (Well-Worn)",
+        "buy_price": 0.356,
+        "steam_price": 0.62,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Downtown (Well-Worn)",
+        "net_steam_price": 0.55,
+        "rentabilidad": 0.5449,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=M249 | Downtown (Well-Worn)"
+    },
+    {
+        "name": "MP5-SD | Savannah Halftone (Field-Tested)",
+        "buy_price": 0.11,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP5-SD | Savannah Halftone (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5455,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/MP5-SD-Savannah-Halftone-Field-Tested"
+    },
+    {
+        "name": "Desert Eagle | Calligraffiti (Field-Tested)",
+        "buy_price": 0.11,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Desert Eagle | Calligraffiti (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5455,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Desert-Eagle-Calligraffiti-Field-Tested"
+    },
+    {
+        "name": "M249 | Hypnosis (Field-Tested)",
+        "buy_price": 0.11,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Hypnosis (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5455,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=M249%20%7C%20Hypnosis%20%28Field-Tested%29"
+    },
+    {
+        "name": "SCAR-20 | Trail Blazer (Field-Tested)",
+        "buy_price": 0.11,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SCAR-20 | Trail Blazer (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5455,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=SCAR-20%20%7C%20Trail%20Blazer%20%28Field-Tested%29"
+    },
+    {
+        "name": "M249 | Hypnosis (Field-Tested)",
+        "buy_price": 0.11,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Hypnosis (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.5455,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=M249 | Hypnosis (Field-Tested)&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "Dual Berettas | Elite 1.6 (Battle-Scarred)",
+        "buy_price": 0.097,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Dual Berettas | Elite 1.6 (Battle-Scarred)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.5464,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Dual-Berettas-Elite-1-6-Battle-Scarred"
+    },
+    {
+        "name": "Dual Berettas | Elite 1.6 (Battle-Scarred)",
+        "buy_price": 0.097,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Dual Berettas | Elite 1.6 (Battle-Scarred)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.5464,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Dual-Berettas-Elite-1-6-Battle-Scarred"
+    },
+    {
+        "name": "SCAR-20 | Trail Blazer (Battle-Scarred)",
+        "buy_price": 0.071,
+        "steam_price": 0.13,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SCAR-20 | Trail Blazer (Battle-Scarred)",
+        "net_steam_price": 0.11,
+        "rentabilidad": 0.5493,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/SCAR-20-Trail-Blazer-Battle-Scarred"
+    },
+    {
+        "name": "Sticker | sh1ro | Rio 2022",
+        "buy_price": 0.058,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | sh1ro | Rio 2022",
+        "net_steam_price": 0.09,
+        "rentabilidad": 0.5517,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-sh1ro-Rio-2022"
+    },
+    {
+        "name": "CZ75-Auto | Imprint (Field-Tested)",
+        "buy_price": 0.103,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/CZ75-Auto | Imprint (Field-Tested)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.5534,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/CZ75-Auto-Imprint-Field-Tested"
+    },
+    {
+        "name": "FAMAS | Half Sleeve (Well-Worn)",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Half Sleeve (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=FAMAS | Half Sleeve (Well-Worn)"
+    },
+    {
+        "name": "FAMAS | Half Sleeve (Well-Worn)",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Half Sleeve (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=FAMAS%20%7C%20Half%20Sleeve%20%28Well-Worn%29"
+    },
+    {
+        "name": "FAMAS | Halftone Wash (Well-Worn)",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Halftone Wash (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=FAMAS%20%7C%20Halftone%20Wash%20%28Well-Worn%29"
+    },
+    {
+        "name": "SSG 08 | Halftone Whorl (Well-Worn)",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SSG 08 | Halftone Whorl (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=SSG%2008%20%7C%20Halftone%20Whorl%20%28Well-Worn%29"
+    },
+    {
+        "name": "Sticker | Scavenger",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Scavenger",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Scavenger"
+    },
+    {
+        "name": "Sticker | Scavenger",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Scavenger",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=Sticker | Scavenger&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "MAG-7 | Wildwood (Battle-Scarred)",
+        "buy_price": 0.09,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAG-7 | Wildwood (Battle-Scarred)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.5556,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=MAG-7 | Wildwood (Battle-Scarred)&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "Sticker | Team Spirit | London 2018",
+        "buy_price": 1.96,
+        "steam_price": 3.5,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Team Spirit | London 2018",
+        "net_steam_price": 3.05,
+        "rentabilidad": 0.5561,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sticker | Hello AK-47",
+        "buy_price": 0.379,
+        "steam_price": 0.66,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Hello AK-47",
+        "net_steam_price": 0.59,
+        "rentabilidad": 0.5567,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Hello-AK-47"
+    },
+    {
+        "name": "UMP-45 | Oscillator (Field-Tested)",
+        "buy_price": 0.122,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/UMP-45 | Oscillator (Field-Tested)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.5574,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/UMP-45-Oscillator-Field-Tested"
+    },
+    {
+        "name": "StatTrak\u2122 AUG | Luxe Trim (Well-Worn)",
+        "buy_price": 0.154,
+        "steam_price": 0.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 AUG | Luxe Trim (Well-Worn)",
+        "net_steam_price": 0.24,
+        "rentabilidad": 0.5584,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-AUG-Luxe-Trim-Well-Worn"
+    },
+    {
+        "name": "UMP-45 | Oscillator (Battle-Scarred)",
+        "buy_price": 0.141,
+        "steam_price": 0.25,
+        "steam_link": "https://steamcommunity.com/market/listings/730/UMP-45 | Oscillator (Battle-Scarred)",
+        "net_steam_price": 0.22,
+        "rentabilidad": 0.5603,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=UMP-45 | Oscillator (Battle-Scarred)"
+    },
+    {
+        "name": "StatTrak\u2122 P2000 | Wicked Sick (Well-Worn)",
+        "buy_price": 2.17,
+        "steam_price": 3.88,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 P2000 | Wicked Sick (Well-Worn)",
+        "net_steam_price": 3.39,
+        "rentabilidad": 0.5622,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "M249 | Deep Relief (Battle-Scarred)",
+        "buy_price": 0.48,
+        "steam_price": 0.85,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Deep Relief (Battle-Scarred)",
+        "net_steam_price": 0.75,
+        "rentabilidad": 0.5625,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=M249 | Deep Relief (Battle-Scarred)&sort=price"
+    },
+    {
+        "name": "Sticker | Necron",
+        "buy_price": 0.128,
+        "steam_price": 0.23,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Necron",
+        "net_steam_price": 0.2,
+        "rentabilidad": 0.5625,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Necron"
+    },
+    {
+        "name": "Souvenir CZ75-Auto | Framework (Factory New)",
+        "buy_price": 0.16,
+        "steam_price": 0.28,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir CZ75-Auto | Framework (Factory New)",
+        "net_steam_price": 0.25,
+        "rentabilidad": 0.5625,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Souvenir%20CZ75-Auto%20%7C%20Framework%20%28Factory%20New%29"
+    },
+    {
+        "name": "Sticker | ENCE (Gold) | Rio 2022",
+        "buy_price": 5.06,
+        "steam_price": 9.1,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | ENCE (Gold) | Rio 2022",
+        "net_steam_price": 7.92,
+        "rentabilidad": 0.5652,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/Sticker-ENCE-Gold-Rio-2022"
+    },
+    {
+        "name": "Sticker | Liquid (Holo) | 2020 RMR",
+        "buy_price": 0.249,
+        "steam_price": 0.43,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Liquid (Holo) | 2020 RMR",
+        "net_steam_price": 0.39,
+        "rentabilidad": 0.5663,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Liquid-Holo-2020-RMR"
+    },
+    {
+        "name": "M249 | Downtown (Well-Worn)",
+        "buy_price": 0.35,
+        "steam_price": 0.62,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Downtown (Well-Worn)",
+        "net_steam_price": 0.55,
+        "rentabilidad": 0.5714,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=M249 | Downtown (Well-Worn)"
+    },
+    {
+        "name": "Sticker | Enemy Spotted",
+        "buy_price": 0.07,
+        "steam_price": 0.13,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Enemy Spotted",
+        "net_steam_price": 0.11,
+        "rentabilidad": 0.5714,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Enemy-Spotted"
+    },
+    {
+        "name": "UMP-45 | Oscillator (Battle-Scarred)",
+        "buy_price": 0.14,
+        "steam_price": 0.25,
+        "steam_link": "https://steamcommunity.com/market/listings/730/UMP-45 | Oscillator (Battle-Scarred)",
+        "net_steam_price": 0.22,
+        "rentabilidad": 0.5714,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=UMP-45%20%7C%20Oscillator%20%28Battle-Scarred%29"
+    },
+    {
+        "name": "M249 | Downtown (Well-Worn)",
+        "buy_price": 0.35,
+        "steam_price": 0.62,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Downtown (Well-Worn)",
+        "net_steam_price": 0.55,
+        "rentabilidad": 0.5714,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/M249-Downtown-Well-Worn"
+    },
+    {
+        "name": "Sticker | electroNic (Holo) | Stockholm 2021",
+        "buy_price": 0.089,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | electroNic (Holo) | Stockholm 2021",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.573,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-electroNic-Holo-Stockholm-2021"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tracer Yellow)",
+        "buy_price": 0.019,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5789,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Sealed Graffiti | Piggles (Tracer Yellow)"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tracer Yellow)",
+        "buy_price": 0.019,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tracer Yellow)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.5789,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/Sealed Graffiti | Piggles (Tracer Yellow)"
+    },
+    {
+        "name": "Souvenir AK-47 | Green Laminate (Minimal Wear)",
+        "buy_price": 14.63,
+        "steam_price": 26.57,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir AK-47 | Green Laminate (Minimal Wear)",
+        "net_steam_price": 23.11,
+        "rentabilidad": 0.5796,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Souvenir Five-SeveN | Hot Shot (Minimal Wear)",
+        "buy_price": 7.61,
+        "steam_price": 13.83,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir Five-SeveN | Hot Shot (Minimal Wear)",
+        "net_steam_price": 12.03,
+        "rentabilidad": 0.5808,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "SCAR-20 | Assault (Minimal Wear)",
+        "buy_price": 0.12,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SCAR-20 | Assault (Minimal Wear)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.5833,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=SCAR-20 | Assault (Minimal Wear)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | 200 IQ (Princess Pink)",
+        "buy_price": 0.12,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | 200 IQ (Princess Pink)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.5833,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | 200 IQ (Princess Pink)&sort=price&order=asc"
+    },
+    {
+        "name": "Souvenir MP7 | Motherboard (Minimal Wear)",
+        "buy_price": 0.12,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir MP7 | Motherboard (Minimal Wear)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.5833,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Souvenir%20MP7%20%7C%20Motherboard%20%28Minimal%20Wear%29"
+    },
+    {
+        "name": "MP9 | Bioleak (Well-Worn)",
+        "buy_price": 0.101,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP9 | Bioleak (Well-Worn)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.5842,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/MP9-Bioleak-Well-Worn"
+    },
+    {
+        "name": "FAMAS | Macabre (Factory New)",
+        "buy_price": 3.08,
+        "steam_price": 5.6,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Macabre (Factory New)",
+        "net_steam_price": 4.88,
+        "rentabilidad": 0.5844,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "StatTrak\u2122 Negev | Loudmouth (Field-Tested)",
+        "buy_price": 1.756,
+        "steam_price": 3.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 Negev | Loudmouth (Field-Tested)",
+        "net_steam_price": 2.79,
+        "rentabilidad": 0.5888,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-Negev-Loudmouth-Field-Tested"
+    },
+    {
+        "name": "CZ75-Auto | Polymer (Battle-Scarred)",
+        "buy_price": 0.113,
+        "steam_price": 0.2,
+        "steam_link": "https://steamcommunity.com/market/listings/730/CZ75-Auto | Polymer (Battle-Scarred)",
+        "net_steam_price": 0.18,
+        "rentabilidad": 0.5929,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/CZ75-Auto-Polymer-Battle-Scarred"
+    },
+    {
+        "name": "Souvenir MP7 | Motherboard (Minimal Wear)",
+        "buy_price": 0.119,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir MP7 | Motherboard (Minimal Wear)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.5966,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Souvenir MP7 | Motherboard (Minimal Wear)"
+    },
+    {
+        "name": "SSG 08 | Halftone Whorl (Factory New)",
+        "buy_price": 0.169,
+        "steam_price": 0.3,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SSG 08 | Halftone Whorl (Factory New)",
+        "net_steam_price": 0.27,
+        "rentabilidad": 0.5976,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/SSG-08-Halftone-Whorl-Factory-New"
+    },
+    {
+        "name": "FAMAS | Halftone Wash (Battle-Scarred)",
+        "buy_price": 0.075,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Halftone Wash (Battle-Scarred)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.6,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=FAMAS | Halftone Wash (Battle-Scarred)"
+    },
+    {
+        "name": "Sealed Graffiti | Lightbulb (Tracer Yellow)",
+        "buy_price": 0.1,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Lightbulb (Tracer Yellow)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.6,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | Lightbulb (Tracer Yellow)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | Heart (Bazooka Pink)",
+        "buy_price": 0.1,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Heart (Bazooka Pink)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.6,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/Sealed Graffiti | Heart (Bazooka Pink)"
+    },
+    {
+        "name": "Sealed Graffiti | Heart (Bazooka Pink)",
+        "buy_price": 0.1,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Heart (Bazooka Pink)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.6,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Heart%20%28Bazooka%20Pink%29"
+    },
+    {
+        "name": "Sticker | Monster",
+        "buy_price": 0.05,
+        "steam_price": 0.1,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Monster",
+        "net_steam_price": 0.08,
+        "rentabilidad": 0.6,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sticker%20%7C%20Monster"
+    },
+    {
+        "name": "Souvenir AUG | Colony (Battle-Scarred)",
+        "buy_price": 0.281,
+        "steam_price": 0.5,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir AUG | Colony (Battle-Scarred)",
+        "net_steam_price": 0.45,
+        "rentabilidad": 0.6014,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Souvenir AUG | Colony (Battle-Scarred)"
+    },
+    {
+        "name": "P90 | Off World (Field-Tested)",
+        "buy_price": 0.131,
+        "steam_price": 0.24,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P90 | Off World (Field-Tested)",
+        "net_steam_price": 0.21,
+        "rentabilidad": 0.6031,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/P90-Off-World-Field-Tested"
+    },
+    {
+        "name": "Souvenir AUG | Colony (Battle-Scarred)",
+        "buy_price": 0.28,
+        "steam_price": 0.5,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir AUG | Colony (Battle-Scarred)",
+        "net_steam_price": 0.45,
+        "rentabilidad": 0.6071,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Souvenir%20AUG%20%7C%20Colony%20%28Battle-Scarred%29"
+    },
+    {
+        "name": "Sticker | ECSTATIC (Glitter) | Copenhagen 2024",
+        "buy_price": 0.087,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | ECSTATIC (Glitter) | Copenhagen 2024",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.6092,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-ECSTATIC-Glitter-Copenhagen-2024"
+    },
+    {
+        "name": "Souvenir M4A1-S | VariCamo (Minimal Wear)",
+        "buy_price": 26.03,
+        "steam_price": 48.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir M4A1-S | VariCamo (Minimal Wear)",
+        "net_steam_price": 41.99,
+        "rentabilidad": 0.6131,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Souvenir%20M4A1-S%20%7C%20VariCamo%20%28Minimal%20Wear%29"
+    },
+    {
+        "name": "Sticker | oBo (Foil) | Berlin 2019",
+        "buy_price": 0.83,
+        "steam_price": 1.53,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | oBo (Foil) | Berlin 2019",
+        "net_steam_price": 1.34,
+        "rentabilidad": 0.6145,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sticker | oBo (Foil) | Berlin 2019&sort=price"
+    },
+    {
+        "name": "Souvenir FAMAS | CaliCamo (Factory New)",
+        "buy_price": 0.099,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir FAMAS | CaliCamo (Factory New)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.6162,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Souvenir-FAMAS-CaliCamo-Factory-New"
+    },
+    {
+        "name": "Sticker | Boombl4 (Holo) | Stockholm 2021",
+        "buy_price": 0.068,
+        "steam_price": 0.13,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Boombl4 (Holo) | Stockholm 2021",
+        "net_steam_price": 0.11,
+        "rentabilidad": 0.6176,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Boombl4-Holo-Stockholm-2021"
+    },
+    {
+        "name": "StatTrak\u2122 XM1014 | XOXO (Field-Tested)",
+        "buy_price": 3.31,
+        "steam_price": 6.15,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 XM1014 | XOXO (Field-Tested)",
+        "net_steam_price": 5.36,
+        "rentabilidad": 0.6193,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "MAG-7 | Insomnia (Minimal Wear)",
+        "buy_price": 0.08,
+        "steam_price": 0.15,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAG-7 | Insomnia (Minimal Wear)",
+        "net_steam_price": 0.13,
+        "rentabilidad": 0.625,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"MAG-7 | Insomnia (Minimal Wear)\"}}"
+    },
+    {
+        "name": "Sticker | Say Cheese (Holo)",
+        "buy_price": 0.35,
+        "steam_price": 0.64,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Say Cheese (Holo)",
+        "net_steam_price": 0.57,
+        "rentabilidad": 0.6286,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sticker | Say Cheese (Holo)&sort=price"
+    },
+    {
+        "name": "MP7 | Akoben (Field-Tested)",
+        "buy_price": 0.178,
+        "buy_coin": 0.29,
+        "steam_price": 0.32,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Akoben (Field-Tested)",
+        "net_steam_price": 0.29,
+        "rentabilidad": 0.6292,
+        "platform": "Empire",
+        "link": "https://csgoempire.com/item/296460386"
+    },
+    {
+        "name": "FAMAS | Decommissioned (Field-Tested)",
+        "buy_price": 0.135,
+        "steam_price": 0.25,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Decommissioned (Field-Tested)",
+        "net_steam_price": 0.22,
+        "rentabilidad": 0.6296,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/FAMAS-Decommissioned-Field-Tested"
+    },
+    {
+        "name": "Sticker | ewjerkz (Glitter) | Copenhagen 2024",
+        "buy_price": 0.135,
+        "steam_price": 0.25,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | ewjerkz (Glitter) | Copenhagen 2024",
+        "net_steam_price": 0.22,
+        "rentabilidad": 0.6296,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-ewjerkz-Glitter-Copenhagen-2024"
+    },
+    {
+        "name": "Sealed Graffiti | Heart (Bazooka Pink)",
+        "buy_price": 0.098,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Heart (Bazooka Pink)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.6327,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Sealed Graffiti | Heart (Bazooka Pink)"
+    },
+    {
+        "name": "SCAR-20 | Trail Blazer (Field-Tested)",
+        "buy_price": 0.104,
+        "steam_price": 0.19,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SCAR-20 | Trail Blazer (Field-Tested)",
+        "net_steam_price": 0.17,
+        "rentabilidad": 0.6346,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/SCAR-20-Trail-Blazer-Field-Tested"
+    },
+    {
+        "name": "PP-Bizon | Jungle Slipstream (Battle-Scarred)",
+        "buy_price": 5.5,
+        "steam_price": 10.36,
+        "steam_link": "https://steamcommunity.com/market/listings/730/PP-Bizon | Jungle Slipstream (Battle-Scarred)",
+        "net_steam_price": 9.01,
+        "rentabilidad": 0.6382,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"PP-Bizon | Jungle Slipstream (Battle-Scarred)\"}}"
+    },
+    {
+        "name": "StatTrak\u2122 Dual Berettas | Urban Shock (Field-Tested)",
+        "buy_price": 3.29,
+        "steam_price": 6.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 Dual Berettas | Urban Shock (Field-Tested)",
+        "net_steam_price": 5.39,
+        "rentabilidad": 0.6383,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "R8 Revolver | Llama Cannon (Field-Tested)",
+        "buy_price": 2.36,
+        "steam_price": 4.44,
+        "steam_link": "https://steamcommunity.com/market/listings/730/R8 Revolver | Llama Cannon (Field-Tested)",
+        "net_steam_price": 3.87,
+        "rentabilidad": 0.6398,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sticker | Fnatic | Cologne 2016",
+        "buy_price": 2.57,
+        "steam_price": 4.86,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Fnatic | Cologne 2016",
+        "net_steam_price": 4.23,
+        "rentabilidad": 0.6459,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | Fnatic | Cologne 2016\"}}"
+    },
+    {
+        "name": "P2000 | Coral Halftone (Well-Worn)",
+        "buy_price": 0.085,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P2000 | Coral Halftone (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.6471,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=P2000 | Coral Halftone (Well-Worn)"
+    },
+    {
+        "name": "Souvenir SG 553 | Lush Ruins (Factory New)",
+        "buy_price": 0.091,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir SG 553 | Lush Ruins (Factory New)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.6484,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Souvenir-SG-553-Lush-Ruins-Factory-New"
+    },
+    {
+        "name": "Souvenir M4A1-S | VariCamo (Minimal Wear)",
+        "buy_price": 25.34,
+        "steam_price": 48.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir M4A1-S | VariCamo (Minimal Wear)",
+        "net_steam_price": 41.99,
+        "rentabilidad": 0.6571,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/Souvenir-M4A1-S-VariCamo-Minimal-Wear"
+    },
+    {
+        "name": "MP7 | Motherboard (Field-Tested)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Motherboard (Field-Tested)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=MP7 | Motherboard (Field-Tested)"
+    },
+    {
+        "name": "SSG 08 | Mainframe 001 (Well-Worn)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SSG 08 | Mainframe 001 (Well-Worn)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=SSG 08 | Mainframe 001 (Well-Worn)"
+    },
+    {
+        "name": "MAC-10 | Monkeyflage (Well-Worn)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAC-10 | Monkeyflage (Well-Worn)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=MAC-10 | Monkeyflage (Well-Worn)"
+    },
+    {
+        "name": "Sticker | Natus Vincere | Stockholm 2021",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Natus Vincere | Stockholm 2021",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=Sticker | Natus Vincere | Stockholm 2021"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tiger Orange)",
+        "buy_price": 0.018,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tiger Orange)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.6667,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=Sealed Graffiti | Piggles (Tiger Orange)"
+    },
+    {
+        "name": "MP7 | Motherboard (Field-Tested)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Motherboard (Field-Tested)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=MP7 | Motherboard (Field-Tested)&sort=price&order=asc"
+    },
+    {
+        "name": "P2000 | Lifted Spirits (Well-Worn)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P2000 | Lifted Spirits (Well-Worn)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=P2000 | Lifted Spirits (Well-Worn)&sort=price&order=asc"
+    },
+    {
+        "name": "P90 | Freight (Battle-Scarred)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P90 | Freight (Battle-Scarred)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=P90 | Freight (Battle-Scarred)&sort=price&order=asc"
+    },
+    {
+        "name": "PP-Bizon | Runic (Battle-Scarred)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/PP-Bizon | Runic (Battle-Scarred)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=PP-Bizon | Runic (Battle-Scarred)&sort=price&order=asc"
+    },
+    {
+        "name": "Sealed Graffiti | Piggles (Tiger Orange)",
+        "buy_price": 0.018,
+        "steam_price": 0.05,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Piggles (Tiger Orange)",
+        "net_steam_price": 0.03,
+        "rentabilidad": 0.6667,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/Sealed Graffiti | Piggles (Tiger Orange)"
+    },
+    {
+        "name": "Sticker | TYLOO | 2020 RMR",
+        "buy_price": 0.066,
+        "steam_price": 0.13,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | TYLOO | 2020 RMR",
+        "net_steam_price": 0.11,
+        "rentabilidad": 0.6667,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-TYLOO-2020-RMR"
+    },
+    {
+        "name": "Dual Berettas | Ventilators (Well-Worn)",
+        "buy_price": 0.072,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Dual Berettas | Ventilators (Well-Worn)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.6667,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Dual-Berettas-Ventilators-Well-Worn"
+    },
+    {
+        "name": "Sealed Graffiti | Heart (Dust Brown)",
+        "buy_price": 0.03,
+        "steam_price": 0.07,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Heart (Dust Brown)",
+        "net_steam_price": 0.05,
+        "rentabilidad": 0.6667,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=Sealed%20Graffiti%20%7C%20Heart%20%28Dust%20Brown%29"
+    },
+    {
+        "name": "StatTrak\u2122 R8 Revolver | Tango (Well-Worn)",
+        "buy_price": 0.304,
+        "steam_price": 0.58,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 R8 Revolver | Tango (Well-Worn)",
+        "net_steam_price": 0.51,
+        "rentabilidad": 0.6776,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-R8-Revolver-Tango-Well-Worn"
+    },
+    {
+        "name": "Sticker | Beaky Decade",
+        "buy_price": 0.143,
+        "steam_price": 0.27,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Beaky Decade",
+        "net_steam_price": 0.24,
+        "rentabilidad": 0.6783,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-Beaky-Decade"
+    },
+    {
+        "name": "StatTrak\u2122 MP9 | Black Sand (Field-Tested)",
+        "buy_price": 0.089,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 MP9 | Black Sand (Field-Tested)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.6854,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-MP9-Black-Sand-Field-Tested"
+    },
+    {
+        "name": "Sealed Graffiti | Little Bock (Jungle Green)",
+        "buy_price": 0.51,
+        "steam_price": 0.98,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Little Bock (Jungle Green)",
+        "net_steam_price": 0.86,
+        "rentabilidad": 0.6863,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sealed Graffiti | Little Bock (Jungle Green)&sort=price&order=asc"
+    },
+    {
+        "name": "MP7 | Motherboard (Factory New)",
+        "buy_price": 0.071,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Motherboard (Factory New)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.6901,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/MP7-Motherboard-Factory-New"
+    },
+    {
+        "name": "Sticker | fame (Holo) | Copenhagen 2024",
+        "buy_price": 0.159,
+        "steam_price": 0.3,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | fame (Holo) | Copenhagen 2024",
+        "net_steam_price": 0.27,
+        "rentabilidad": 0.6981,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-fame-Holo-Copenhagen-2024"
+    },
+    {
+        "name": "Sticker | shox | Berlin 2019",
+        "buy_price": 0.053,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | shox | Berlin 2019",
+        "net_steam_price": 0.09,
+        "rentabilidad": 0.6981,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-shox-Berlin-2019"
+    },
+    {
+        "name": "Sticker | apEX (Holo) | Copenhagen 2024",
+        "buy_price": 0.182,
+        "steam_price": 0.35,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | apEX (Holo) | Copenhagen 2024",
+        "net_steam_price": 0.31,
+        "rentabilidad": 0.7033,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-apEX-Holo-Copenhagen-2024"
+    },
+    {
+        "name": "StatTrak\u2122 CZ75-Auto | Polymer (Field-Tested)",
+        "buy_price": 0.27,
+        "steam_price": 0.51,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 CZ75-Auto | Polymer (Field-Tested)",
+        "net_steam_price": 0.46,
+        "rentabilidad": 0.7037,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=StatTrak\u2122 CZ75-Auto | Polymer (Field-Tested)"
+    },
+    {
+        "name": "SG 553 | Triarch (Well-Worn)",
+        "buy_price": 0.264,
+        "steam_price": 0.5,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SG 553 | Triarch (Well-Worn)",
+        "net_steam_price": 0.45,
+        "rentabilidad": 0.7045,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/SG-553-Triarch-Well-Worn"
+    },
+    {
+        "name": "Sticker | AKickflip-47",
+        "buy_price": 0.07,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | AKickflip-47",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.7143,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | AKickflip-47\"}}"
+    },
+    {
+        "name": "MP7 | Urban Hazard (Well-Worn)",
+        "buy_price": 0.093,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP7 | Urban Hazard (Well-Worn)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.7204,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/MP7-Urban-Hazard-Well-Worn"
+    },
+    {
+        "name": "FAMAS | Half Sleeve (Field-Tested)",
+        "buy_price": 0.11,
+        "steam_price": 0.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/FAMAS | Half Sleeve (Field-Tested)",
+        "net_steam_price": 0.19,
+        "rentabilidad": 0.7273,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=FAMAS%20%7C%20Half%20Sleeve%20%28Field-Tested%29"
+    },
+    {
+        "name": "StatTrak\u2122 G3SG1 | Keeping Tabs (Battle-Scarred)",
+        "buy_price": 0.7,
+        "steam_price": 1.4,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 G3SG1 | Keeping Tabs (Battle-Scarred)",
+        "net_steam_price": 1.22,
+        "rentabilidad": 0.7429,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=StatTrak\u2122 G3SG1 | Keeping Tabs (Battle-Scarred)&sort=price"
+    },
+    {
+        "name": "P90 | Verdant Growth (Battle-Scarred)",
+        "buy_price": 3.46,
+        "steam_price": 6.94,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P90 | Verdant Growth (Battle-Scarred)",
+        "net_steam_price": 6.04,
+        "rentabilidad": 0.7457,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=P90 | Verdant Growth (Battle-Scarred)&sort=price&order=asc"
+    },
+    {
+        "name": "Sawed-Off | Black Sand (Battle-Scarred)",
+        "buy_price": 0.04,
+        "steam_price": 0.09,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sawed-Off | Black Sand (Battle-Scarred)",
+        "net_steam_price": 0.07,
+        "rentabilidad": 0.75,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Sawed-Off | Black Sand (Battle-Scarred)&sort=price&order=asc"
+    },
+    {
+        "name": "MAG-7 | Wildwood (Battle-Scarred)",
+        "buy_price": 0.08,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MAG-7 | Wildwood (Battle-Scarred)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.75,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=MAG-7%20%7C%20Wildwood%20%28Battle-Scarred%29"
+    },
+    {
+        "name": "P2000 | Coral Halftone (Well-Worn)",
+        "buy_price": 0.08,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P2000 | Coral Halftone (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.75,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=P2000%20%7C%20Coral%20Halftone%20%28Well-Worn%29"
+    },
+    {
+        "name": "P250 | Iron Clad (Well-Worn)",
+        "buy_price": 0.13,
+        "steam_price": 0.26,
+        "steam_link": "https://steamcommunity.com/market/listings/730/P250 | Iron Clad (Well-Worn)",
+        "net_steam_price": 0.23,
+        "rentabilidad": 0.7692,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=P250%20%7C%20Iron%20Clad%20%28Well-Worn%29"
+    },
+    {
+        "name": "Sticker | stanislaw | Berlin 2019",
+        "buy_price": 0.09,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | stanislaw | Berlin 2019",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.7778,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | stanislaw | Berlin 2019\"}}"
+    },
+    {
+        "name": "Sticker | Fnatic | Cologne 2016",
+        "buy_price": 2.37,
+        "steam_price": 4.86,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | Fnatic | Cologne 2016",
+        "net_steam_price": 4.23,
+        "rentabilidad": 0.7848,
+        "platform": "Lisskins",
+        "link": "https://lis-skins.com/ru/market/csgo/Sticker-Fnatic-Cologne-2016"
+    },
+    {
+        "name": "USP-S | 27 (Well-Worn)",
+        "buy_price": 0.067,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/USP-S | 27 (Well-Worn)",
+        "net_steam_price": 0.12,
+        "rentabilidad": 0.791,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/USP-S-27-Well-Worn"
+    },
+    {
+        "name": "CZ75-Auto | Distressed (Minimal Wear)",
+        "buy_price": 0.1,
+        "steam_price": 0.2,
+        "steam_link": "https://steamcommunity.com/market/listings/730/CZ75-Auto | Distressed (Minimal Wear)",
+        "net_steam_price": 0.18,
+        "rentabilidad": 0.8,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=CZ75-Auto | Distressed (Minimal Wear)&sort=price&order=asc"
+    },
+    {
+        "name": "Sticker | FL1T | Berlin 2019",
+        "buy_price": 0.15,
+        "steam_price": 0.3,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | FL1T | Berlin 2019",
+        "net_steam_price": 0.27,
+        "rentabilidad": 0.8,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | FL1T | Berlin 2019\"}}"
+    },
+    {
+        "name": "Sticker | SAW | Copenhagen 2024",
+        "buy_price": 0.083,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | SAW | Copenhagen 2024",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.8072,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-SAW-Copenhagen-2024"
+    },
+    {
+        "name": "USP-S | Ticket to Hell (Field-Tested)",
+        "buy_price": 0.27,
+        "steam_price": 0.54,
+        "steam_link": "https://steamcommunity.com/market/listings/730/USP-S | Ticket to Hell (Field-Tested)",
+        "net_steam_price": 0.49,
+        "rentabilidad": 0.8148,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=USP-S | Ticket to Hell (Field-Tested)"
+    },
+    {
+        "name": "Sealed Graffiti | Kiss (Tracer Yellow)",
+        "buy_price": 0.24,
+        "steam_price": 0.49,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Kiss (Tracer Yellow)",
+        "net_steam_price": 0.44,
+        "rentabilidad": 0.8333,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sealed Graffiti | Kiss (Tracer Yellow)&sort=price"
+    },
+    {
+        "name": "Sticker | FL1T | Rio 2022",
+        "buy_price": 0.054,
+        "steam_price": 0.12,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | FL1T | Rio 2022",
+        "net_steam_price": 0.1,
+        "rentabilidad": 0.8519,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Sticker-FL1T-Rio-2022"
+    },
+    {
+        "name": "MP9 | Green Plaid (Field-Tested)",
+        "buy_price": 2.62,
+        "steam_price": 5.61,
+        "steam_link": "https://steamcommunity.com/market/listings/730/MP9 | Green Plaid (Field-Tested)",
+        "net_steam_price": 4.89,
+        "rentabilidad": 0.8664,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "SSG 08 | Halftone Whorl (Well-Worn)",
+        "buy_price": 0.075,
+        "steam_price": 0.16,
+        "steam_link": "https://steamcommunity.com/market/listings/730/SSG 08 | Halftone Whorl (Well-Worn)",
+        "net_steam_price": 0.14,
+        "rentabilidad": 0.8667,
+        "platform": "Waxpeer",
+        "link": "https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=SSG 08 | Halftone Whorl (Well-Worn)"
+    },
+    {
+        "name": "M249 | Spectrogram (Well-Worn)",
+        "buy_price": 0.08,
+        "steam_price": 0.17,
+        "steam_link": "https://steamcommunity.com/market/listings/730/M249 | Spectrogram (Well-Worn)",
+        "net_steam_price": 0.15,
+        "rentabilidad": 0.875,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=M249%20%7C%20Spectrogram%20%28Well-Worn%29"
+    },
+    {
+        "name": "StatTrak\u2122 XM1014 | Oxide Blaze (Field-Tested)",
+        "buy_price": 0.085,
+        "steam_price": 0.18,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 XM1014 | Oxide Blaze (Field-Tested)",
+        "net_steam_price": 0.16,
+        "rentabilidad": 0.8824,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/StatTrak-XM1014-Oxide-Blaze-Field-Tested"
+    },
+    {
+        "name": "PP-Bizon | Jungle Slipstream (Battle-Scarred)",
+        "buy_price": 4.6,
+        "steam_price": 10.36,
+        "steam_link": "https://steamcommunity.com/market/listings/730/PP-Bizon | Jungle Slipstream (Battle-Scarred)",
+        "net_steam_price": 9.01,
+        "rentabilidad": 0.9587,
+        "platform": "MarketCsgo",
+        "link": "https://market.csgo.com/PP-Bizon | Jungle Slipstream (Battle-Scarred)"
+    },
+    {
+        "name": "Sticker | FaZe Clan | Stockholm 2021",
+        "buy_price": 0.06,
+        "steam_price": 0.14,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | FaZe Clan | Stockholm 2021",
+        "net_steam_price": 0.12,
+        "rentabilidad": 1.0,
+        "platform": "Bitskins",
+        "link": "https://bitskins.com/market/cs2?search={\"order\":[{\"field\":\"price\",\"order\":\"ASC\"}],\"where\":{\"skin_name\":\"Sticker | FaZe Clan | Stockholm 2021\"}}"
+    },
+    {
+        "name": "PP-Bizon | Night Ops (Field-Tested)",
+        "buy_price": 0.03,
+        "steam_price": 0.08,
+        "steam_link": "https://steamcommunity.com/market/listings/730/PP-Bizon | Night Ops (Field-Tested)",
+        "net_steam_price": 0.06,
+        "rentabilidad": 1.0,
+        "platform": "White",
+        "link": "https://white.market/item?appId=730&nameHash=PP-Bizon%20%7C%20Night%20Ops%20%28Field-Tested%29"
+    },
+    {
+        "name": "Sticker | apEX (Glitter) | Copenhagen 2024",
+        "buy_price": 0.01,
+        "steam_price": 0.04,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | apEX (Glitter) | Copenhagen 2024",
+        "net_steam_price": 0.02,
+        "rentabilidad": 1.0,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=Sticker | apEX (Glitter) | Copenhagen 2024&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "Souvenir Nova | Mandrel (Factory New)",
+        "buy_price": 0.044,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir Nova | Mandrel (Factory New)",
+        "net_steam_price": 0.09,
+        "rentabilidad": 1.0455,
+        "platform": "Skinout",
+        "link": "https://skinout.gg/en/market/Souvenir-Nova-Mandrel-Factory-New"
+    },
+    {
+        "name": "Sealed Graffiti | Little Bock (Jungle Green)",
+        "buy_price": 0.4,
+        "steam_price": 0.98,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Little Bock (Jungle Green)",
+        "net_steam_price": 0.86,
+        "rentabilidad": 1.15,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sealed Graffiti | Little Bock (Jungle Green)&sort=price"
+    },
+    {
+        "name": "Souvenir G3SG1 | Ancient Ritual (Minimal Wear)",
+        "buy_price": 0.05,
+        "steam_price": 0.13,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir G3SG1 | Ancient Ritual (Minimal Wear)",
+        "net_steam_price": 0.11,
+        "rentabilidad": 1.2,
+        "platform": "Skinport",
+        "link": "https://skinport.com/es/market?search=Souvenir G3SG1 | Ancient Ritual (Minimal Wear)&sort=price&order=asc"
+    },
+    {
+        "name": "Souvenir Nova | Mandrel (Factory New)",
+        "buy_price": 0.04,
+        "steam_price": 0.11,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Souvenir Nova | Mandrel (Factory New)",
+        "net_steam_price": 0.09,
+        "rentabilidad": 1.25,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=Souvenir Nova | Mandrel (Factory New)"
+    },
+    {
+        "name": "Sticker | TYLOO (Foil) | 2020 RMR",
+        "buy_price": 1.13,
+        "steam_price": 3.04,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | TYLOO (Foil) | 2020 RMR",
+        "net_steam_price": 2.65,
+        "rentabilidad": 1.3451,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sticker | TYLOO (Foil) | 2020 RMR",
+        "buy_price": 1.13,
+        "steam_price": 3.04,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | TYLOO (Foil) | 2020 RMR",
+        "net_steam_price": 2.65,
+        "rentabilidad": 1.3451,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sticker | TYLOO (Gold) | 2020 RMR",
+        "buy_price": 5.61,
+        "steam_price": 16.01,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | TYLOO (Gold) | 2020 RMR",
+        "net_steam_price": 13.93,
+        "rentabilidad": 1.4831,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sticker | nitr0 (Foil) | Berlin 2019",
+        "buy_price": 0.47,
+        "steam_price": 1.35,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sticker | nitr0 (Foil) | Berlin 2019",
+        "net_steam_price": 1.19,
+        "rentabilidad": 1.5319,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sticker | nitr0 (Foil) | Berlin 2019&sort=price"
+    },
+    {
+        "name": "PP-Bizon | Chemical Green (Factory New)",
+        "buy_price": 5.18,
+        "steam_price": 15.66,
+        "steam_link": "https://steamcommunity.com/market/listings/730/PP-Bizon | Chemical Green (Factory New)",
+        "net_steam_price": 13.62,
+        "rentabilidad": 1.6293,
+        "platform": "Rapidskins",
+        "link": "https://rapidskins.com/market"
+    },
+    {
+        "name": "Sealed Graffiti | Little Bock (Frog Green)",
+        "buy_price": 0.3,
+        "steam_price": 1.01,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Little Bock (Frog Green)",
+        "net_steam_price": 0.89,
+        "rentabilidad": 1.9667,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sealed Graffiti | Little Bock (Frog Green)&sort=price"
+    },
+    {
+        "name": "StatTrak\u2122 MP5-SD | Condition Zero (Minimal Wear)",
+        "buy_price": 1.73,
+        "steam_price": 5.95,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 MP5-SD | Condition Zero (Minimal Wear)",
+        "net_steam_price": 5.19,
+        "rentabilidad": 2.0,
+        "platform": "Shadowpay",
+        "link": "https://shadowpay.com/csgo-items?search=StatTrak\u2122 MP5-SD | Condition Zero (Minimal Wear)&sort_column=price&sort_dir=asc"
+    },
+    {
+        "name": "StatTrak\u2122 MP5-SD | Condition Zero (Minimal Wear)",
+        "buy_price": 1.45,
+        "steam_price": 5.95,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 MP5-SD | Condition Zero (Minimal Wear)",
+        "net_steam_price": 5.19,
+        "rentabilidad": 2.5793,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=StatTrak\u2122 MP5-SD | Condition Zero (Minimal Wear)&sort=price"
+    },
+    {
+        "name": "StatTrak\u2122 Dual Berettas | Retribution (Field-Tested)",
+        "buy_price": 1.8,
+        "steam_price": 9.21,
+        "steam_link": "https://steamcommunity.com/market/listings/730/StatTrak\u2122 Dual Berettas | Retribution (Field-Tested)",
+        "net_steam_price": 8.01,
+        "rentabilidad": 3.45,
+        "platform": "Cstrade",
+        "link": "https://cs.trade/trade?market_name=StatTrak\u2122 Dual Berettas | Retribution (Field-Tested)"
+    },
+    {
+        "name": "Sealed Graffiti | Heart (Blood Red)",
+        "buy_price": 0.02,
+        "steam_price": 0.24,
+        "steam_link": "https://steamcommunity.com/market/listings/730/Sealed Graffiti | Heart (Blood Red)",
+        "net_steam_price": 0.21,
+        "rentabilidad": 9.5,
+        "platform": "Csdeals",
+        "link": "https://cs.deals/es/market/csgo/?name=Sealed Graffiti | Heart (Blood Red)&sort=price"
+    }
+]

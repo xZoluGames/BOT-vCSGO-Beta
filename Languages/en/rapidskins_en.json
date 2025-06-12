@@ -1,0 +1,6 @@
+{
+    "success_message": "Successfully fetched Rapidskins data. Total items: {total_items}",
+    "fetch_error": "Error fetching data from Rapidskins: {error}",
+    "updating_message": "Updating Rapidskins data...",
+    "waiting_message": "Waiting 25 seconds for the next update..."
+}
