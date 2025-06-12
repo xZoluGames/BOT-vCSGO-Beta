@@ -1,0 +1,27 @@
+{
+    "project_name": "BOT-vCSGO-Beta",
+    "version": "2.0.0",
+    "language": "es",
+    "update_intervals": {
+        "steam": 3600,
+        "fast_platforms": 60,
+        "slow_platforms": 300
+    },
+    "proxy_settings": {
+        "enabled": false,
+        "rotation_enabled": true,
+        "timeout": 10,
+        "max_retries": 5,
+        "retry_delay": 2
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name} | {message}",
+        "rotation": "1 day",
+        "retention": "7 days"
+    },
+    "database": {
+        "type": "sqlite",
+        "path": "csgo_arbitrage.db"
+    }
+}

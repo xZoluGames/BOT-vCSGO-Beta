@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+VENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Configuraciones locales
+.env
+.env.local
+config/local/
+*.local.json
+
+# Logs
+logs/
+*.log
+temp/
+
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Datos sensibles
+proxy.txt
+proxy*.txt
+config/api_keys.json
+config/credentials.json
+
+# Archivos de datos (los JSONs se generan, no se suben)
+JSON/
+*.json
+!config/**/*.json
+!Languages/**/*.json
+
+# Excepciones - archivos JSON que SÍ queremos en el repo
+!config/settings.json
+!config/scrapers/platforms.json
+!config/notifications/thresholds.json
+
+# ChromeDriver
+Chromedriver/
+chromedriver.exe
+chromedriver
+
+# Backups
+backup/
+*.bak
+*.backup

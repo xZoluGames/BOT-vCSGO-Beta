@@ -1,0 +1,11 @@
+# Ejemplo de archivo proxy.txt
+# Un proxy por línea
+# Formatos soportados:
+# http://usuario:password@ip:puerto
+# http://ip:puerto
+# socks5://ip:puerto
+
+# Descomenta las líneas siguientes y reemplaza con tus proxies reales:
+# http://123.456.789.0:8080
+# http://usuario:pass@proxy.ejemplo.com:3128
+# socks5://127.0.0.1:1080
