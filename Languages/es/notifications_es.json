@@ -1,0 +1,20 @@
+{
+    "SYSTEM_STARTED": "Sistema de notificaciones iniciado",
+    "PROFITABLE_OPPORTUNITY": "💰 OPORTUNIDAD RENTABLE: {profit}%",
+    "BUY_AT": "Comprar en {platform} por ${price}",
+    "SCRAPER_ERROR": "⚠️ ERROR EN SCRAPER: {scraper}",
+    "ANALYSIS_SUMMARY": "📈 RESUMEN DE ANÁLISIS",
+    "OPPORTUNITIES_FOUND": "Encontradas {count} oportunidades rentables",
+    "NO_OPPORTUNITIES": "📊 SIN OPORTUNIDADES",
+    "NO_OPPORTUNITIES_MESSAGE": "No se encontraron oportunidades rentables en este análisis",
+    "ITEM": "Item",
+    "PLATFORM": "Plataforma",
+    "BUY_PRICE": "Precio Compra",
+    "PROFITABILITY": "Rentabilidad",
+    "PROFIT": "Ganancia",
+    "OPPORTUNITIES": "Oportunidades",
+    "BEST_PROFITABILITY": "Mejor Rentabilidad",
+    "ACTIVE_SCRAPERS": "Scrapers Activos",
+    "ERROR": "Error",
+    "SCRAPER": "Scraper"
+}

@@ -454,7 +454,7 @@ Ejemplos:
             while True:
                 # Ejecutar scrapers esenciales
                 for scraper_name in SCRAPER_GROUPS['essential']:
-                    run_all_scrapers(scraper_name, use_proxy=None, once=True)
+                    run_single_scraper(scraper_name, use_proxy=None, once=True)
                 
                 # Esperar un poco para que se guarden los JSON
                 time.sleep(5)

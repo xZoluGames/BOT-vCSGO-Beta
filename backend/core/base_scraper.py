@@ -14,8 +14,8 @@ from loguru import logger
 # Importar nuestro gestor de configuración
 from .config_manager import get_config_manager
 from .proxy_manager import ProxyManager
-
-
+from backend.services.database_service import get_database_service
+from backend.services.notification_service import get_notification_service
 class BaseScraper(ABC):
     """
     Clase base para todos los scrapers de BOT-vCSGO-Beta
@@ -83,7 +83,9 @@ class BaseScraper(ABC):
             'last_run': None,
             'last_error': None
         }
-        
+        self.db_service = get_database_service()
+        self.notification_service = get_notification_service()
+        self.use_database = self.config_manager.settings.get('database', {}).get('enabled', True)
         # Sesión de requests para reutilizar conexiones
         self.session = requests.Session()
         self.session.headers.update(self.headers)
@@ -120,18 +122,13 @@ class BaseScraper(ABC):
         
         return kwargs
     
-    def make_request(self, 
-                    url: str, 
-                    method: str = 'GET',
-                    max_retries: Optional[int] = None,
-                    **kwargs) -> Optional[requests.Response]:
+    def make_request(self, url: str, method: str = 'GET', **kwargs) -> Optional[requests.Response]:
         """
         Realiza una petición HTTP con reintentos y manejo de errores
         
         Args:
             url: URL a consultar
-            method: Método HTTP (GET, POST, etc)
-            max_retries: Número máximo de reintentos (None = usar config)
+            method: Método HTTP (GET, POST, etc.)
             **kwargs: Argumentos adicionales para requests
             
         Returns:
@@ -168,7 +165,15 @@ class BaseScraper(ABC):
             except requests.exceptions.RequestException as e:
                 self.stats['requests_failed'] += 1
                 self.stats['last_error'] = str(e)
+            except Exception as e:
+                self.logger.error(f"Error no manejado: {e}")
                 
+                # Notificar error crítico
+                if "timeout" not in str(e).lower():  # No notificar timeouts comunes
+                    self.notification_service.notify_scraper_error(
+                        scraper_name=self.platform_name,
+                        error=str(e)
+                    )
                 self.logger.warning(
                     f"Error en petición (intento {attempt + 1}/{max_retries}): {e}"
                 )
@@ -192,28 +197,64 @@ class BaseScraper(ABC):
         self.logger.error(f"Falló después de {max_retries} intentos: {url}")
         return None
     
-    def save_data(self, data: List[Dict], filename: Optional[str] = None):
+    def save_data(self, data: List[Dict]) -> bool:
         """
-        Guarda los datos en formato JSON
+        Guarda los datos en formato JSON y en la base de datos
         
         Args:
-            data: Lista de diccionarios con los datos
-            filename: Nombre del archivo (None = usar nombre por defecto)
+            data: Lista de items a guardar
+            
+        Returns:
+            bool: True si se guardó correctamente
         """
-        if filename is None:
-            filename = f"{self.platform_name.lower()}_data.json"
-        
-        output_path = self.config_manager.get_json_output_path(filename)
-        
         try:
-            with open(output_path, 'w', encoding='utf-8') as f:
+            # Guardar en JSON (mantener compatibilidad)
+            filename = f"{self.platform_name.lower()}_data.json"
+            filepath = self.config_manager.get_json_output_path(filename)
+            
+            with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
             
-            self.logger.info(f"Datos guardados: {output_path} ({len(data)} items)")
+            self.logger.info(f"Datos guardados en {filepath}")
+            
+            # Guardar en base de datos si está habilitada
+            if self.use_database:
+                try:
+                    self.db_service.save_scraper_data(self.platform_name.lower(), data)
+                    self.logger.info(f"Datos guardados en base de datos")
+                except Exception as e:
+                    self.logger.error(f"Error guardando en base de datos: {e}")
+                    # No fallar si la DB falla, ya tenemos el JSON
+            
+            return True
             
         except Exception as e:
             self.logger.error(f"Error guardando datos: {e}")
-    
+            return False
+    def get_cached_data(self, max_age_minutes: int = 5) -> Optional[List[Dict]]:
+        """
+        Obtiene datos cacheados de la base de datos si son recientes
+        
+        Args:
+            max_age_minutes: Edad máxima de los datos en minutos
+            
+        Returns:
+            Lista de items o None si no hay datos recientes
+        """
+        if not self.use_database:
+            return None
+            
+        try:
+            from datetime import datetime, timedelta
+            cutoff_time = datetime.utcnow() - timedelta(minutes=max_age_minutes)
+            
+            # Aquí podrías implementar lógica para obtener de la DB
+            # Por ahora retornamos None para mantener el comportamiento actual
+            return None
+            
+        except Exception as e:
+            self.logger.error(f"Error obteniendo datos cacheados: {e}")
+            return None
     @abstractmethod
     def fetch_data(self) -> List[Dict]:
         """

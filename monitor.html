@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOT-vCSGO-Beta - Monitor en Tiempo Real</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e1e;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #00d4ff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .status {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        .status.connected {
+            background: #00ff88;
+            color: #000;
+        }
+        
+        .status.disconnected {
+            background: #ff5555;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .panel {
+            background: #2d2d2d;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .panel h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .stat-card {
+            background: #3d3d3d;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        
+        .stat-card .label {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        
+        th {
+            background: #3d3d3d;
+            color: #00d4ff;
+        }
+        
+        .profit-high {
+            color: #00ff88;
+            font-weight: bold;
+        }
+        
+        .profit-medium {
+            color: #ffaa00;
+        }
+        
+        .scraper-status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .scraper-status.running {
+            background: #00ff88;
+        }
+        
+        .scraper-status.idle {
+            background: #ffaa00;
+        }
+        
+        .scraper-status.error {
+            background: #ff5555;
+        }
+        
+        .notification {
+            background: #3d3d3d;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #00d4ff;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 BOT-vCSGO-Beta - Monitor en Tiempo Real</h1>
+        
+        <div id="status" class="status disconnected">
+            ⚫ Desconectado
+        </div>
+        
+        <div class="grid">
+            <!-- Panel de Estadísticas -->
+            <div class="panel">
+                <h2>📊 Estadísticas</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="value" id="total-items">--</div>
+                        <div class="label">Items Totales</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="active-opportunities">--</div>
+                        <div class="label">Oportunidades Activas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="best-profit">--%</div>
+                        <div class="label">Mejor Rentabilidad</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="last-update">--:--</div>
+                        <div class="label">Última Actualización</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel de Scrapers -->
+            <div class="panel">
+                <h2>🤖 Estado de Scrapers</h2>
+                <div id="scrapers-list"></div>
+            </div>
+        </div>
+        
+        <!-- Panel de Oportunidades -->
+        <div class="panel">
+            <h2>💰 Mejores Oportunidades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Plataforma</th>
+                        <th>Precio Compra</th>
+                        <th>Rentabilidad</th>
+                        <th>Ganancia</th>
+                    </tr>
+                </thead>
+                <tbody id="opportunities-table">
+                    <tr>
+                        <td colspan="5" style="text-align: center;">Esperando datos...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Panel de Notificaciones -->
+        <div class="panel">
+            <h2>🔔 Notificaciones Recientes</h2>
+            <div id="notifications"></div>
+        </div>
+    </div>
+    
+    <script>
+        // Configuración
+        const WS_URL = 'ws://localhost:8765';
+        let ws = null;
+        let reconnectInterval = null;
+        
+        // Elementos del DOM
+        const statusEl = document.getElementById('status');
+        const totalItemsEl = document.getElementById('total-items');
+        const activeOpportunitiesEl = document.getElementById('active-opportunities');
+        const bestProfitEl = document.getElementById('best-profit');
+        const lastUpdateEl = document.getElementById('last-update');
+        const scrapersListEl = document.getElementById('scrapers-list');
+        const opportunitiesTableEl = document.getElementById('opportunities-table');
+        const notificationsEl = document.getElementById('notifications');
+        
+        // Conectar WebSocket
+        function connect() {
+            ws = new WebSocket(WS_URL);
+            
+            ws.onopen = () => {
+                console.log('Conectado al servidor');
+                statusEl.textContent = '🟢 Conectado';
+                statusEl.className = 'status connected';
+                
+                // Limpiar intervalo de reconexión
+                if (reconnectInterval) {
+                    clearInterval(reconnectInterval);
+                    reconnectInterval = null;
+                }
+                
+                // Enviar ping cada 30 segundos
+                setInterval(() => {
+                    if (ws.readyState === WebSocket.OPEN) {
+                        ws.send(JSON.stringify({ type: 'ping' }));
+                    }
+                }, 30000);
+            };
+            
+            ws.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                handleMessage(data);
+            };
+            
+            ws.onclose = () => {
+                console.log('Desconectado del servidor');
+                statusEl.textContent = '⚫ Desconectado';
+                statusEl.className = 'status disconnected';
+                
+                // Intentar reconectar cada 5 segundos
+                if (!reconnectInterval) {
+                    reconnectInterval = setInterval(connect, 5000);
+                }
+            };
+            
+            ws.onerror = (error) => {
+                console.error('Error WebSocket:', error);
+            };
+        }
+        
+        // Manejar mensajes
+        function handleMessage(data) {
+            switch (data.type) {
+                case 'initial_state':
+                    updateStats(data.data.stats);
+                    updateOpportunities(data.data.opportunities);
+                    updateScrapers(data.data.scrapers);
+                    break;
+                    
+                case 'new_opportunity':
+                    addNotification(`Nueva oportunidad: ${data.data.item_name} - ${data.data.profit_percentage.toFixed(1)}%`);
+                    // Solicitar actualización de oportunidades
+                    ws.send(JSON.stringify({ type: 'get_opportunities' }));
+                    break;
+                    
+                case 'scraper_update':
+                    addNotification(`Scraper ${data.data.scraper}: ${data.data.status}`);
+                    break;
+                    
+                case 'opportunities_update':
+                    updateOpportunities(data.data);
+                    break;
+                    
+                case 'stats_update':
+                    updateStats(data.data);
+                    break;
+            }
+        }
+        
+        // Actualizar estadísticas
+        function updateStats(stats) {
+            totalItemsEl.textContent = stats.total_items || '--';
+            activeOpportunitiesEl.textContent = stats.active_opportunities || '--';
+            bestProfitEl.textContent = stats.best_profit_percentage ? 
+                `${stats.best_profit_percentage.toFixed(1)}%` : '--%';
+            
+            if (stats.last_update) {
+                const date = new Date(stats.last_update);
+                lastUpdateEl.textContent = date.toLocaleTimeString();
+            }
+        }
+        
+        // Actualizar oportunidades
+        function updateOpportunities(opportunities) {
+            if (!opportunities || opportunities.length === 0) {
+                opportunitiesTableEl.innerHTML = '<tr><td colspan="5" style="text-align: center;">No hay oportunidades activas</td></tr>';
+                return;
+            }
+            
+            const rows = opportunities.slice(0, 10).map(opp => {
+                const profitClass = opp.profit_percentage > 15 ? 'profit-high' : 
+                                   opp.profit_percentage > 10 ? 'profit-medium' : '';
+                
+                return `
+                    <tr>
+                        <td>${opp.name}</td>
+                        <td>${opp.buy_platform}</td>
+                        <td>$${opp.buy_price.toFixed(2)}</td>
+                        <td class="${profitClass}">${opp.profit_percentage.toFixed(1)}%</td>
+                        <td>$${opp.profit_amount.toFixed(2)}</td>
+                    </tr>
+                `;
+            }).join('');
+            
+            opportunitiesTableEl.innerHTML = rows;
+        }
+        
+        // Actualizar scrapers
+        function updateScrapers(scrapers) {
+            if (!scrapers || scrapers.length === 0) {
+                scrapersListEl.innerHTML = '<p>No hay información de scrapers</p>';
+                return;
+            }
+            
+            const html = scrapers.map(scraper => {
+                const statusClass = scraper.status === 'running' ? 'running' : 
+                                   scraper.status === 'idle' ? 'idle' : 'error';
+                
+                return `
+                    <div style="margin-bottom: 10px;">
+                        <span class="scraper-status ${statusClass}"></span>
+                        <strong>${scraper.name}</strong>: ${scraper.status}
+                        ${scraper.items_found ? ` (${scraper.items_found} items)` : ''}
+                    </div>
+                `;
+            }).join('');
+            
+            scrapersListEl.innerHTML = html;
+        }
+        
+        // Agregar notificación
+        function addNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `
+                <strong>${new Date().toLocaleTimeString()}</strong>: ${message}
+            `;
+            
+            notificationsEl.insertBefore(notification, notificationsEl.firstChild);
+            
+            // Mantener solo las últimas 10 notificaciones
+            while (notificationsEl.children.length > 10) {
+                notificationsEl.removeChild(notificationsEl.lastChild);
+            }
+        }
+        
+        // Iniciar conexión
+        connect();
+    </script>
+</body>
+</html>

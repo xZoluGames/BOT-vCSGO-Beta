@@ -21,7 +21,15 @@
         "retention": "7 days"
     },
     "database": {
+        "enabled": true,
         "type": "sqlite",
-        "path": "csgo_arbitrage.db"
+        "path": "data/csgo_arbitrage.db",
+        "cleanup_days": 30,
+        "cache_minutes": 5
+    },
+    "api": {
+        "enabled": false,
+        "host": "0.0.0.0",
+        "port": 8000
     }
 }

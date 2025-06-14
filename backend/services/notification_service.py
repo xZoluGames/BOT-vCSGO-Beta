@@ -1,482 +1,225 @@
 # backend/services/notification_service.py
 
-import asyncio
-import smtplib
+
 import json
-from abc import ABC, abstractmethod
-from typing import Dict, List, Optional, Any
+import time
+import platform
 from datetime import datetime
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-import aiohttp
+from pathlib import Path
+from typing import List, Dict, Optional
 from dataclasses import dataclass
-import logging
+from loguru import logger
+import winsound  # Solo Windows
+
+from backend.core.config_manager import get_config_manager
+from backend.core.translator import get_translator
+
 
 @dataclass
 class Notification:
-    """Estructura de una notificación"""
+    """Representa una notificación"""
     title: str
     message: str
-    type: str  # 'opportunity', 'alert', 'info'
-    data: Dict[str, Any]
-    priority: int = 1  # 1-5, donde 5 es la más alta
+    level: str = "INFO"  # INFO, WARNING, OPPORTUNITY
+    data: Optional[Dict] = None
     timestamp: datetime = None
     
     def __post_init__(self):
         if self.timestamp is None:
-            self.timestamp = datetime.utcnow()
+            self.timestamp = datetime.now()
 
-class NotificationChannel(ABC):
-    """Clase base para canales de notificación"""
-    
-    @abstractmethod
-    async def send(self, notification: Notification) -> bool:
-        """Envía una notificación por el canal"""
-        pass
-    
-    @abstractmethod
-    def is_configured(self) -> bool:
-        """Verifica si el canal está configurado"""
-        pass
-
-class WebSocketChannel(NotificationChannel):
-    """Canal de notificación por WebSocket"""
-    
-    def __init__(self, connection_manager):
-        self.connection_manager = connection_manager
-        self.logger = logging.getLogger(self.__class__.__name__)
-        
-    async def send(self, notification: Notification) -> bool:
-        try:
-            message = {
-                "type": "notification",
-                "data": {
-                    "title": notification.title,
-                    "message": notification.message,
-                    "type": notification.type,
-                    "priority": notification.priority,
-                    "timestamp": notification.timestamp.isoformat(),
-                    "data": notification.data
-                }
-            }
-            
-            await self.connection_manager.broadcast(json.dumps(message))
-            return True
-            
-        except Exception as e:
-            self.logger.error(f"Error enviando notificación WebSocket: {e}")
-            return False
-            
-    def is_configured(self) -> bool:
-        return self.connection_manager is not None
-
-class TelegramChannel(NotificationChannel):
-    """Canal de notificación por Telegram"""
-    
-    def __init__(self, bot_token: str, chat_ids: List[str]):
-        self.bot_token = bot_token
-        self.chat_ids = chat_ids
-        self.base_url = f"https://api.telegram.org/bot{bot_token}"
-        self.logger = logging.getLogger(self.__class__.__name__)
-        
-    async def send(self, notification: Notification) -> bool:
-        if not self.is_configured():
-            return False
-            
-        try:
-            # Formatear mensaje para Telegram
-            message = self._format_telegram_message(notification)
-            
-            # Enviar a todos los chat IDs configurados
-            async with aiohttp.ClientSession() as session:
-                for chat_id in self.chat_ids:
-                    url = f"{self.base_url}/sendMessage"
-                    payload = {
-                        "chat_id": chat_id,
-                        "text": message,
-                        "parse_mode": "HTML",
-                        "disable_web_page_preview": True
-                    }
-                    
-                    async with session.post(url, json=payload) as response:
-                        if response.status != 200:
-                            self.logger.error(f"Error enviando a Telegram: {await response.text()}")
-                            
-            return True
-            
-        except Exception as e:
-            self.logger.error(f"Error enviando notificación Telegram: {e}")
-            return False
-            
-    def _format_telegram_message(self, notification: Notification) -> str:
-        """Formatea el mensaje para Telegram con HTML"""
-        priority_emojis = {1: "ℹ️", 2: "📢", 3: "⚡", 4: "🔥", 5: "🚨"}
-        emoji = priority_emojis.get(notification.priority, "📌")
-        
-        message = f"{emoji} <b>{notification.title}</b>\n\n"
-        message += f"{notification.message}\n\n"
-        
-        if notification.type == "opportunity" and notification.data:
-            data = notification.data
-            message += f"💰 <b>Rentabilidad:</b> {data.get('profitability', 0):.2f}%\n"
-            message += f"🛒 <b>Comprar en:</b> {data.get('platform', 'N/A')} - ${data.get('buy_price', 0):.2f}\n"
-            message += f"💵 <b>Vender en:</b> Steam - ${data.get('steam_price', 0):.2f}\n"
-            message += f"📈 <b>Ganancia:</b> ${data.get('profit', 0):.2f}\n\n"
-            
-            if data.get('url'):
-                message += f"🔗 <a href='{data['url']}'>Ver en {data.get('platform', 'plataforma')}</a>"
-                
-        return message
-        
-    def is_configured(self) -> bool:
-        return bool(self.bot_token and self.chat_ids)
-
-class DiscordChannel(NotificationChannel):
-    """Canal de notificación por Discord"""
-    
-    def __init__(self, webhook_url: str):
-        self.webhook_url = webhook_url
-        self.logger = logging.getLogger(self.__class__.__name__)
-        
-    async def send(self, notification: Notification) -> bool:
-        if not self.is_configured():
-            return False
-            
-        try:
-            # Crear embed de Discord
-            embed = self._create_discord_embed(notification)
-            
-            async with aiohttp.ClientSession() as session:
-                payload = {
-                    "embeds": [embed],
-                    "username": "CS:GO Arbitrage Bot"
-                }
-                
-                async with session.post(self.webhook_url, json=payload) as response:
-                    return response.status == 204
-                    
-        except Exception as e:
-            self.logger.error(f"Error enviando notificación Discord: {e}")
-            return False
-            
-    def _create_discord_embed(self, notification: Notification) -> Dict:
-        """Crea un embed de Discord"""
-        colors = {
-            "opportunity": 0x00ff00,  # Verde
-            "alert": 0xff0000,        # Rojo
-            "info": 0x0099ff          # Azul
-        }
-        
-        embed = {
-            "title": notification.title,
-            "description": notification.message,
-            "color": colors.get(notification.type, 0x808080),
-            "timestamp": notification.timestamp.isoformat(),
-            "fields": []
-        }
-        
-        if notification.type == "opportunity" and notification.data:
-            data = notification.data
-            embed["fields"] = [
-                {
-                    "name": "💰 Rentabilidad",
-                    "value": f"{data.get('profitability', 0):.2f}%",
-                    "inline": True
-                },
-                {
-                    "name": "🛒 Comprar en",
-                    "value": f"{data.get('platform', 'N/A')} - ${data.get('buy_price', 0):.2f}",
-                    "inline": True
-                },
-                {
-                    "name": "💵 Vender en",
-                    "value": f"Steam - ${data.get('steam_price', 0):.2f}",
-                    "inline": True
-                },
-                {
-                    "name": "📈 Ganancia Potencial",
-                    "value": f"${data.get('profit', 0):.2f}",
-                    "inline": True
-                }
-            ]
-            
-            if data.get('url'):
-                embed["url"] = data['url']
-                
-        return embed
-        
-    def is_configured(self) -> bool:
-        return bool(self.webhook_url)
-
-class EmailChannel(NotificationChannel):
-    """Canal de notificación por Email"""
-    
-    def __init__(self, smtp_config: Dict[str, Any], recipients: List[str]):
-        self.smtp_config = smtp_config
-        self.recipients = recipients
-        self.logger = logging.getLogger(self.__class__.__name__)
-        
-    async def send(self, notification: Notification) -> bool:
-        if not self.is_configured():
-            return False
-            
-        try:
-            # Ejecutar en thread pool para no bloquear
-            loop = asyncio.get_event_loop()
-            return await loop.run_in_executor(None, self._send_email, notification)
-            
-        except Exception as e:
-            self.logger.error(f"Error enviando notificación Email: {e}")
-            return False
-            
-    def _send_email(self, notification: Notification) -> bool:
-        """Envía el email (síncrono)"""
-        msg = MIMEMultipart('alternative')
-        msg['Subject'] = notification.title
-        msg['From'] = self.smtp_config['from_email']
-        msg['To'] = ', '.join(self.recipients)
-        
-        # Crear versión HTML del email
-        html_content = self._create_email_html(notification)
-        html_part = MIMEText(html_content, 'html')
-        msg.attach(html_part)
-        
-        # Enviar email
-        with smtplib.SMTP(self.smtp_config['host'], self.smtp_config['port']) as server:
-            if self.smtp_config.get('use_tls'):
-                server.starttls()
-            if self.smtp_config.get('username'):
-                server.login(self.smtp_config['username'], self.smtp_config['password'])
-            server.send_message(msg)
-            
-        return True
-        
-    def _create_email_html(self, notification: Notification) -> str:
-        """Crea el contenido HTML del email"""
-        html = f"""
-        <html>
-        <head>
-            <style>
-                body {{ font-family: Arial, sans-serif; }}
-                .container {{ max-width: 600px; margin: 0 auto; padding: 20px; }}
-                .header {{ background-color: #2c3e50; color: white; padding: 20px; border-radius: 10px 10px 0 0; }}
-                .content {{ background-color: #f8f9fa; padding: 20px; border: 1px solid #dee2e6; }}
-                .opportunity {{ background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; margin: 10px 0; border-radius: 5px; }}
-                .stats {{ display: flex; justify-content: space-between; margin: 10px 0; }}
-                .stat {{ text-align: center; }}
-                .button {{ display: inline-block; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="header">
-                    <h1>{notification.title}</h1>
-                </div>
-                <div class="content">
-                    <p>{notification.message}</p>
-        """
-        
-        if notification.type == "opportunity" and notification.data:
-            data = notification.data
-            html += f"""
-                    <div class="opportunity">
-                        <h2>Detalles de la Oportunidad</h2>
-                        <div class="stats">
-                            <div class="stat">
-                                <h3>{data.get('profitability', 0):.2f}%</h3>
-                                <p>Rentabilidad</p>
-                            </div>
-                            <div class="stat">
-                                <h3>${data.get('buy_price', 0):.2f}</h3>
-                                <p>Precio Compra ({data.get('platform', 'N/A')})</p>
-                            </div>
-                            <div class="stat">
-                                <h3>${data.get('steam_price', 0):.2f}</h3>
-                                <p>Precio Steam</p>
-                            </div>
-                            <div class="stat">
-                                <h3>${data.get('profit', 0):.2f}</h3>
-                                <p>Ganancia</p>
-                            </div>
-                        </div>
-                        {f'<a href="{data["url"]}" class="button">Ver en {data.get("platform", "plataforma")}</a>' if data.get('url') else ''}
-                    </div>
-            """
-            
-        html += """
-                </div>
-            </div>
-        </body>
-        </html>
-        """
-        
-        return html
-        
-    def is_configured(self) -> bool:
-        return bool(self.smtp_config and self.recipients)
 
 class NotificationService:
-    """Servicio principal de notificaciones"""
+    """Servicio de notificaciones simple"""
     
-    def __init__(self, config: Dict[str, Any]):
-        self.config = config
-        self.channels: List[NotificationChannel] = []
-        self.logger = logging.getLogger(self.__class__.__name__)
-        self._setup_channels()
+    def __init__(self):
+        self.config_manager = get_config_manager()
+        self.translator = get_translator('notifications', self.config_manager.get_language_config())
+        self.logger = logger.bind(service="NotificationService")
         
-    def _setup_channels(self):
-        """Configura los canales disponibles"""
+        # Cargar configuración
+        self.enabled = self.config_manager.settings.get('notifications', {}).get('enabled', True)
+        self.sound_enabled = self.config_manager.settings.get('notifications', {}).get('sound', True)
+        self.min_profit_alert = self.config_manager.settings.get('notifications', {}).get('min_profit_percentage', 10.0)
         
-        # WebSocket (siempre disponible si hay connection_manager)
-        if self.config.get('websocket_manager'):
-            self.channels.append(WebSocketChannel(self.config['websocket_manager']))
+        # Archivo de log de notificaciones
+        self.notifications_file = Path("logs/notifications.json")
+        self.notifications_file.parent.mkdir(exist_ok=True)
+        
+        # Cache para evitar notificaciones duplicadas
+        self._sent_notifications = set()
+        self._last_cleanup = time.time()
+    
+    def _play_sound(self, sound_type: str = "alert"):
+        """Reproduce un sonido de alerta"""
+        if not self.sound_enabled or platform.system() != 'Windows':
+            return
             
-        # Telegram
-        telegram_config = self.config.get('telegram', {})
-        if telegram_config.get('bot_token'):
-            self.channels.append(TelegramChannel(
-                telegram_config['bot_token'],
-                telegram_config.get('chat_ids', [])
-            ))
+        try:
+            if sound_type == "opportunity":
+                winsound.Beep(3000, 200)  # Tono alto para oportunidades
+                time.sleep(0.1)
+                winsound.Beep(3000, 200)
+            else:
+                winsound.Beep(2000, 150)  # Tono normal
+        except:
+            pass  # Silenciar errores de sonido
+    
+    def _save_to_file(self, notification: Notification):
+        """Guarda la notificación en archivo"""
+        try:
+            # Leer notificaciones existentes
+            notifications = []
+            if self.notifications_file.exists():
+                with open(self.notifications_file, 'r', encoding='utf-8') as f:
+                    notifications = json.load(f)
             
-        # Discord
-        discord_config = self.config.get('discord', {})
-        if discord_config.get('webhook_url'):
-            self.channels.append(DiscordChannel(discord_config['webhook_url']))
+            # Agregar nueva notificación
+            notifications.append({
+                'timestamp': notification.timestamp.isoformat(),
+                'level': notification.level,
+                'title': notification.title,
+                'message': notification.message,
+                'data': notification.data
+            })
             
-        # Email
-        email_config = self.config.get('email', {})
-        if email_config.get('smtp'):
-            self.channels.append(EmailChannel(
-                email_config['smtp'],
-                email_config.get('recipients', [])
-            ))
+            # Mantener solo las últimas 1000 notificaciones
+            if len(notifications) > 1000:
+                notifications = notifications[-1000:]
             
-        self.logger.info(f"Canales configurados: {len(self.channels)}")
+            # Guardar
+            with open(self.notifications_file, 'w', encoding='utf-8') as f:
+                json.dump(notifications, f, indent=2, ensure_ascii=False)
+                
+        except Exception as e:
+            self.logger.error(f"Error guardando notificación: {e}")
+    
+    def _clean_cache(self):
+        """Limpia el cache de notificaciones enviadas cada hora"""
+        current_time = time.time()
+        if current_time - self._last_cleanup > 3600:  # 1 hora
+            self._sent_notifications.clear()
+            self._last_cleanup = current_time
+    
+    def send(self, title: str, message: str, level: str = "INFO", data: Optional[Dict] = None):
+        """Envía una notificación"""
+        if not self.enabled:
+            return
         
-    async def send_notification(self, 
-                              title: str, 
-                              message: str, 
-                              type: str = "info",
-                              data: Dict[str, Any] = None,
-                              priority: int = 1,
-                              channels: List[str] = None) -> bool:
-        """
-        Envía una notificación por los canales configurados
+        # Limpiar cache periódicamente
+        self._clean_cache()
         
-        Args:
-            title: Título de la notificación
-            message: Mensaje principal
-            type: Tipo de notificación ('opportunity', 'alert', 'info')
-            data: Datos adicionales
-            priority: Prioridad (1-5)
-            channels: Lista de canales específicos (None = todos)
-        """
-        
+        # Crear notificación
         notification = Notification(
             title=title,
             message=message,
-            type=type,
-            data=data or {},
-            priority=priority
+            level=level,
+            data=data
         )
         
-        # Filtrar por prioridad mínima
-        min_priority = self.config.get('min_priority', 1)
-        if notification.priority < min_priority:
-            self.logger.debug(f"Notificación ignorada por baja prioridad: {priority} < {min_priority}")
-            return False
-            
-        # Enviar por todos los canales configurados
-        results = []
-        for channel in self.channels:
-            if channels and channel.__class__.__name__ not in channels:
-                continue
-                
-            try:
-                result = await channel.send(notification)
-                results.append(result)
-                if not result:
-                    self.logger.warning(f"Fallo al enviar por {channel.__class__.__name__}")
-            except Exception as e:
-                self.logger.error(f"Error en canal {channel.__class__.__name__}: {e}")
-                results.append(False)
-                
-        return any(results)  # True si al menos un canal tuvo éxito
+        # Verificar si ya se envió (evitar spam)
+        notification_key = f"{title}:{message}"
+        if notification_key in self._sent_notifications and level != "OPPORTUNITY":
+            return
         
-    async def send_opportunity_notification(self, opportunity: Dict[str, Any]) -> bool:
-        """Envía una notificación de oportunidad de arbitraje"""
+        # Marcar como enviada
+        self._sent_notifications.add(notification_key)
         
-        title = f"🎯 Nueva Oportunidad: {opportunity['item_name']}"
-        message = f"Rentabilidad del {opportunity['profitability_percentage']:.2f}% detectada"
+        # Mostrar en consola con formato
+        self._print_notification(notification)
         
-        # Determinar prioridad basada en rentabilidad
-        profitability = opportunity['profitability_percentage']
-        if profitability >= 20:
-            priority = 5
-        elif profitability >= 15:
-            priority = 4
-        elif profitability >= 10:
-            priority = 3
-        elif profitability >= 5:
-            priority = 2
-        else:
-            priority = 1
-            
+        # Reproducir sonido si corresponde
+        if level == "OPPORTUNITY":
+            self._play_sound("opportunity")
+        elif level == "WARNING":
+            self._play_sound("alert")
+        
+        # Guardar en archivo
+        self._save_to_file(notification)
+    
+    def _print_notification(self, notification: Notification):
+        """Imprime la notificación en consola con formato"""
+        # Colores según nivel
+        colors = {
+            "INFO": "\033[94m",      # Azul
+            "WARNING": "\033[93m",   # Amarillo
+            "OPPORTUNITY": "\033[92m" # Verde
+        }
+        reset = "\033[0m"
+        color = colors.get(notification.level, "")
+        
+        # Formato de notificación
+        print(f"\n{color}{'='*60}")
+        print(f"🔔 {notification.title}")
+        print(f"{'='*60}{reset}")
+        print(f"📅 {notification.timestamp.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"📝 {notification.message}")
+        
+        if notification.data:
+            print(f"\n📊 Detalles:")
+            for key, value in notification.data.items():
+                print(f"   • {key}: {value}")
+        
+        print(f"{color}{'='*60}{reset}\n")
+    
+    def notify_opportunity(self, item_name: str, buy_platform: str, buy_price: float, 
+                          profit_percentage: float, profit_amount: float):
+        """Notifica una oportunidad rentable"""
+        if profit_percentage < self.min_profit_alert:
+            return
+        
+        title = f"💰 OPORTUNIDAD RENTABLE: {profit_percentage:.1f}%"
+        message = f"{item_name} - Comprar en {buy_platform} por ${buy_price:.2f}"
+        
         data = {
-            'item_name': opportunity['item_name'],
-            'platform': opportunity['buy_platform'],
-            'buy_price': opportunity['buy_price'],
-            'steam_price': opportunity['steam_price'],
-            'profitability': opportunity['profitability_percentage'],
-            'profit': opportunity['potential_profit'],
-            'url': opportunity.get('buy_url')
+            "Item": item_name,
+            "Plataforma": buy_platform,
+            "Precio Compra": f"${buy_price:.2f}",
+            "Rentabilidad": f"{profit_percentage:.1f}%",
+            "Ganancia": f"${profit_amount:.2f}"
         }
         
-        return await self.send_notification(
-            title=title,
-            message=message,
-            type="opportunity",
-            data=data,
-            priority=priority
-        )
-
-# Configuración de ejemplo
-if __name__ == "__main__":
-    config = {
-        'telegram': {
-            'bot_token': 'YOUR_BOT_TOKEN',
-            'chat_ids': ['YOUR_CHAT_ID']
-        },
-        'discord': {
-            'webhook_url': 'YOUR_WEBHOOK_URL'
-        },
-        'email': {
-            'smtp': {
-                'host': 'smtp.gmail.com',
-                'port': 587,
-                'use_tls': True,
-                'username': 'your_email@gmail.com',
-                'password': 'your_app_password',
-                'from_email': 'CS:GO Bot <your_email@gmail.com>'
-            },
-            'recipients': ['recipient@example.com']
-        },
-        'min_priority': 2
-    }
+        self.send(title, message, "OPPORTUNITY", data)
     
-    # Ejemplo de uso
-    async def test():
-        service = NotificationService(config)
+    def notify_scraper_error(self, scraper_name: str, error: str):
+        """Notifica un error en un scraper"""
+        title = f"⚠️ ERROR EN SCRAPER: {scraper_name}"
+        message = f"Error: {error}"
         
-        await service.send_opportunity_notification({
-            'item_name': 'AK-47 | Redline (Field-Tested)',
-            'buy_platform': 'Waxpeer',
-            'buy_price': 25.50,
-            'steam_price': 32.00,
-            'profitability_percentage': 15.5,
-            'potential_profit': 4.50,
-            'buy_url': 'https://waxpeer.com/...'
-        })
+        self.send(title, message, "WARNING", {"Scraper": scraper_name, "Error": error})
+    
+    def notify_summary(self, opportunities_count: int, best_profit: float, total_scrapers: int):
+        """Notifica un resumen de análisis"""
+        title = "📈 RESUMEN DE ANÁLISIS"
+        message = f"Encontradas {opportunities_count} oportunidades rentables"
         
-    asyncio.run(test())
+        data = {
+            "Oportunidades": opportunities_count,
+            "Mejor Rentabilidad": f"{best_profit:.1f}%",
+            "Scrapers Activos": total_scrapers
+        }
+        
+        self.send(title, message, "INFO", data)
+    
+    def get_recent_notifications(self, limit: int = 50) -> List[Dict]:
+        """Obtiene las notificaciones recientes"""
+        try:
+            if self.notifications_file.exists():
+                with open(self.notifications_file, 'r', encoding='utf-8') as f:
+                    notifications = json.load(f)
+                    return notifications[-limit:]
+            return []
+        except Exception as e:
+            self.logger.error(f"Error leyendo notificaciones: {e}")
+            return []
+
+
+# Singleton
+_notification_service = None
+
+def get_notification_service():
+    """Obtiene la instancia singleton del NotificationService"""
+    global _notification_service
+    if _notification_service is None:
+        _notification_service = NotificationService()
+    return _notification_service

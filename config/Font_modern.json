@@ -1,0 +1,12 @@
+{
+    "fonts": [
+        {
+            "name": "Arial",
+            "size": 10
+        },
+        {
+            "name": "Consolas",
+            "size": 9
+        }
+    ]
+}

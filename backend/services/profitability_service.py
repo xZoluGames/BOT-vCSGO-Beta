@@ -16,8 +16,8 @@ sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from backend.core.config_manager import get_config_manager
 from backend.core.translator import get_translator
-
-
+from backend.services.database_service import get_database_service
+from backend.services.notification_service import get_notification_service
 @dataclass
 class ProfitableItem:
     """Representa un item con oportunidad de arbitraje"""
@@ -129,7 +129,9 @@ class ProfitabilityService:
         
         # Cargar umbrales de rentabilidad
         self.thresholds = self.config_manager.get_notification_thresholds()
-        
+        self.db_service = get_database_service()
+        self.notification_service = get_notification_service()
+        self.use_database = self.config_manager.settings.get('database', {}).get('enabled', True)
     def calculate_profitability(self, steam_price: float, buy_price: float) -> Tuple[float, float]:
         """
         Calcula la rentabilidad de un item
@@ -255,24 +257,43 @@ class ProfitabilityService:
         return profitable_items
     
     def save_profitable_items(self, items: List[ProfitableItem]):
-        """Guarda los items rentables en JSON"""
+        """Guarda los items rentables en JSON y base de datos"""
         output_file = self.json_path / 'rentabilidad.json'
         
         try:
             # Convertir a lista de diccionarios
             data = [item.to_dict() for item in items]
             
-            # Guardar con formato legible
+            # Guardar en JSON (mantener compatibilidad)
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
                 
-            self.logger.info(f"Guardadas {len(items)} oportunidades rentables")
+            self.logger.info(f"Guardadas {len(items)} oportunidades rentables en JSON")
+            
+            # Guardar en base de datos si está habilitada
+            if self.use_database:
+                try:
+                    self.db_service.save_profitable_opportunities(data)
+                    self.logger.info(f"Oportunidades guardadas en base de datos")
+                except Exception as e:
+                    self.logger.error(f"Error guardando en base de datos: {e}")
             
         except Exception as e:
             self.logger.error(f"Error guardando rentabilidad: {e}")
-    
+    def load_platform_data_from_db(self, platform: str) -> List[Dict]:
+        """Carga los datos de una plataforma desde la base de datos"""
+        if not self.use_database:
+            return []
+            
+        try:
+            # Implementar lógica para cargar desde DB
+            # Por ahora usamos el método original
+            return self.load_platform_data(platform)
+        except Exception as e:
+            self.logger.error(f"Error cargando desde DB: {e}")
+            return []
     def run(self):
-        """Ejecuta el análisis de rentabilidad"""
+        """Ejecuta el análisis de rentabilidad con notificaciones"""
         self.logger.info("Iniciando análisis de rentabilidad...")
         
         # Encontrar items rentables
@@ -283,6 +304,24 @@ class ProfitabilityService:
             
             # Guardar resultados
             self.save_profitable_items(profitable_items)
+            
+            # Notificar las mejores oportunidades
+            for item in profitable_items[:5]:  # Top 5
+                self.notification_service.notify_opportunity(
+                    item_name=item.name,
+                    buy_platform=item.buy_platform,
+                    buy_price=item.buy_price,
+                    profit_percentage=item.rentabilidad_percentage,
+                    profit_amount=item.profit
+                )
+            
+            # Notificar resumen
+            best_profit = profitable_items[0].rentabilidad_percentage if profitable_items else 0
+            self.notification_service.notify_summary(
+                opportunities_count=len(profitable_items),
+                best_profit=best_profit,
+                total_scrapers=len(self.platforms)
+            )
             
             # Mostrar las mejores oportunidades
             print("\n" + "="*60)
@@ -297,6 +336,12 @@ class ProfitabilityService:
                 print(f"   Ganancia: ${item.profit:.2f}")
         else:
             self.logger.warning("No se encontraron oportunidades rentables")
+            self.notification_service.send(
+                title="📊 SIN OPORTUNIDADES",
+                message="No se encontraron oportunidades rentables en este análisis",
+                level="INFO"
+            )
+
 
 def run_profitability_monitor():
     """Función para ejecutar el monitor de rentabilidad continuamente"""
