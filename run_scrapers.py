@@ -12,7 +12,7 @@ import time
 sys.path.append(str(Path(__file__).parent))
 
 from backend.core.config_manager import get_config_manager
-
+from backend.services.profitability_service import ProfitabilityService
 # Importar todos los scrapers migrados
 from backend.scrapers.waxpeer_scraper import WaxpeerScraper
 from backend.scrapers.csdeals_scraper import CSDealsScraper
@@ -86,7 +86,8 @@ SCRAPER_GROUPS = {
     'steam': ['steammarket', 'steamnames', 'steamid', 'steamlisting'],
     'fast': ['waxpeer', 'csdeals', 'bitskins', 'marketcsgo'],
     'slow': ['manncostore', 'tradeit', 'skinport'],
-    'essential': ['waxpeer', 'csdeals', 'empire', 'steammarket']
+    'essential': ['waxpeer', 'csdeals', 'empire', 'steammarket'],
+    'profitable': ['waxpeer', 'csdeals', 'empire', 'skinport', 'cstrade'],  # Scrapers más rentables
 }
 
 
@@ -300,6 +301,21 @@ def show_status():
     
     print("\n" + "="*60 + "\n")
 
+def run_profitability_analysis():
+    """Ejecuta el análisis de rentabilidad"""
+    try:
+        print("\n" + "="*60)
+        print("ANALIZANDO RENTABILIDAD")
+        print("="*60)
+        
+        service = ProfitabilityService()
+        service.run()
+        
+        print("\nAnálisis completado. Ver resultados en JSON/rentabilidad.json")
+        
+    except Exception as e:
+        logger.error(f"Error en análisis de rentabilidad: {e}")
+        print(f"Error: {e}")
 
 def main():
     """Función principal con argumentos mejorados"""
@@ -312,6 +328,8 @@ Comandos especiales:
   all                       Ejecutar todos los scrapers
   group <nombre>            Ejecutar grupo de scrapers
   toggle-proxy              Activar/desactivar proxy
+  profitability             Analizar rentabilidad actual
+  monitor                   Ejecutar scrapers + rentabilidad continuamente
 
 Grupos disponibles:
   trading                   Todos los scrapers de trading
@@ -320,13 +338,14 @@ Grupos disponibles:
   fast                      Scrapers rápidos (1 min)
   slow                      Scrapers lentos (5+ min)
   essential                 Scrapers esenciales
+  profitable                Scrapers más rentables
 
 Ejemplos:
   python run_scrapers.py status
   python run_scrapers.py waxpeer
-  python run_scrapers.py waxpeer --proxy --once
-  python run_scrapers.py group trading
-  python run_scrapers.py all --exclude manncostore,tradeit
+  python run_scrapers.py profitability
+  python run_scrapers.py monitor
+  python run_scrapers.py group profitable --with-profitability
         """
     )
     
@@ -368,7 +387,18 @@ Ejemplos:
         action='store_true',
         help='Ejecutar como grupo de scrapers'
     )
+    parser.add_argument(
+        '--with-profitability',
+        action='store_true',
+        help='Ejecutar análisis de rentabilidad después de los scrapers'
+    )
     
+    parser.add_argument(
+        '--monitor-interval',
+        type=int,
+        default=300,
+        help='Intervalo para el modo monitor en segundos (default: 300)'
+    )    
     args = parser.parse_args()
     
     # Configurar logging
@@ -387,6 +417,9 @@ Ejemplos:
         exclude = [s.strip() for s in args.exclude.split(',')]
     
     # Ejecutar comando
+    if args.target == 'profitability':
+        run_profitability_analysis()
+        return
     if args.target == 'status':
         show_status()
     elif args.target == 'toggle-proxy':
@@ -410,7 +443,35 @@ Ejemplos:
         print(f"Scrapers disponibles: {', '.join(list(SCRAPERS.keys())[:10])}...")
         print(f"Grupos disponibles: {', '.join(SCRAPER_GROUPS.keys())}")
         print("Usa 'python run_scrapers.py status' para ver todas las opciones")
-
-
+    if args.target == 'monitor':
+        print("\n" + "="*60)
+        print("MODO MONITOR ACTIVADO")
+        print("="*60)
+        print(f"Intervalo: {args.monitor_interval} segundos")
+        print("Presiona Ctrl+C para detener\n")
+        
+        try:
+            while True:
+                # Ejecutar scrapers esenciales
+                for scraper_name in SCRAPER_GROUPS['essential']:
+                    run_all_scrapers(scraper_name, use_proxy=None, once=True)
+                
+                # Esperar un poco para que se guarden los JSON
+                time.sleep(5)
+                
+                # Ejecutar análisis de rentabilidad
+                run_profitability_analysis()
+                
+                # Esperar intervalo
+                print(f"\nPróximo ciclo en {args.monitor_interval} segundos...")
+                time.sleep(args.monitor_interval)
+                
+        except KeyboardInterrupt:
+            print("\nMonitor detenido")
+        return
+    if args.with_profitability:
+        print("\nEsperando 5 segundos antes de analizar rentabilidad...")
+        time.sleep(5)
+        run_profitability_analysis()
 if __name__ == "__main__":
     main()

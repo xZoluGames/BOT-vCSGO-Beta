@@ -13,5 +13,6 @@
     "profitability_white": 0.5,
     "profitability_skindeck": 0.5,
     "profitability_lisskins": 0.5,
-    "profitability_shadowpay": 0.5
+    "profitability_shadowpay": 0.5,
+    "_comment": "Valores en decimal. 0.05 = 5% de rentabilidad mínima"
 }

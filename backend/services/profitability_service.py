@@ -39,6 +39,19 @@ class ProfitableItem:
     def profit(self) -> float:
         """Retorna la ganancia potencial"""
         return self.net_steam_price - self.buy_price
+    
+    def to_dict(self) -> dict:
+        """Convierte a diccionario para JSON"""
+        return {
+            'name': self.name,
+            'buy_price': self.buy_price,
+            'steam_price': self.steam_price,
+            'steam_link': self.steam_link,
+            'net_steam_price': self.net_steam_price,
+            'rentabilidad': self.rentabilidad,
+            'platform': self.buy_platform,
+            'link': self.buy_url
+        }
 
 
 class SteamFeeCalculator:
@@ -69,41 +82,37 @@ class SteamFeeCalculator:
             else:
                 fees.append(round(last_element + 0.02, 2))
         
-        # Encontrar el intervalo correcto
+        # Encontrar el primer intervalo mayor o igual
         first_greater = next((value for value in intervals if value >= input_value), None)
         index_of_first_greater = intervals.index(first_greater)
         
-        # Calcular precio después de comisión
+        # Calcular precio neto
         fee_subtraction = round(input_value - fees[index_of_first_greater - 1], 2)
         return fee_subtraction
 
 
 class ProfitabilityService:
-    """
-    Servicio principal para calcular oportunidades de arbitraje
-    Reemplaza a Rentabilidad.py con arquitectura moderna
-    """
+    """Servicio principal para calcular rentabilidad entre plataformas"""
     
-    # URLs de las plataformas
+    # URLs base de las plataformas
     PLATFORM_URLS = {
-        'csdeals': ('https://cs.deals/es/market/csgo/?name=', '&sort=price'),
-        'waxpeer': ('https://waxpeer.com/es/?game=csgo&sort=ASC&order=price&all=0&exact=0&search=', ''),
-        'skinport': ('https://skinport.com/es/market?search=', '&sort=price&order=asc'),
-        'rapidskins': ('https://rapidskins.com/market', ''),
-        'cstrade': ('https://cs.trade/trade?market_name=', ''),
-        'tradeit': ('https://tradeit.gg/csgo/trade', ''),
-        'empire': ('https://csgoempire.com/item/', ''),
-        'marketcsgo': ('https://market.csgo.com/', ''),
-        'bitskins': ('https://bitskins.com/market/cs2?search={"order":[{"field":"price","order":"ASC"}],"where":{"skin_name":"', '"}}'),
-        'skinout': ('https://skinout.gg/en/market/', ''),
-        'skindeck': ('https://skindeck.com/sell?tab=withdraw', ''),
-        'lisskins': ('https://lis-skins.com/ru/market/csgo/', ''),
-        'shadowpay': ('https://shadowpay.com/csgo-items?search=', '&sort_column=price&sort_dir=asc'),
-        'white': ('', ''),  # URLs vienen en el JSON
-        'manncostore': ('', '')  # URLs vienen en el JSON
+        'waxpeer': 'https://waxpeer.com/csgo/',
+        'csdeals': 'https://cs.deals/pt-BR/market/730/',
+        'empire': 'https://csgoempire.com/item/730/',
+        'skinport': 'https://skinport.com/es/market/730?search=',
+        'manncostore': 'https://mannco.store/item/730/',
+        'cstrade': 'https://old.cs.trade/#',
+        'bitskins': 'https://bitskins.com/inventory/730/search?market_hash_name=',
+        'tradeit': 'https://tradeit.gg/csgo/trade?search=',
+        'marketcsgo': 'https://market.csgo.com/?t=all&p=0&f=0&s=0&search=',
+        'skinout': 'https://skinout.gg/market/cs2?item=',
+        'skindeck': 'https://skindeck.com/listings?query=',
+        'white': 'https://white.market/search?game[]=CS2&query=',
+        'lisskins': 'https://lis-skins.com/market_730.html?search_item=',
+        'shadowpay': 'https://shadowpay.com/en/csgo?search='
     }
     
-    STEAM_URL = "https://steamcommunity.com/market/listings/730/"
+    STEAM_URL = 'https://steamcommunity.com/market/listings/730/'
     
     def __init__(self):
         self.config_manager = get_config_manager()
@@ -112,7 +121,7 @@ class ProfitabilityService:
         self.logger = logger.bind(service="ProfitabilityService")
         
         # Rutas de archivos JSON
-        self.json_path = self.config_manager.get_json_output_path('')
+        self.json_path = Path('JSON')
         
         # Cache para evitar recálculos innecesarios
         self._cache = {}
@@ -157,225 +166,156 @@ class ProfitabilityService:
             return []
     
     def load_steam_prices(self) -> Dict[str, float]:
-        """Carga los precios de Steam"""
-        steam_data = self.load_platform_data('steam_items')
-        if not steam_data:
-            # Intentar con otros nombres posibles
-            steam_data = self.load_platform_data('steam_listing_prices')
-            
-        return {item['name']: item['price'] for item in steam_data}
-    
-    def find_profitable_opportunities(self) -> List[ProfitableItem]:
-        """
-        Encuentra todas las oportunidades de arbitraje rentables
+        """Carga los precios de Steam desde JSON"""
+        steam_file = self.json_path / 'steam_data.json'
         
-        Returns:
-            Lista de items rentables ordenados por rentabilidad
-        """
-        self.logger.info("Buscando oportunidades de arbitraje...")
+        if not steam_file.exists():
+            self.logger.error("No se encontró steam_data.json")
+            return {}
+            
+        try:
+            with open(steam_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                # Convertir lista a diccionario para búsqueda rápida
+                return {item['Item']: item['Price'] for item in data}
+        except Exception as e:
+            self.logger.error(f"Error cargando steam_data.json: {e}")
+            return {}
+    
+    def find_profitable_items(self) -> List[ProfitableItem]:
+        """Encuentra todos los items rentables comparando todas las plataformas"""
+        profitable_items = []
         
         # Cargar precios de Steam
         steam_prices = self.load_steam_prices()
         if not steam_prices:
-            self.logger.error("No se pudieron cargar precios de Steam")
+            self.logger.error("No hay precios de Steam disponibles")
             return []
         
-        profitable_items = []
-        
-        # Plataformas a verificar
+        # Plataformas a analizar
         platforms = [
-            'rapidskins', 'csdeals', 'manncostore', 'cstrade', 'waxpeer',
-            'skinport', 'tradeit', 'empire', 'marketcsgo', 'bitskins',
-            'skinout', 'skindeck', 'white', 'lisskins', 'shadowpay'
+            'waxpeer', 'csdeals', 'empire', 'skinport', 'manncostore',
+            'cstrade', 'bitskins', 'tradeit', 'marketcsgo', 'skinout',
+            'skindeck', 'white', 'lisskins', 'shadowpay'
         ]
         
+        # Analizar cada plataforma
         for platform in platforms:
-            items = self._process_platform(platform, steam_prices)
-            profitable_items.extend(items)
+            # Obtener umbral de rentabilidad para esta plataforma
+            threshold_key = f'profitability_{platform}'
+            min_profitability = self.thresholds.get(threshold_key, 0.05)  # 5% por defecto
+            
+            # Cargar datos de la plataforma
+            platform_data = self.load_platform_data(platform)
+            
+            for item in platform_data:
+                try:
+                    name = item.get('Item', '')
+                    buy_price = float(item.get('Price', 0))
+                    
+                    if not name or buy_price == 0:
+                        continue
+                    
+                    # Buscar precio en Steam
+                    steam_price = steam_prices.get(name)
+                    if not steam_price:
+                        continue
+                    
+                    # Calcular rentabilidad
+                    rentabilidad, net_steam_price = self.calculate_profitability(
+                        steam_price, buy_price
+                    )
+                    
+                    # Si es rentable según el umbral
+                    if rentabilidad >= min_profitability:
+                        # Construir URL del item
+                        item_url = self.PLATFORM_URLS.get(platform, '') + name
+                        steam_url = self.STEAM_URL + name
+                        
+                        profitable_item = ProfitableItem(
+                            name=name,
+                            buy_price=buy_price,
+                            buy_platform=platform.capitalize(),
+                            buy_url=item_url,
+                            steam_price=steam_price,
+                            net_steam_price=net_steam_price,
+                            rentabilidad=rentabilidad,
+                            steam_link=steam_url
+                        )
+                        
+                        profitable_items.append(profitable_item)
+                        
+                except Exception as e:
+                    self.logger.error(f"Error procesando item {item} de {platform}: {e}")
+                    continue
         
-        # Ordenar por rentabilidad
+        # Ordenar por rentabilidad descendente
         profitable_items.sort(key=lambda x: x.rentabilidad, reverse=True)
         
-        self.logger.info(f"Se encontraron {len(profitable_items)} oportunidades rentables")
-        
         return profitable_items
-    
-    def _process_platform(self, platform: str, steam_prices: Dict[str, float]) -> List[ProfitableItem]:
-        """Procesa una plataforma específica"""
-        # Obtener umbral de rentabilidad para esta plataforma
-        threshold_key = f'profitability_{platform}'
-        threshold = self.thresholds.get(threshold_key, 0.5)
-        
-        # Cargar datos de la plataforma
-        platform_data = self.load_platform_data(platform)
-        if not platform_data:
-            return []
-        
-        profitable_items = []
-        
-        for item in platform_data:
-            # Manejo especial para diferentes formatos
-            if platform == 'rapidskins':
-                name = item.get('marketHashName')
-                buy_price = item.get('price', {}).get('coinAmount', 0) / 100.0
-            else:
-                name = item.get('Item')
-                buy_price = self._parse_price(item.get('Price', 0))
-            
-            if not name or name not in steam_prices:
-                continue
-                
-            steam_price = steam_prices[name]
-            rentabilidad, net_steam_price = self.calculate_profitability(steam_price, buy_price)
-            
-            if rentabilidad >= threshold:
-                # Construir URL
-                platform_url = self._build_platform_url(platform, name, item)
-                
-                profitable_item = ProfitableItem(
-                    name=name,
-                    buy_price=buy_price,
-                    buy_platform=platform.capitalize(),
-                    buy_url=platform_url,
-                    steam_price=steam_price,
-                    net_steam_price=net_steam_price,
-                    rentabilidad=rentabilidad,
-                    steam_link=self.STEAM_URL + name
-                )
-                
-                profitable_items.append(profitable_item)
-        
-        return profitable_items
-    
-    def _parse_price(self, price) -> float:
-        """Parsea diferentes formatos de precio"""
-        if isinstance(price, (int, float)):
-            return float(price)
-        elif isinstance(price, str):
-            # Remover símbolos de moneda y convertir
-            price_clean = price.replace('$', '').replace(',', '.').strip()
-            try:
-                return float(price_clean)
-            except ValueError:
-                return 0.0
-        return 0.0
-    
-    def _build_platform_url(self, platform: str, item_name: str, item_data: Dict) -> str:
-        """Construye la URL para un item en una plataforma"""
-        # Algunos items tienen su propia URL
-        if 'URL' in item_data:
-            return item_data['URL']
-        
-        # Para Empire, necesitamos el ID
-        if platform == 'empire' and 'id' in item_data:
-            return f"https://csgoempire.com/item/{item_data['id']}"
-        
-        # URLs predefinidas
-        if platform in self.PLATFORM_URLS:
-            prefix, suffix = self.PLATFORM_URLS[platform]
-            
-            # Limpiar nombre para URLs
-            if platform == 'skinout':
-                clean_name = self._clean_name_for_url(item_name)
-                return prefix + clean_name + suffix
-            
-            return prefix + item_name + suffix
-        
-        return ""
-    
-    def _clean_name_for_url(self, name: str) -> str:
-        """Limpia un nombre para usarlo en URLs"""
-        # Remover caracteres especiales
-        chars_to_remove = "()™"
-        for char in chars_to_remove:
-            name = name.replace(char, "")
-        
-        # Reemplazar espacios y caracteres por guiones
-        name = name.replace(" ", "-").replace("|", "-").replace(".", "-")
-        
-        # Eliminar guiones múltiples
-        while "--" in name:
-            name = name.replace("--", "-")
-        
-        return name.strip("-")
     
     def save_profitable_items(self, items: List[ProfitableItem]):
-        """Guarda los items rentables en formato JSON"""
-        # Convertir a formato del proyecto original
-        data = []
-        for item in items:
-            data.append({
-                'name': item.name,
-                'buy_price': item.buy_price,
-                'steam_price': item.steam_price,
-                'steam_link': item.steam_link,
-                'net_steam_price': item.net_steam_price,
-                'rentabilidad': item.rentabilidad,
-                'platform': item.buy_platform,
-                'link': item.buy_url
-            })
-        
+        """Guarda los items rentables en JSON"""
         output_file = self.json_path / 'rentabilidad.json'
         
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-        
-        self.logger.info(f"Guardadas {len(items)} oportunidades en rentabilidad.json")
+        try:
+            # Convertir a lista de diccionarios
+            data = [item.to_dict() for item in items]
+            
+            # Guardar con formato legible
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
+                
+            self.logger.info(f"Guardadas {len(items)} oportunidades rentables")
+            
+        except Exception as e:
+            self.logger.error(f"Error guardando rentabilidad: {e}")
     
-    async def monitor_continuous(self, interval: int = 60):
-        """
-        Monitorea continuamente las oportunidades de arbitraje
+    def run(self):
+        """Ejecuta el análisis de rentabilidad"""
+        self.logger.info("Iniciando análisis de rentabilidad...")
         
-        Args:
-            interval: Segundos entre actualizaciones
-        """
-        self.logger.info(f"Iniciando monitoreo continuo (intervalo: {interval}s)")
+        # Encontrar items rentables
+        profitable_items = self.find_profitable_items()
         
-        while True:
-            try:
-                # Buscar oportunidades
-                opportunities = self.find_profitable_opportunities()
-                
-                # Guardar resultados
-                self.save_profitable_items(opportunities)
-                
-                # Log de resumen
-                if opportunities:
-                    best = opportunities[0]
-                    self.logger.success(
-                        f"Mejor oportunidad: {best.name} - "
-                        f"Comprar en {best.buy_platform} a ${best.buy_price:.2f} - "
-                        f"Rentabilidad: {best.rentabilidad_percentage:.2f}%"
-                    )
-                
-                await asyncio.sleep(interval)
-                
-            except KeyboardInterrupt:
-                self.logger.info("Monitoreo detenido por el usuario")
-                break
-            except Exception as e:
-                self.logger.error(f"Error en monitoreo: {e}")
-                await asyncio.sleep(interval)
+        if profitable_items:
+            self.logger.info(f"Encontradas {len(profitable_items)} oportunidades rentables")
+            
+            # Guardar resultados
+            self.save_profitable_items(profitable_items)
+            
+            # Mostrar las mejores oportunidades
+            print("\n" + "="*60)
+            print("TOP 10 MEJORES OPORTUNIDADES DE ARBITRAJE")
+            print("="*60)
+            
+            for i, item in enumerate(profitable_items[:10], 1):
+                print(f"\n{i}. {item.name}")
+                print(f"   Comprar en: {item.buy_platform} - ${item.buy_price:.2f}")
+                print(f"   Vender en: Steam - ${item.steam_price:.2f} (neto: ${item.net_steam_price:.2f})")
+                print(f"   Rentabilidad: {item.rentabilidad_percentage:.2f}%")
+                print(f"   Ganancia: ${item.profit:.2f}")
+        else:
+            self.logger.warning("No se encontraron oportunidades rentables")
 
-
-# Funciones de utilidad para compatibilidad
 def run_profitability_monitor():
-    """Función para ejecutar el monitor de rentabilidad"""
+    """Función para ejecutar el monitor de rentabilidad continuamente"""
     service = ProfitabilityService()
     
-    # Ejecutar una vez para prueba
-    opportunities = service.find_profitable_opportunities()
-    service.save_profitable_items(opportunities)
-    
-    print(f"\nEncontradas {len(opportunities)} oportunidades rentables")
-    
-    # Mostrar las mejores 5
-    for i, opp in enumerate(opportunities[:5], 1):
-        print(f"\n{i}. {opp.name}")
-        print(f"   Comprar en: {opp.buy_platform} - ${opp.buy_price:.2f}")
-        print(f"   Vender en: Steam - ${opp.steam_price:.2f} (neto: ${opp.net_steam_price:.2f})")
-        print(f"   Rentabilidad: {opp.rentabilidad_percentage:.2f}%")
-        print(f"   Ganancia: ${opp.profit:.2f}")
+    while True:
+        try:
+            # Ejecutar análisis
+            service.run()
+            
+            # Esperar 60 segundos antes del próximo análisis
+            time.sleep(60)
+            
+        except KeyboardInterrupt:
+            logger.info("Monitor de rentabilidad detenido por el usuario")
+            break
+        except Exception as e:
+            logger.error(f"Error en monitor de rentabilidad: {e}")
+            time.sleep(60)  # Esperar antes de reintentar
 
 
 if __name__ == "__main__":
