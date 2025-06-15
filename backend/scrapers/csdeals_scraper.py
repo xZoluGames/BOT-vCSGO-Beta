@@ -120,6 +120,7 @@ class CSDealsScraper(BaseScraper):
 
 
 # Funciones de compatibilidad
+
 def main():
     """Función principal - usa configuración automática"""
     scraper = CSDealsScraper()

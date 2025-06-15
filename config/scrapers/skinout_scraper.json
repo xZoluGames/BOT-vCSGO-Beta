@@ -1,0 +1,5 @@
+{
+  "max_workers": 20,
+  "batch_size": 50,
+  "delay_between_batches": 1
+}

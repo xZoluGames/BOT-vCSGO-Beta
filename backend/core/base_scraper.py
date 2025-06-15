@@ -10,6 +10,11 @@ from datetime import datetime
 from pathlib import Path
 import sys
 from loguru import logger
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from functools import lru_cache
+import threading
+
 
 # Importar nuestro gestor de configuración
 from .config_manager import get_config_manager
@@ -77,12 +82,26 @@ class BaseScraper(ABC):
         
         # Estadísticas de ejecución
         self.stats = {
-            'requests_made': 0,
-            'requests_failed': 0,
-            'items_fetched': 0,
-            'last_run': None,
-            'last_error': None
-        }
+    'requests_made': 0,
+    'requests_failed': 0,
+    'items_fetched': 0,
+    'last_run': None,
+    'last_error': None
+}
+        # Rate limiting
+        try:
+            from backend.core.rate_limiter import get_rate_limiter
+            self.rate_limiter = get_rate_limiter()
+        except:
+            self.rate_limiter = None
+        
+        # Cache service
+        try:
+            from backend.services.cache_service import get_cache_service
+            self.cache_service = get_cache_service()
+        except:
+            self.cache_service = None
+
         self.db_service = get_database_service()
         self.notification_service = get_notification_service()
         self.use_database = self.config_manager.settings.get('database', {}).get('enabled', True)
@@ -125,85 +144,79 @@ class BaseScraper(ABC):
 # Correcciones para backend/core/base_scraper.py
 
 # En el método make_request, cambiar la primera parte a:
-def make_request(self, url: str, method: str = 'GET', max_retries: Optional[int] = None, **kwargs) -> Optional[requests.Response]:
-    """
-    Realiza una petición HTTP con reintentos y manejo de errores
-    
-    Args:
-        url: URL a consultar
-        method: Método HTTP (GET, POST, etc.)
-        max_retries: Número máximo de reintentos (None = usar config)
-        **kwargs: Argumentos adicionales para requests
+    def make_request(self, url: str, method: str = 'GET', max_retries: Optional[int] = None, **kwargs) -> Optional[requests.Response]:
+        """
+        Realiza una petición HTTP con reintentos y manejo de errores
+        """
+        # Rate limiting
+        if self.rate_limiter and hasattr(self, 'platform_name'):
+            self.rate_limiter.wait_if_needed(self.platform_name.lower())
+        # Definir max_retries ANTES de usarlo
+        if max_retries is None:
+            max_retries = self.config.get('max_retries', 5)
         
-    Returns:
-        Response object o None si falla
-    """
-    # Definir max_retries ANTES de usarlo
-    if max_retries is None:
-        max_retries = self.config.get('max_retries', 5)
-    
-    retry_delay = self.config.get('retry_delay', 2)
-    
-    # Obtener kwargs base
-    request_kwargs = self._get_request_kwargs(kwargs.pop('headers', None))
-    request_kwargs.update(kwargs)
-    
-    for attempt in range(max_retries):
-        try:
-            self.stats['requests_made'] += 1
-            
-            # Realizar petición
-            if method.upper() == 'GET':
-                response = self.session.get(url, **request_kwargs)
-            elif method.upper() == 'POST':
-                response = self.session.post(url, **request_kwargs)
-            else:
-                raise ValueError(f"Método no soportado: {method}")
-            
-            # Verificar respuesta
-            response.raise_for_status()
-            
-            # Si llegamos aquí, la petición fue exitosa
-            self.logger.debug(f"Petición exitosa a {url} (intento {attempt + 1})")
-            return response
-            
-        except requests.exceptions.RequestException as e:
-            self.stats['requests_failed'] += 1
-            self.stats['last_error'] = str(e)
-            
-            self.logger.warning(
-                f"Error en petición (intento {attempt + 1}/{max_retries}): {e}"
-            )
-            
-            # Si estamos usando proxy y falla, marcar como malo y obtener otro
-            if self.use_proxy and self.proxy_manager and 'proxies' in request_kwargs:
-                proxy = request_kwargs['proxies']['http']
-                self.proxy_manager.mark_failed(proxy)
+        retry_delay = self.config.get('retry_delay', 2)
+        
+        # Obtener kwargs base
+        request_kwargs = self._get_request_kwargs(kwargs.pop('headers', None))
+        request_kwargs.update(kwargs)
+        
+        for attempt in range(max_retries):
+            try:
+                self.stats['requests_made'] += 1
                 
-                # Obtener nuevo proxy para el siguiente intento
-                new_proxy = self.proxy_manager.get_proxy()
-                if new_proxy:
-                    request_kwargs['proxies'] = {'http': new_proxy, 'https': new_proxy}
-            
-            # Si es el último intento, no esperar
-            if attempt < max_retries - 1:
-                wait_time = retry_delay * (attempt + 1)  # Backoff exponencial
-                self.logger.info(f"Esperando {wait_time} segundos antes de reintentar...")
-                time.sleep(wait_time)
+                # Realizar petición
+                if method.upper() == 'GET':
+                    response = self.session.get(url, **request_kwargs)
+                elif method.upper() == 'POST':
+                    response = self.session.post(url, **request_kwargs)
+                else:
+                    raise ValueError(f"Método no soportado: {method}")
                 
-        except Exception as e:
-            self.logger.error(f"Error no manejado: {e}")
-            
-            # Notificar error crítico si tenemos notification_service
-            if hasattr(self, 'notification_service') and self.notification_service:
-                if "timeout" not in str(e).lower():  # No notificar timeouts comunes
-                    self.notification_service.notify_scraper_error(
-                        scraper_name=self.platform_name,
-                        error=str(e)
-                    )
-    
-    self.logger.error(f"Falló después de {max_retries} intentos: {url}")
-    return None
+                # Verificar respuesta
+                response.raise_for_status()
+                
+                # Si llegamos aquí, la petición fue exitosa
+                self.logger.debug(f"Petición exitosa a {url} (intento {attempt + 1})")
+                return response
+                
+            except requests.exceptions.RequestException as e:
+                self.stats['requests_failed'] += 1
+                self.stats['last_error'] = str(e)
+                
+                self.logger.warning(
+                    f"Error en petición (intento {attempt + 1}/{max_retries}): {e}"
+                )
+                
+                # Si estamos usando proxy y falla, marcar como malo y obtener otro
+                if self.use_proxy and self.proxy_manager and 'proxies' in request_kwargs:
+                    proxy = request_kwargs['proxies']['http']
+                    self.proxy_manager.mark_failed(proxy)
+                    
+                    # Obtener nuevo proxy para el siguiente intento
+                    new_proxy = self.proxy_manager.get_proxy()
+                    if new_proxy:
+                        request_kwargs['proxies'] = {'http': new_proxy, 'https': new_proxy}
+                
+                # Si es el último intento, no esperar
+                if attempt < max_retries - 1:
+                    wait_time = retry_delay * (attempt + 1)  # Backoff exponencial
+                    self.logger.info(f"Esperando {wait_time} segundos antes de reintentar...")
+                    time.sleep(wait_time)
+                    
+            except Exception as e:
+                self.logger.error(f"Error no manejado: {e}")
+                
+                # Notificar error crítico si tenemos notification_service
+                if hasattr(self, 'notification_service') and self.notification_service:
+                    if "timeout" not in str(e).lower():  # No notificar timeouts comunes
+                        self.notification_service.notify_scraper_error(
+                            scraper_name=self.platform_name,
+                            error=str(e)
+                        )
+        
+        self.logger.error(f"Falló después de {max_retries} intentos: {url}")
+        return None
     
     def save_data(self, data: List[Dict]) -> bool:
         """
@@ -239,30 +252,8 @@ def make_request(self, url: str, method: str = 'GET', max_retries: Optional[int]
         except Exception as e:
             self.logger.error(f"Error guardando datos: {e}")
             return False
-    def get_cached_data(self, max_age_minutes: int = 5) -> Optional[List[Dict]]:
-        """
-        Obtiene datos cacheados de la base de datos si son recientes
-        
-        Args:
-            max_age_minutes: Edad máxima de los datos en minutos
-            
-        Returns:
-            Lista de items o None si no hay datos recientes
-        """
-        if not self.use_database:
-            return None
-            
-        try:
-            from datetime import datetime, timedelta
-            cutoff_time = datetime.utcnow() - timedelta(minutes=max_age_minutes)
-            
-            # Aquí podrías implementar lógica para obtener de la DB
-            # Por ahora retornamos None para mantener el comportamiento actual
-            return None
-            
-        except Exception as e:
-            self.logger.error(f"Error obteniendo datos cacheados: {e}")
-            return None
+    
+
     @abstractmethod
     def fetch_data(self) -> List[Dict]:
         """
@@ -279,6 +270,23 @@ def make_request(self, url: str, method: str = 'GET', max_retries: Optional[int]
         """
         pass
     
+    
+    def get_cached_data(self, cache_key: str, fetch_func, ttl: int = 300):
+        """Obtiene datos del caché o los fetcha si no existen"""
+        if self.cache_service:
+            cached = self.cache_service.get(cache_key)
+            if cached:
+                self.logger.debug(f"Cache hit para {cache_key}")
+                return cached
+        
+        # Fetch fresh data
+        data = fetch_func()
+        
+        if data and self.cache_service:
+            self.cache_service.set(cache_key, data, ttl)
+        
+        return data
+
     @abstractmethod
     def parse_response(self, response: requests.Response) -> List[Dict]:
         """

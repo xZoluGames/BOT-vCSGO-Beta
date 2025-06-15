@@ -1,5 +1,7 @@
 # backend/scrapers/rapidskins_scraper.py
 import time
+import os
+filename = os.path.basename(__file__)
 from backend.core.base_scraper import BaseScraper
 from typing import List, Dict, Optional
 from backend.core.translator import get_translator
@@ -125,14 +127,10 @@ class RapidskinsScraper(BaseScraper):
         pass
 
 
-    def main_rapidskins():
+    def main():
         scraper = RapidskinsScraper()
         scraper.run_forever()
 
 
     if __name__ == "__main__":
-
-        import os
-        filename = os.path.basename(__file__)
-        if 'rapidskins' in filename:
-            main_rapidskins()
+        main()

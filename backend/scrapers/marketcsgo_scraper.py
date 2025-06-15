@@ -73,6 +73,7 @@ class MarketCSGOScraper(BaseScraper):
             return []
 
 
+
 def main():
     scraper = MarketCSGOScraper()
     scraper.run_forever()

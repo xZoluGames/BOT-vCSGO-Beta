@@ -42,7 +42,7 @@ class ManncoStoreScraper(BaseScraper):
         options = uc.ChromeOptions()
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--headless")  # Ejecutar sin interfaz gráfica
+
         
         # Configurar proxy si está habilitado
         if self.use_proxy and self.proxy_manager:

@@ -6,7 +6,8 @@ import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
-
+import os
+filename = os.path.basename(__file__)
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from backend.core.base_scraper import BaseScraper
@@ -128,13 +129,15 @@ class SkinoutScraper(BaseScraper):
         """No se usa en Skinout, el parsing se hace en fetch_data"""
         pass
 
-def main_skinout():
+
+
+
+
+
+    def main():
         scraper = SkinoutScraper()
         scraper.run_forever()
 
-if __name__ == "__main__":
-        import os
-        filename = os.path.basename(__file__)
-        
-        if 'skinout' in filename:
-            main_skinout()
+
+    if __name__ == "__main__":
+        main()

@@ -42,16 +42,14 @@ class ShadowpayScraper(BaseScraper):
         except Exception as e:
             self.logger.error(f"Error parseando Shadowpay: {e}")
             return []
-        
-def main_shadowpay():
+
+
+
+
+    def main():
         scraper = ShadowpayScraper()
         scraper.run_forever()
 
 
-def main():
-    scraper = ShadowpayScraper()
-    scraper.run_forever()
-
-
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        main()

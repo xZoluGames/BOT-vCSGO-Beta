@@ -111,6 +111,7 @@ class EmpireScraper(BaseScraper):
 
 
 # Funciones de compatibilidad
+
 def main():
     """Función principal"""
     scraper = EmpireScraper()

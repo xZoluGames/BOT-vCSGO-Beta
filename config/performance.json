@@ -1,0 +1,20 @@
+{
+  "connection_pool": {
+    "pool_connections": 10,
+    "pool_maxsize": 20,
+    "max_retries": 3,
+    "backoff_factor": 0.3
+  },
+  "timeouts": {
+    "connect": 5.0,
+    "read": 10.0
+  },
+  "headers": {
+    "Connection": "keep-alive",
+    "Accept-Encoding": "gzip, deflate, br"
+  },
+  "rate_limiting": {
+    "requests_per_minute": 60,
+    "burst_size": 10
+  }
+}

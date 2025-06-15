@@ -88,6 +88,7 @@ class BitskinsScraper(BaseScraper):
         return f"{price_min / 1000:.2f}"
 
 
+
 def main():
     scraper = BitskinsScraper()
     scraper.run_forever()

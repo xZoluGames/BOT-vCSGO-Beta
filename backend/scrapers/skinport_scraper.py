@@ -75,10 +75,11 @@ class SkinportScraper(BaseScraper):
             return []
 
 
-def main():
-    scraper = SkinportScraper()
-    scraper.run_forever()
+
+    def main():
+        scraper = SkinportScraper()
+        scraper.run_forever()
 
 
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        main()

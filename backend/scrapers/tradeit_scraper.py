@@ -3,9 +3,11 @@ from typing import List, Dict, Optional
 import sys
 from pathlib import Path
 import json
+import shutil
 import undetected_chromedriver as uc
 sys.path.append(str(Path(__file__).parent.parent.parent))
 from backend.core.base_scraper import BaseScraper
+
 class TradeitScraper(BaseScraper):
     """
     Scraper para Tradeit.gg usando Selenium
@@ -22,29 +24,26 @@ class TradeitScraper(BaseScraper):
         self.driver = None
         self._setup_driver()
     
-        def _setup_driver(self):
-            """Configura el driver de Chrome para Tradeit"""
+    def _setup_driver(self):
+        """Configura el driver de Chrome para Tradeit"""
         try:
             options = uc.ChromeOptions()
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
-            options.add_argument("--disable-blink-features=AutomationControlled")
-            
+
+
             # Limpiar archivos antiguos de ChromeDriver
-            import shutil
             chromedriver_path = Path.home() / "appdata" / "roaming" / "undetected_chromedriver"
             if chromedriver_path.exists():
-                try:
-                    exe_file = chromedriver_path / "undetected_chromedriver.exe"
-                    if exe_file.exists():
-                        exe_file.unlink()
-                except:
-                    pass
-            
-            self.driver = uc.Chrome(options=options, version_main=None)
+                exe_file = chromedriver_path / "undetected_chromedriver.exe"
+                if exe_file.exists():
+                    exe_file.unlink()
+
+            self.driver = uc.Chrome(options=options)
         except Exception as e:
             self.logger.error(f"Error configurando ChromeDriver: {e}")
             self.driver = None
+
     def fetch_data(self) -> List[Dict]:
         """Obtiene datos de Tradeit usando Selenium"""
         self.logger.info("Obteniendo datos de Tradeit...")

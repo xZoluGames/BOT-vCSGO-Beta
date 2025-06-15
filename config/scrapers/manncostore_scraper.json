@@ -1,0 +1,5 @@
+{
+  "selenium_timeout": 20,
+  "wait_for_element": true,
+  "retry_stale_element": true
+}

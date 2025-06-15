@@ -140,29 +140,16 @@ class WaxpeerScraper(BaseScraper):
             return price_str[:-3] + '.' + price_str[-3:]
 
 
-# Funciones de compatibilidad para facilitar la migración
-def main_no_proxy():
-    """Función principal sin proxy (compatibilidad con script antiguo)"""
-    scraper = WaxpeerScraper(use_proxy=False)
-    scraper.run_forever()
+    def main():
+        """
+        Función principal que decide automáticamente si usar proxy o no
+        basándose en la configuración
+        """
+        # El scraper usará la configuración global por defecto
+        scraper = WaxpeerScraper()
+        scraper.run_forever()
 
 
-def main_with_proxy():
-    """Función principal con proxy (compatibilidad con script antiguo)"""
-    scraper = WaxpeerScraper(use_proxy=True)
-    scraper.run_forever()
-
-
-def main():
-    """
-    Función principal que decide automáticamente si usar proxy o no
-    basándose en la configuración
-    """
-    # El scraper usará la configuración global por defecto
-    scraper = WaxpeerScraper()
-    scraper.run_forever()
-
-
-if __name__ == "__main__":
-    # Si se ejecuta directamente, usar configuración automática
-    main()
+    if __name__ == "__main__":
+        # Si se ejecuta directamente, usar configuración automática
+        main()
