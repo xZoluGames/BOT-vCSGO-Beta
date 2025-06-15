@@ -1,5 +1,6 @@
 # backend/core/base_scraper.py
 
+import os
 import requests
 import json
 import time
@@ -14,6 +15,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from functools import lru_cache
 import threading
+
 
 
 # Importar nuestro gestor de configuración
@@ -46,7 +48,8 @@ class BaseScraper(ABC):
         
         # Cargar configuración de la plataforma
         self.config = self.config_manager.get_scraper_config(platform_name)
-        
+        if os.getenv('DEV_MODE') == 'true':
+            return self.get_mock_data()
         # Aplicar configuración personalizada si se proporciona
         if custom_config:
             self.config.update(custom_config)

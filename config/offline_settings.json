@@ -1,0 +1,17 @@
+{
+  "proxy_settings": {
+    "enabled": false,
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "selenium_settings": {
+    "use_offline_driver": true,
+    "driver_path": "drivers/chromedriver.exe",
+    "headless": true
+  },
+  "network_settings": {
+    "timeout": 30,
+    "retry_on_failure": true,
+    "max_retries": 3
+  }
+}

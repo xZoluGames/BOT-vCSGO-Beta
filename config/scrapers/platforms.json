@@ -1,76 +1,29 @@
 {
-    "waxpeer": {
-        "api_url": "https://api.waxpeer.com/v1/prices?game=csgo&minified=0&single=0",
-        "update_interval": 60,
-        "requires_auth": false
-    },
-    "csdeals": {
-        "api_url": "https://cs.deals/API/IPricing/GetLowestPrices/v1?appid=730",
-        "update_interval": 60,
-        "requires_auth": false
-    },
-    "empire": {
-        "api_url": "https://csgoempire.com/api/v2/trading/items",
-        "update_interval": 30,
-        "requires_auth": true,
-        "api_key_env": "EMPIRE_API_KEY"
-    },
-    "skinport": {
-        "api_url": "https://api.skinport.com/v1/items?app_id=730&currency=USD",
-        "update_interval": 300,
-        "requires_auth": false
-    },
-    "manncostore": {
-        "base_url": "https://mannco.store/items/get",
-        "update_interval": 300,
-        "requires_selenium": true
-    },
-    "cstrade": {
-        "api_url": "https://cdn.cs.trade:2096/api/prices_CSGO",
-        "update_interval": 60,
-        "requires_auth": false,
-        "bonus_rate": 50
-    },
-    "bitskins": {
-        "api_url": "https://api.bitskins.com/market/insell/730",
-        "update_interval": 60,
-        "requires_auth": false
-    },
-    "tradeit": {
-        "base_url": "https://tradeit.gg/api/v2/inventory/data",
-        "update_interval": 120,
-        "requires_selenium": true
-    },
-    "marketcsgo": {
-        "api_url": "https://market.csgo.com/api/v2/prices/USD.json",
-        "update_interval": 60,
-        "requires_auth": false
-    },
-    "skinout": {
-        "base_url": "https://skinout.gg/api/market/items",
-        "update_interval": 60,
-        "requires_auth": false
-    },
-    "skindeck": {
-        "api_url": "https://api.skindeck.com/client/market",
-        "update_interval": 60,
-        "requires_auth": true,
-        "api_key_env": "SKINDECK_TOKEN"
-    },
-    "white": {
-        "api_url": "https://api.white.market/export/v1/prices/730.json",
-        "update_interval": 60,
-        "requires_auth": false
-    },
-    "lisskins": {
-        "api_url": "https://lis-skins.com/market_export_json/api_csgo_full.json",
-        "update_interval": 300,
-        "requires_auth": false
-    },
-    "shadowpay": {
-        "api_url": "https://api.shadowpay.com/api/v2/user/items/prices",
-        "update_interval": 60,
-        "requires_auth": true,
-        "api_key_env": "SHADOWPAY_TOKEN"
-    }
+  "waxpeer": {
+    "update_interval": 60,
+    "use_proxy": false,
+    "timeout": 30
+  },
+  "csdeals": {
+    "update_interval": 60,
+    "use_proxy": false,
+    "timeout": 30
+  },
+  "empire": {
+    "update_interval": 120,
+    "use_proxy": false,
+    "timeout": 30
+  },
+  "manncostore": {
+    "update_interval": 300,
+    "use_proxy": false,
+    "timeout": 60,
+    "use_selenium": true
+  },
+  "tradeit": {
+    "update_interval": 300,
+    "use_proxy": false,
+    "timeout": 60,
+    "use_selenium": true
+  }
 }

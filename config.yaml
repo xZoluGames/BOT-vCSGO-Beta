@@ -1,0 +1,29 @@
+# config.yaml
+app:
+  name: BOT-vCSGO-Beta
+  version: 2.0
+  mode: production  # o development
+
+scrapers:
+  defaults:
+    timeout: 30
+    retry: 3
+    use_proxy: false
+  
+  specific:
+    waxpeer:
+      interval: 60
+      api_key: ${WAXPEER_API_KEY}  # Variable de entorno
+    
+    manncostore:
+      interval: 300
+      use_selenium: false  # Cambiar a API
+
+database:
+  enabled: false  # Desactivar por defecto
+  url: sqlite:///data.db
+
+notifications:
+  discord:
+    enabled: false
+    webhook: ${DISCORD_WEBHOOK}

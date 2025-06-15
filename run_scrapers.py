@@ -23,6 +23,7 @@ from backend.scrapers.bitskins_scraper import BitskinsScraper
 from backend.scrapers.marketcsgo_scraper import MarketCSGOScraper
 
 # Importar scrapers complejos
+from backend.scrapers.offline_test_scraper import OfflineTestScraper
 from backend.scrapers.manncostore_scraper import ManncoStoreScraper
 from backend.scrapers.tradeit_scraper import TradeitScraper
 from backend.scrapers.skindeck_scraper import SkindeckScraper
@@ -45,6 +46,7 @@ from backend.scrapers.rapidskins_scraper import RapidskinsScraper
 
 # Diccionario completo de scrapers disponibles
 SCRAPERS = {
+    'offlinetest': OfflineTestScraper,
     # Scrapers principales de trading
     'waxpeer': WaxpeerScraper,
     'csdeals': CSDealsScraper,

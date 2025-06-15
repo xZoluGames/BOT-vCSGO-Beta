@@ -2,34 +2,31 @@
     "project_name": "BOT-vCSGO-Beta",
     "version": "2.0.0",
     "language": "es",
+    "proxy_settings": {
+        "enabled": false,
+        "timeout": 30,
+        "max_retries": 3,
+        "rotation_enabled": true,
+        "retry_delay": 2
+    },
+    "database": {
+        "enabled": false,
+        "type": "sqlite",
+        "path": "csgo_arbitrage.db"
+    },
+    "scrapers": {
+        "default_interval": 300,
+        "default_timeout": 30
+    },
     "update_intervals": {
         "steam": 3600,
         "fast_platforms": 60,
         "slow_platforms": 300
-    },
-    "proxy_settings": {
-        "enabled": false,
-        "rotation_enabled": true,
-        "timeout": 10,
-        "max_retries": 5,
-        "retry_delay": 2
     },
     "logging": {
         "level": "INFO",
         "format": "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name} | {message}",
         "rotation": "1 day",
         "retention": "7 days"
-    },
-    "database": {
-        "type": "postgresql",
-        "url": "postgresql://user:password@localhost/csgo_arbitrage",
-        "pool_size": 20,
-        "max_overflow": 40,
-        "path": "csgo_arbitrage.db"
-    },
-    "api": {
-        "enabled": false,
-        "host": "0.0.0.0",
-        "port": 8000
     }
 }
