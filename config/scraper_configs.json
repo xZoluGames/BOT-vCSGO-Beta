@@ -1,0 +1,135 @@
+{
+  "waxpeer": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "csdeals": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "empire": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 30,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "steammarket": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 300,
+    "max_retries": 10,
+    "timeout": 15
+  },
+  "skinport": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "cstrade": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "bitskins": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "marketcsgo": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "manncostore": {
+    "enabled": true,
+    "use_proxy": true,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "tradeit": {
+    "enabled": true,
+    "use_proxy": true,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "skindeck": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "white": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "lisskins": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "shadowpay": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "skinout": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "rapidskins": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "steamnames": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 300,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "steamid": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 300,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "steamlisting": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 300,
+    "max_retries": 5,
+    "timeout": 10
+  }
+}

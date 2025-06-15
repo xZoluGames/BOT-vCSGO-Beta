@@ -102,7 +102,10 @@ class DatabaseService:
             scraper_status.status = 'idle'
             scraper_status.last_success = datetime.utcnow()
             scraper_status.items_found = items_saved
-            scraper_status.run_count += 1
+            if scraper_status.run_count is None:
+                scraper_status.run_count = 1
+            else:
+                scraper_status.run_count += 1
             scraper_status.error_message = None
             
             session.commit()
