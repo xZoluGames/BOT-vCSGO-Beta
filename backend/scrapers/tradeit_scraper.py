@@ -22,14 +22,29 @@ class TradeitScraper(BaseScraper):
         self.driver = None
         self._setup_driver()
     
-    def _setup_driver(self):
-        """Configura el driver de Chrome para Tradeit"""
-        options = uc.ChromeOptions()
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-        
-        self.driver = uc.Chrome(options=options)
-    
+        def _setup_driver(self):
+            """Configura el driver de Chrome para Tradeit"""
+        try:
+            options = uc.ChromeOptions()
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--disable-blink-features=AutomationControlled")
+            
+            # Limpiar archivos antiguos de ChromeDriver
+            import shutil
+            chromedriver_path = Path.home() / "appdata" / "roaming" / "undetected_chromedriver"
+            if chromedriver_path.exists():
+                try:
+                    exe_file = chromedriver_path / "undetected_chromedriver.exe"
+                    if exe_file.exists():
+                        exe_file.unlink()
+                except:
+                    pass
+            
+            self.driver = uc.Chrome(options=options, version_main=None)
+        except Exception as e:
+            self.logger.error(f"Error configurando ChromeDriver: {e}")
+            self.driver = None
     def fetch_data(self) -> List[Dict]:
         """Obtiene datos de Tradeit usando Selenium"""
         self.logger.info("Obteniendo datos de Tradeit...")

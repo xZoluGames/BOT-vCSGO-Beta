@@ -21,11 +21,11 @@
         "retention": "7 days"
     },
     "database": {
-        "enabled": true,
-        "type": "sqlite",
-        "path": "data/csgo_arbitrage.db",
-        "cleanup_days": 30,
-        "cache_minutes": 5
+        "type": "postgresql",
+        "url": "postgresql://user:password@localhost/csgo_arbitrage",
+        "pool_size": 20,
+        "max_overflow": 40,
+        "path": "csgo_arbitrage.db"
     },
     "api": {
         "enabled": false,

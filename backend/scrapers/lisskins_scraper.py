@@ -69,6 +69,15 @@ class LisskinsScraper(BaseScraper):
             item_name = item_name.replace('--', '-')
         
         return item_name.strip('-')
-    def main_lisskins():
+def main_lisskins():
         scraper = LisskinsScraper()
         scraper.run_forever()
+
+
+def main():
+    scraper = LisskinsScraper()
+    scraper.run_forever()
+
+
+if __name__ == "__main__":
+    main()

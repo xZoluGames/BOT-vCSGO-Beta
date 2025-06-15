@@ -80,6 +80,14 @@ class SkindeckScraper(BaseScraper):
                 print(self.translator.gettext('fetch_error', error=str(e)), flush=True)
             return []
 
-    def main_skindeck():
+def main_skindeck():
         scraper = SkindeckScraper()
         scraper.run_forever()
+
+def main():
+    scraper = SkindeckScraper()
+    scraper.run_forever()
+
+
+if __name__ == "__main__":
+    main()

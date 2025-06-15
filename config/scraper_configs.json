@@ -16,16 +16,9 @@
   "empire": {
     "enabled": true,
     "use_proxy": false,
-    "interval": 30,
+    "interval": 60,
     "max_retries": 5,
     "timeout": 10
-  },
-  "steammarket": {
-    "enabled": true,
-    "use_proxy": false,
-    "interval": 300,
-    "max_retries": 10,
-    "timeout": 15
   },
   "skinport": {
     "enabled": true,
@@ -57,17 +50,17 @@
   },
   "manncostore": {
     "enabled": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "interval": 60,
     "max_retries": 5,
-    "timeout": 10
+    "timeout": 15
   },
   "tradeit": {
     "enabled": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "interval": 60,
     "max_retries": 5,
-    "timeout": 10
+    "timeout": 15
   },
   "skindeck": {
     "enabled": true,
@@ -108,6 +101,13 @@
     "enabled": true,
     "use_proxy": false,
     "interval": 60,
+    "max_retries": 5,
+    "timeout": 10
+  },
+  "steammarket": {
+    "enabled": true,
+    "use_proxy": false,
+    "interval": 300,
     "max_retries": 5,
     "timeout": 10
   },

@@ -128,11 +128,11 @@ class SkinoutScraper(BaseScraper):
         """No se usa en Skinout, el parsing se hace en fetch_data"""
         pass
 
-    def main_skinout():
+def main_skinout():
         scraper = SkinoutScraper()
         scraper.run_forever()
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
         import os
         filename = os.path.basename(__file__)
         

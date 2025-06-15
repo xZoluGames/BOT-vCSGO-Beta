@@ -45,6 +45,14 @@ class WhiteScraper(BaseScraper):
         except Exception as e:
             self.logger.error(f"Error parseando White: {e}")
             return []
-    def main_white():
+def main_white():
         scraper = WhiteScraper()
         scraper.run_forever()
+
+def main():
+    scraper = WhiteScraper()
+    scraper.run_forever()
+
+
+if __name__ == "__main__":
+    main()
